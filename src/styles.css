@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* You can add global styles to this file, and also import other style files */
+
+
+@layer utilities {
+    @keyframes fadeDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-1rem);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .animate-fadeDown {
+        animation: fadeDown 0.5s ease-out forwards;
+    }
+}
+body {
+  @apply font-fustat;
+}
+
+@font-face {
+    font-family: 'Layla';
+    src: url('/fonts/layla/Layla Pro Regular.otf') format('opentype');
+    font-weight: 400; /* Regular */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Layla';
+    src: url('/fonts/layla/Layla Pro Light.otf') format('opentype');
+    font-weight: 300; /* Light */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Layla';
+    src: url('/fonts/layla/Layla Pro Medium.otf') format('opentype');
+    font-weight: 500; /* Medium */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Layla';
+    src: url('/fonts/layla/Layla Pro Semi Bold.otf') format('opentype');
+    font-weight: 600; /* Semi Bold */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Layla';
+    src: url('/fonts/layla/Layla Pro Bold.otf') format('opentype');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+  }
+  

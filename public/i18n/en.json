@@ -1,0 +1,56 @@
+{
+    "navbar": {
+        "home": "home",
+        "services": {
+            "main": "Our Services",
+            "sec1": "Litigation and dispute resolution",
+            "par1": "Litigation and Dispute Resolution Representing and pleading before courts and judicial bodies of all levels and specializations on behalf of the company's clients, providing legal and Sharia advice and opinions to clients regarding existing and potential disputes, and providing the best ways to prevent and resolve disputes",
+            "sec2": "Corporate services",
+            "par2": "The company provides legal advice and undertakes structuring and establishment work for companies and commercial entities.",
+            "sec3": "Studies and legislation  ",
+            "par3": "Corporate Services: Providing expert legal assistance for corporations...",
+            "sec4": "Labor system and labor relations",
+            "par4": " Drafting, preparing, and reviewing land and real estate sale, purchase, and lease contracts",
+            "sec5": "Real estate regulations",
+            "par5": "Corporate Services: Providing expert legal assistance for corporations...",
+            "sec6": "Endowments and the non-profit ",
+            "par6": "Corporate Services: Providing expert legal assistance for corporations...",
+            "sec7": "Zakat and tax",
+            "par7": "Corporate Services: Providing expert legal assistance for corporations...",
+            "sec8": "Division of estates"
+        },
+        "team": "Our team",
+        "event": "Events",
+        "branches": "Our branches",
+        "contact": "Contact us",
+        "english": "English (US)",
+        "arabic": "Arabic (SA)"
+    },
+    "timeline": {
+        "main": "Timeline",
+        "firm": "Al-Zamel and Al-Kharashi Law Firm",
+        "button": "For more",
+        "paragraph": "Since the first launch more than twenty-five years ago, and with the founders experience that preceded that period by a long way, attention was directed to the strength of professional competence with complete integrity and honesty, and as a result a number of successes were achieved in a number of fields."
+    },
+    "title3": "Company Accreditations",
+
+    "form": {
+        "title": "title",
+        "title2": "Don't hesitate to contact us",
+        "send": "Send"
+    },
+
+    "footer": {
+        "paragraph": "Established over twenty-five years ago, building on the founders' extensive prior experience, our focus has always been on fostering a strong professional culture combined with integrity and trustworthiness. This approach has led to numerous successes across various fields.",
+        "connect": "Contact Us",
+        "riyadh": "Riyadh",
+        "khobar": "Khobar",
+        "jeddah": "Jeddah",
+        "dphone": "Unified Number: 920009756",
+        "phone": "phone:",
+        "follow": "Follow Us:",
+        "email": "Email",
+        "hours": "Working Hours"  
+    }
+
+}
