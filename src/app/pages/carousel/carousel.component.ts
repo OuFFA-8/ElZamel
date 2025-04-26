@@ -22,28 +22,41 @@ export class CarouselComponent {
           dir: 'rtl',
           injectStyles: [`
             .swiper-pagination {
+              position: absolute;
               bottom: 10px !important;
               right: 10px !important;
               left: auto !important;
-              text-align: right !important;
+              top: auto !important;
+              transform: none !important;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              gap: 5px;
+              width: auto;
             }
-
+          
             .swiper-pagination-bullet {
               width: 25px;
               height: 25px;
-              text-align: center;
-              line-height: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
               font-size: 12px;
               color: #000;
               opacity: 1;
               background: rgba(0, 0, 0, 0.2);
+              border-radius: 50%;
+              transition: background 0.3s, color 0.3s;
             }
-
+          
             .swiper-pagination-bullet-active {
               color: #fff;
               background: #a39669;
             }
-          `],
+          `]
+          
+          
+          ,
           pagination: {
             clickable: true,
             renderBullet: (index: number, className: string): string => {

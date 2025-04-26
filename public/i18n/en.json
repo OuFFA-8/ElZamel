@@ -35,9 +35,28 @@
     "title3": "Company Accreditations",
 
     "form": {
-        "title": "title",
-        "title2": "Don't hesitate to contact us",
-        "send": "Send"
+        "title0": "title",
+        "title": "CONTACT US WITH YOUR LEGAL REQUIREMENTS",
+        "title2": "We are here to provide you with the best legal solutions, backed by a team of experts.",
+        "connect": "Let's Connect",
+        "send": "Send",
+        "group": {
+            "Corporate": "Corporate and Commercial",
+            "Banking": "Banking and Finance",
+            "Investment": "Investment Fund Services",
+            "Information": "Information Technology and Data Protection",
+            "Intellectual": "Intellectual Property",
+            "Employment": "Employment and Labor Law",
+            "Dispute": "Dispute Resolution",
+            "Foreign": "Foreign Investment",
+            "Government": "Government Contracts and Procurement",
+            "Capital": "Capital Markets",
+            "Environmental": "Environmental Law",
+            "Insurance": "Insurance Law",
+            "Legal": "Legal and Compliance Training",
+            "Real": "Real Estate",
+            "Shipping": "Shipping and Maritime Law"
+        }
     },
 
     "footer": {
@@ -52,5 +71,6 @@
         "email": "Email",
         "hours": "Working Hours"  
     }
+
 
 }

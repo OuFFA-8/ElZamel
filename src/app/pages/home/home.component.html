@@ -4,11 +4,11 @@
   <div class="grid md:grid-cols-[50%_minmax(0,1fr)] ">
 
 
-    <div class="">
-      <div class="bg-white    ">
-        <div class="p-10">
+    <div class="w-full">
+      <div class="bg-white sm:px-7 py-10 md:ps-[100px] pe-2 mx-auto  ">
+        <div class="">
           <h2 class="text-3xl font-bold mb-8 text-[#061933]">{{'timeline.firm' | translate}}</h2>
-          <p class="text-xl w-[87%] "> {{'timeline.paragraph' | translate}} </p>
+          <p class="text-xl md:w-[90%] "> {{'timeline.paragraph' | translate}} </p>
         </div>
         <div class=" flex justify-end text-[#a39669] mb-6 me-6">
           <button class=" text-xl font-bold  hover:underline ">{{'timeline.button' | translate}} <span><i
@@ -266,17 +266,52 @@
 <section class="bg-white w-full  container mx-auto mt-16 h-80">
 
   <h2 class="text-5xl text-[#061933] mb-5 font-bold pb-10"> {{'title3' | translate}} </h2>
+
+
+</section>
+
+<section class="bg-[#b3a16c] py-6 ">
+  <div id="counterSection" class="max-w-7xl mx-auto px-4 grid  md:grid-cols-5 gap-8 text-center">
+
+
+
+    <div class="flex flex-col items-center">
+      <h2 class="text-6xl font-bold text-gray-200">+{{counter1}}</h2>
+      <p class="mt-2 text-gray-200 text-xl">{{'form.title0' | translate}}</p>
+    </div>
+
+    <div class="flex flex-col items-center">
+      <h2 class="text-6xl font-bold text-gray-200">+{{counter1}}</h2>
+      <p class="mt-2 text-gray-200 text-xl">{{'form.title0' | translate}}</p>
+    </div>
+
+    <div class="flex flex-col items-center">
+      <h2 class="text-6xl font-bold text-gray-200">+{{counter2}}</h2>
+      <p class="mt-2 text-gray-200 text-xl">{{'form.title0' | translate}}</p>
+    </div>
+
+    <div class="flex flex-col items-center">
+      <h2 class="text-6xl font-bold text-gray-200">+{{counter3}}</h2>
+      <p class="mt-2 text-gray-200 text-xl">{{'form.title0' | translate}}</p>
+    </div>
+
+    <div class="flex flex-col items-center">
+      <h2 class="text-6xl font-bold text-gray-200">+{{counter3}}</h2>
+      <p class="mt-2 text-gray-200 text-xl">{{'form.title0' | translate}}</p>
+    </div>
+
+  </div>
 </section>
 
 
-
+<!-- 
 <section class="relative bg-cover bg-center h-[80vh] " style="background-image: url('/images/Law-Gavel-2.png');">
 
-  <div  id="counterSection"
-  class="  max-w-4xl mx-auto -translate-y-1/2 z-10  relative bg-[#b3a16c] rounded-xl shadow-lg grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-around items-center py-7 px-3 text-white text-center gap-6"
+  <div  
+  class="  max-w-4xl mx-auto -translate-y-1/2 z-10  relative bg-[#b3a16c] rounded-xl shadow-lg grid xl:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-around items-center py-7 px-3 text-white text-center gap-6"
 >
 
-  <div class="flex items-center gap-2 justify-center border-white ">
+  <div class="flex items-center gap-2 justify-center border-[#b3a16c] ">
 
     <i class="fa-solid fa-gavel text-6xl text-[#061933]"></i>
     <div class="flex flex-col items-start text-right ms-2">
@@ -284,7 +319,7 @@
       <span class="text-3xl font-semibold text-white">{{'form.title' | translate}}</span>
     </div>
   </div>
-  <div class="flex items-center gap-2 justify-center border-white border-l-2 border-r-2">
+  <div class="flex items-center gap-2 justify-center border-[#b3a16c] border-[#b3a16c]order-[#b3a16c]
 
     <i class="fa-solid fa-archway text-6xl text-[#061933]"></i>
 
@@ -316,5 +351,83 @@
       <button type="submit"
         class="bg-[#b3a16c] text-white py-2 rounded col-span-full hover:opacity-90 transition">{{'form.send' | translate}}</button>
     </form>
+  </div>
+</section> -->
+
+<section class="our-section relative w-full md:h-screen bg-cover bg-center">
+  <div class="absolute inset-0"></div>
+
+  <div class="relative z-10 flex flex-col md:flex-row items-center justify-between max-w-[1325px] mx-auto px-6 py-16 h-full">
+
+    <!-- Left content -->
+    <div class="text-white max-w-lg  md:text-start md:mb-52 ">
+      <h1 class="text-3xl md:text-5xl font-bold mb-4">
+        {{'form.title' | translate}}
+      </h1>
+      <p class="mb-6">
+        {{'form.title2' | translate}}
+      </p>
+      <button class="bg-white text-blue-900 font-semibold py-2 px-6 rounded-full hover:bg-gray-100 transition">
+        {{'form.connect' | translate}} 
+      </button>
+    </div>
+
+    <!-- Right form -->
+    <div
+      class="bg-white bg-opacity-20 backdrop-blur-md p-8 rounded-xl w-full md:w-1/2 mt-10 md:mt-0 max-w-md mx-auto px-4">
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+        <input type="text" placeholder="First Name"
+          class="p-3 rounded bg-transparent border border-[#b3a16c] placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-1">
+
+        <input type="text" placeholder="Last Name"
+          class="p-3 rounded bg-transparent border border-[#b3a16c] placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-1">
+
+        <input type="email" placeholder="Email"
+          class="p-3 rounded bg-transparent border border-[#b3a16c] placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2">
+
+        <!-- Mobile Number with Country Code -->
+        <div class="col-span-2 flex gap-2 items-center">
+
+
+          <!-- Mobile Number Input -->
+          <input type="text" placeholder="Mobile Number "
+            class="flex-1 p-3 rounded bg-transparent border border-[#b3a16c] placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c]">
+        </div>
+
+
+        <select
+          class="p-3 rounded bg-transparent border border-[#b3a16c] text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2">
+          <option class="text-black">{{'form.group.Corporate' | translate}}</option>
+          <option class="text-black">{{'form.group.Banking' | translate}}</option>
+          <option class="text-black">{{'form.group.Investment' | translate}}</option>
+          <option class="text-black">{{'form.group.Information' | translate}}</option>
+          <option class="text-black">{{'form.group.Intellectual' | translate}}</option>
+          <option class="text-black">{{'form.group.Employment' | translate}}</option>
+          <option class="text-black">{{'form.group.Dispute' | translate}}</option>
+          <option class="text-black">{{'form.group.Foreign' | translate}}</option>
+          <option class="text-black">{{'form.group.Government' | translate}}</option>
+          <option class="text-black">{{'form.group.Capital' | translate}}</option>
+          <option class="text-black">{{'form.group.Environmental' | translate}}</option>
+          <option class="text-black">{{'form.group.Insurance' | translate}}</option>
+          <option class="text-black">{{'form.group.Legal' | translate}}</option>
+          <option class="text-black">{{'form.group.Real' | translate}}</option>
+          <option class="text-black">{{'form.group.Shipping' | translate}}</option>
+        </select>
+
+        <!-- Message -->
+        <textarea placeholder="Your Message" rows="4"
+          class="p-3 rounded bg-transparent border border-[#b3a16c] placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2"></textarea>
+
+        <!-- Submit -->
+        <button role="button"
+          class="bg-[#b3a16c] text-white font-semibold py-3 px-6 rounded-full hover:bg-[#837342] transition col-span-2">
+          {{'form.send' | translate}} 
+        </button>
+
+      </form>
+    </div>
+
+
   </div>
 </section>

@@ -30,7 +30,7 @@ export class NavbarComponent {
 
   @HostListener('window:scroll',) onscroll() {
 
-    if (scrollY > 0) {
+    if (scrollY > 200) {
       this.scroll = true;
     }
     else {

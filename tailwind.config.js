@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         fustat: ['Fustat', 'sans-serif'],
-        sans: ['Layla', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        NotoKufi: ['Noto Kufi Arabic', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
       },
       animation: {
         'fade-in-up': 'fadeInUp 1s ease-out',
