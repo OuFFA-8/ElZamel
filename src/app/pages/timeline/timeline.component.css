@@ -37,7 +37,7 @@
   
     &.active {
       @apply md:flex-grow md:flex-shrink md:basis-auto;
-      background-color: rgba(255, 255, 255, 0.85);
+      background-color: #ffffffd9;
   
       .nav-elements {
         @apply opacity-0 pointer-events-none bg-transparent;
