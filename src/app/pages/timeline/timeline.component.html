@@ -56,13 +56,13 @@
 
       <div class="item-content relative md:absolute md:inset-0 w-full h-0 md:h-full p-0 md:p-10 box-border opacity-100 md:opacity-0 scale-100 md:scale-95 pointer-events-auto md:pointer-events-none bg-transparent overflow-hidden md:overflow-y-auto">
         <div class="content-inner flex flex-col md:flex-row gap-8 md:gap-8 items-center md:items-start h-auto md:h-full pt-8 md:pt-0 pb-8 md:pb-0 px-5 md:px-0 opacity-0 md:opacity-100">
-          <div class="content-image w-full max-w-[500px] md:max-w-none md:w-2/5 md:h-60 text-center mx-auto md:mx-0 mb-5 md:mb-0">
-            <img [src]="section.imageUrl" [alt]="section.contentTitle" class="max-w-full h-auto max-h-[40vh] md:max-h-[60vh] object-contain rounded-lg">
+          <div class="content-image  text-center mx-auto md:mx-0 mb-5 md:mb-0 bg-gray-400">
+            <img [src]="section.imageUrl" [alt]="section.contentTitle" class="max-w-full h-auto max-h-[40vh] w-full md:max-h-[60vh] object-contain rounded-lg">
           </div>
-          <div class="content-text flex-1 text-center md:text-right">
-            <h2 class="text-2xl md:text-3xl font-semibold mb-4 text-red-900">{{ section.contentTitle }}</h2>
-            <p class="text-sm md:text-base mb-6 text-black leading-relaxed">{{ section.contentText }}</p>
-            <button class="cta-button inline-flex items-center bg-white/10 border border-white/30 text-white text-xs md:text-sm py-2 px-4 md:py-2.5 md:px-6 rounded-full cursor-pointer transition-colors duration-300 hover:bg-white/20 hover:border-white/50">
+          <div class="content-text flex-1 text-center md:text-right ">
+            <h2 class="text-2xl md:text-3xl xl:md:text-4xl font-semibold mb-4 text-[#061933]">{{ section.contentTitle }}</h2>
+            <p class="text-sm md:text-base mb-6 text-black leading-relaxed bg-gray-100 lg:p-6 lg:text-lg xl:text-xl 2xl:text-2xl">{{ section.contentText }}</p>
+            <button class="cta-button inline-flex items-center bg-[#b3a16c] border border-white/30 text-white text-xs md:text-lg xl:text-xl py-2 px-4 md:py-2.5 md:px-6 rounded-full cursor-pointer transition-colors duration-300 hover:bg-[#80734a] hover:border-white/50 mb-2">
               تفاصيل أكثر <i class="fas fa-arrow-left mr-2 transition-transform duration-300 ease-out hover:translate-x-[-5px]"></i>
             </button>
           </div>
