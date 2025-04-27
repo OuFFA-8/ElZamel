@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { initFlowbite } from 'flowbite';
 import { title } from 'process';
 import { FlowbiteService } from './core/services/flowbite/flowbite.service';
 import { NavbarComponent } from "./layouts/navbar/navbar.component";
 import { FooterComponent } from "./layouts/footer/footer.component";
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -15,12 +16,18 @@ import { FooterComponent } from "./layouts/footer/footer.component";
 
 export class AppComponent implements OnInit {
   title = 'elzamel';
-  constructor(private flowbiteService: FlowbiteService) {}
+  constructor(private flowbiteService: FlowbiteService, @Inject(PLATFORM_ID) private platformId: Object
+  ) { }
 
   ngOnInit(): void {
-    this.flowbiteService.loadFlowbite((flowbite) => {
-      initFlowbite();
-    });
+    if (isPlatformBrowser(this.platformId)) {
+      document.documentElement.lang = 'ar';
+      document.documentElement.dir = 'rtl';
+
+      this.flowbiteService.loadFlowbite((flowbite) => {
+        initFlowbite();
+      });
+    }
   }
 
 

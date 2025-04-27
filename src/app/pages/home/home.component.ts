@@ -14,7 +14,11 @@ import { TranslatePipe } from '@ngx-translate/core';
 })
 
 
+
 export class HomeComponent implements AfterViewInit {
+
+
+
 
   open1 = false;
   open2 = false;
