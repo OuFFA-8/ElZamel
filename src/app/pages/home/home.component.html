@@ -1,64 +1,47 @@
 <app-carousel></app-carousel>
 
-<!-- Section 1: Firm Info & Timeline -->
 <section>
-  <!-- Grid layout stacks on mobile, 2 columns on medium screens and up -->
   <div class="grid md:grid-cols-[50%_minmax(0,1fr)]">
 
-    <!-- Left Column (Firm Info & Image) -->
     <div class="w-full">
-      <!-- Content Box -->
       <div class="bg-white px-4 sm:px-7 py-8 md:py-10 md:ps-[50px] lg:ps-[100px] pe-2 mx-auto">
         <div>
-          <!-- Title: Adjusted font size for mobile -->
           <h2 class="text-2xl sm:text-3xl font-bold mb-6 md:mb-8 text-[#061933]">{{'timeline.firm' | translate}}</h2>
-          <!-- Paragraph: Adjusted font size and width -->
           <p class="text-lg sm:text-xl md:w-[90%]"> {{'timeline.paragraph' | translate}} </p>
         </div>
-        <!-- Button: Adjusted font size and margin -->
         <div class=" flex justify-end text-[#a39669] mt-6 mb-4 md:mb-6 me-4 md:me-6">
           <button class=" text-lg sm:text-xl font-bold hover:underline ">{{'timeline.button' | translate}} <span><i
                 class="fa-solid fa-angle-up fa-rotate-90 "></i></span></button>
         </div>
       </div>
-      <!-- Image: Adjusted height for different screens, object-cover ensures it fills the container -->
       <img src="/images/LAW2.png" class="w-full object-cover h-[250px] sm:h-[300px] md:h-[350px]" alt="Law Firm Image">
     </div>
 
-    <!-- Right Column (Timeline Component) -->
     <app-timeline></app-timeline>
 
   </div>
 </section>
 
-<!-- Section 2: Our Services -->
-<!-- Added padding adjustments for different screens -->
 <section class="our-section w-full min-h-72 py-12 sm:py-16 md:py-20 bg-cover bg-center bg-no-repeat">
-  <!-- Container for centering -->
-  <div class="m-section container mx-auto px-4"> <!-- Added px-4 for padding on small screens -->
+  <div class="m-section container mx-auto px-4">
 
-    <!-- Title: Adjusted font size and padding bottom -->
     <h2 class="text-3xl sm:text-4xl md:text-5xl text-[#a39669] mb-5 font-bold pb-6 md:pb-10"> <span class="text-3xl sm:text-4xl md:text-5xl"><i
           class="fa-solid fa-gavel"></i></span> {{'navbar.services.main' | translate}} </h2>
 
-    <!-- Grid: Adjusted columns and gap for responsiveness -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 ">
 
-      <!-- Service Item 1 -->
       <div class="group/1">
         <div class="1" (click)="toggleOpen1()">
-          <div class="relative text-white flex cursor-pointer items-center"> <!-- Added items-center -->
+          <div class="relative text-white flex cursor-pointer items-center">
             <div class="relative">
-              <!-- Number: Adjusted font size -->
               <span [class.text-[#a39669]]="open1" [class.text-white]="!open1"
                 class="text-4xl md:text-5xl font-bold relative z-10 duration-1000">
                 01
               </span>
-              <div class="absolute bottom-1 left-0 right-0 h-1 bg-white z-0"></div>
+              <div class="absolute bottom-[2px] left-0 right-0 h-1 bg-white z-0"></div>
             </div>
 
-            <!-- Text & Icon: Adjusted spacing and icon size -->
-            <div class="flex flex-grow items-center justify-between gap-2 mx-2"> <!-- Changed flex behavior -->
+            <div class="flex flex-grow items-center justify-between gap-2 mx-2">
               <span class="text-base sm:text-lg">{{'navbar.services.sec1' | translate}}</span>
               <i class="fa-solid fa-arrow-up fa-rotate-by text-3xl md:text-4xl duration-1000 flex-shrink-0" [class.rotate-[225deg]]="open1"
                 [class.text-[#a39669]]="open1" [class.text-white]="!open1" style="--fa-rotate-angle: 45deg;"></i>
@@ -70,7 +53,6 @@
           </div>
 
           @if (open1) {
-          <!-- Description: Font size seems okay -->
           <div class="p-3 bg-gray-50 rounded-lg mt-2 transition-all duration-500 ease-out w-full
                      opacity-0 -translate-y-4 animate-fadeDown">
             <p class="text-sm text-black">
@@ -81,12 +63,10 @@
         </div>
       </div>
 
-      <!-- Service Item 2, 4, 6 Column -->
-      <div class="group/2 space-y-8 md:space-y-10"> <!-- Added spacing between items in this column -->
-        <div class="2"> <!-- Removed pb-16, using space-y on parent -->
-          <div class="relative text-white flex mb-3 md:mb-5 w-full cursor-pointer items-center" (click)="toggleOpen2()"> <!-- Added items-center -->
+      <div class="group/2 space-y-8 md:space-y-10">
+        <div class="2">
+          <div class="relative text-white flex mb-3 md:mb-5 w-full cursor-pointer items-center" (click)="toggleOpen2()">
             <div class="flex-shrink-0 relative">
-              <!-- Number: Adjusted font size -->
               <span class="text-4xl md:text-5xl font-bold relative z-10 duration-1000" [class.text-[#a39669]]="open2"
                 [class.text-white]="!open2">
                 02
@@ -94,7 +74,6 @@
               <div class="absolute bottom-1 left-0 right-0 h-1 bg-white z-0"></div>
             </div>
 
-            <!-- Text & Icon: Adjusted spacing and icon size -->
             <div class="flex-grow flex justify-between items-center mx-2">
               <span class="text-base sm:text-lg md:text-xl">{{'navbar.services.sec2' | translate}}</span>
               <i class="fa-solid fa-arrow-up fa-rotate-by text-3xl md:text-4xl duration-1000 flex-shrink-0" [class.rotate-[225deg]]="open2"
@@ -115,10 +94,9 @@
           }
         </div>
 
-        <div class="4"> <!-- Removed pb-16 -->
-          <div class="relative text-white flex mb-3 md:mb-5 w-full cursor-pointer items-center" (click)="toggleOpen4()"> <!-- Added items-center -->
+        <div class="4">
+          <div class="relative text-white flex mb-3 md:mb-5 w-full cursor-pointer items-center" (click)="toggleOpen4()">
             <div class="flex-shrink-0 relative">
-              <!-- Number: Adjusted font size -->
               <span class="text-4xl md:text-5xl font-bold relative z-10 duration-1000" [class.text-[#a39669]]="open4"
                 [class.text-white]="!open4">
                 04
@@ -126,7 +104,6 @@
               <div class="absolute bottom-1 left-0 right-0 h-1 bg-white z-0"></div>
             </div>
 
-            <!-- Text & Icon: Adjusted spacing and icon size -->
             <div class="flex-grow flex justify-between items-center mx-2">
               <span class="text-base sm:text-lg">{{'navbar.services.sec4' | translate}}</span>
               <i class="fa-solid fa-arrow-up fa-rotate-by text-3xl md:text-4xl duration-1000 flex-shrink-0" [class.rotate-[225deg]]="open4"
@@ -149,9 +126,8 @@
         </div>
 
         <div class="6">
-          <div class="relative text-white flex mb-3 md:mb-5 w-full cursor-pointer items-center" (click)="toggleOpen6()"> <!-- Added items-center -->
+          <div class="relative text-white flex mb-3 md:mb-5 w-full cursor-pointer items-center" (click)="toggleOpen6()">
             <div class="flex-shrink-0 relative">
-              <!-- Number: Adjusted font size -->
               <span class="text-4xl md:text-5xl font-bold relative z-10 duration-1000" [class.text-[#a39669]]="open6"
                 [class.text-white]="!open6">
                 06
@@ -159,7 +135,6 @@
               <div class="absolute bottom-1 left-0 right-0 h-1 bg-white z-0"></div>
             </div>
 
-            <!-- Text & Icon: Adjusted spacing and icon size -->
             <div class="flex-grow flex justify-between items-center mx-2">
               <span class="text-base sm:text-lg">{{'navbar.services.sec6' | translate}}</span>
               <i class="fa-solid fa-arrow-up fa-rotate-by text-3xl md:text-4xl duration-1000 flex-shrink-0" [class.rotate-[225deg]]="open6"
@@ -182,17 +157,14 @@
         </div>
       </div>
 
-      <!-- Service Item 3, 5, 7 Column -->
-      <div class="group/3 space-y-8 md:space-y-10"> <!-- Added spacing between items -->
-         <div class="3"> <!-- Removed pb-16 -->
-          <div class="relative text-white flex mb-3 md:mb-5 w-full cursor-pointer items-center" (click)="toggleOpen3()"> <!-- Added items-center -->
+      <div class="group/3 space-y-8 md:space-y-10">
+         <div class="3">
+          <div class="relative text-white flex mb-3 md:mb-5 w-full cursor-pointer items-center" (click)="toggleOpen3()">
             <div class="flex-shrink-0 relative">
-               <!-- Number: Adjusted font size -->
               <span class="text-4xl md:text-5xl font-bold relative z-10 duration-1000" [class.text-[#a39669]]="open3"
                 [class.text-white]="!open3">03</span>
-              <div class="absolute bottom-1 left-0 right-0 h-1 bg-white z-0"></div> <!-- Added underline div -->
+              <div class="absolute bottom-1 left-0 right-0 h-1 bg-white z-0"></div>
             </div>
-             <!-- Text & Icon: Adjusted spacing and icon size -->
             <div class="flex-grow flex justify-between items-center mx-2">
               <span class="text-base sm:text-lg md:text-xl">{{'navbar.services.sec3' | translate}}</span>
                <i class="fa-solid fa-arrow-up fa-rotate-by text-3xl md:text-4xl duration-1000 flex-shrink-0" [class.rotate-[225deg]]="open3"
@@ -212,15 +184,13 @@
           }
         </div>
 
-        <div class="5"> <!-- Removed pb-16 -->
-          <div class="relative text-white flex mb-3 md:mb-5 w-full cursor-pointer items-center" (click)="toggleOpen5()"> <!-- Added items-center -->
+        <div class="5">
+          <div class="relative text-white flex mb-3 md:mb-5 w-full cursor-pointer items-center" (click)="toggleOpen5()">
             <div class="flex-shrink-0 relative">
-              <!-- Number: Adjusted font size -->
               <span class="text-4xl md:text-5xl font-bold relative z-10 duration-1000" [class.text-[#a39669]]="open5"
                 [class.text-white]="!open5">05</span>
-               <div class="absolute bottom-1 left-0 right-0 h-1 bg-white z-0"></div> <!-- Added underline div -->
+               <div class="absolute bottom-1 left-0 right-0 h-1 bg-white z-0"></div>
             </div>
-             <!-- Text & Icon: Adjusted spacing and icon size -->
             <div class="flex-grow flex justify-between items-center mx-2">
               <span class="text-base sm:text-lg md:text-xl">{{'navbar.services.sec5' | translate}}</span>
                <i class="fa-solid fa-arrow-up fa-rotate-by text-3xl md:text-4xl duration-1000 flex-shrink-0" [class.rotate-[225deg]]="open5"
@@ -241,14 +211,12 @@
         </div>
 
         <div class="7 ">
-          <div class="relative text-white flex mb-3 md:mb-5 w-full cursor-pointer items-center" (click)="toggleOpen7()"> <!-- Added items-center -->
+          <div class="relative text-white flex mb-3 md:mb-5 w-full cursor-pointer items-center" (click)="toggleOpen7()">
             <div class="flex-shrink-0 relative">
-              <!-- Number: Adjusted font size -->
               <span class="text-4xl md:text-5xl font-bold relative z-10 duration-1000" [class.text-[#a39669]]="open7"
                 [class.text-white]="!open7">07</span>
-              <div class="absolute bottom-1 left-0 right-0 h-1 bg-white z-0"></div> <!-- Added underline div -->
+              <div class="absolute bottom-1 left-0 right-0 h-1 bg-white z-0"></div>
             </div>
-            <!-- Text & Icon: Adjusted spacing and icon size -->
             <div class="flex-grow flex justify-between items-center mx-2">
               <span class="text-base sm:text-lg md:text-xl">{{'navbar.services.sec7' | translate}}</span>
                <i class="fa-solid fa-arrow-up fa-rotate-by text-3xl md:text-4xl duration-1000 flex-shrink-0" [class.rotate-[225deg]]="open7"
@@ -270,7 +238,6 @@
       </div>
 
     </div>
-    <!-- Button: Adjusted font size and margin top -->
     <div class=" flex justify-end text-[#a39669] mt-8 md:mt-10">
       <button class=" text-lg sm:text-xl font-bold hover:underline ">{{'timeline.button' | translate}} <span><i
             class="fa-solid fa-angle-up fa-rotate-90 "></i></span></button>
@@ -280,28 +247,19 @@
 </section>
 
 
-<!-- Section 3: Title -->
-<!-- Replaced fixed height with padding, added horizontal padding -->
 <section class="bg-white w-full container mx-auto px-4 py-12 md:py-16 mt-10 md:mt-16">
 
-  <!-- Title: Adjusted font size and padding bottom -->
   <h2 class="text-3xl sm:text-4xl md:text-5xl text-[#061933] mb-5 font-bold pb-6 md:pb-10"> {{'title3' | translate}} </h2>
 
 </section>
 
-<!-- Section 4: Counters -->
 <section class="bg-[#b3a16c] py-10 md:py-12">
-  <!-- Grid: Adjusted columns and gap for responsiveness -->
   <div id="counterSection" class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center">
 
-    <!-- Counter Item (Repeated) -->
     <div class="flex flex-col items-center">
-      <!-- Number: Adjusted font size -->
       <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-200">+{{counter1}}</h2>
-      <!-- Text: Adjusted font size -->
       <p class="mt-2 text-gray-200 text-lg md:text-xl">{{'form.title0' | translate}}</p>
     </div>
-    <!-- ... other counter items ... -->
 
      <div class="flex flex-col items-center">
       <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-200">+{{counter1}}</h2>
@@ -326,58 +284,46 @@
   </div>
 </section>
 
-<!-- Section 5: Contact Form -->
-<!-- Adjusted height behavior, padding -->
-<section class="our-section relative w-full min-h-[110vh] sm:min-h-[90vh] md:h-auto md:min-h-[80vh] lg:h-screen bg-cover bg-center py-10 md:py-0"> <!-- Adjusted min-height for mobile, removed md:h-screen if content needs more space -->
-  <div class="absolute inset-0"></div> <!-- Assuming this is for background overlay -->
+<section class="our-section relative w-full min-h-[110vh] sm:min-h-[90vh] md:h-auto md:min-h-[80vh] lg:h-screen bg-cover bg-center py-10 md:py-0">
+  <div class="absolute inset-0"></div>
 
-  <!-- Container: Adjusted padding, flex direction -->
   <div class="relative z-10 flex flex-col md:flex-row items-center justify-center md:justify-between max-w-[1325px] mx-auto px-4 sm:px-6 py-10 md:py-16 h-full gap-10 md:gap-6">
 
-    <!-- Left content: Adjusted alignment and margin for mobile -->
     <div class="text-white max-w-lg text-center md:text-start md:mb-0 lg:mb-16 xl:mb-52 w-full md:w-1/2">
-      <!-- Title: Font size already responsive -->
       <h1 class="text-3xl md:text-4xl font-bold mb-4 leading-loose">
         {{'form.title' | translate}}
       </h1>
-       <!-- Paragraph: Font size seems okay -->
       <p class="mb-6 text-base sm:text-lg">
         {{'form.title2' | translate}}
       </p>
-      <!-- Button: Styling seems okay -->
       <button class="bg-white text-blue-900 font-semibold py-2 px-6 rounded-full hover:bg-gray-100 transition">
         {{'form.connect' | translate}}
       </button>
     </div>
 
-    <!-- Right form: Adjusted padding, width -->
     <div
-      class="bg-white bg-opacity-20 backdrop-blur-md p-6 md:p-8 rounded-xl w-full max-w-md md:w-1/2 mt-0"> <!-- Removed mt-10, adjusted padding -->
-      <!-- Form Grid: Grid behavior already responsive -->
+      class="bg-white bg-opacity-20 backdrop-blur-md p-6 md:p-8 rounded-xl w-full max-w-md md:w-1/2 mt-0">
       <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
         <input type="text" placeholder="First Name"
-          class="p-3 rounded bg-transparent border border-white placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2 md:col-span-1"> <!-- Adjusted col-span -->
+          class="p-3 rounded bg-transparent border border-white placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2 md:col-span-1">
 
         <input type="text" placeholder="Last Name"
-          class="p-3 rounded bg-transparent border border-white placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2 md:col-span-1"> <!-- Adjusted col-span -->
+          class="p-3 rounded bg-transparent border border-white placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2 md:col-span-1">
 
         <input type="email" placeholder="Email"
           class="p-3 rounded bg-transparent border border-white placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2">
 
-        <!-- Mobile Number Input: Looks okay -->
         <div class="col-span-2 flex gap-2 items-center">
           <input type="text" placeholder="Mobile Number "
             class="flex-1 p-3 rounded bg-transparent border border-white placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c]">
         </div>
 
-        <!-- Select Box: Styling seems okay -->
         <select
           class="p-3 rounded bg-transparent border border-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2">
-          <option class="text-black" value="" disabled selected>Select Service...</option> <!-- Added default option -->
+          <option class="text-black" value="" disabled selected>Select Service...</option>
           <option class="text-black">{{'form.group.Corporate' | translate}}</option>
           <option class="text-black">{{'form.group.Banking' | translate}}</option>
-          <!-- ... other options ... -->
            <option class="text-black">{{'form.group.Investment' | translate}}</option>
           <option class="text-black">{{'form.group.Information' | translate}}</option>
           <option class="text-black">{{'form.group.Intellectual' | translate}}</option>
@@ -393,11 +339,9 @@
           <option class="text-black">{{'form.group.Shipping' | translate}}</option>
         </select>
 
-        <!-- Message Textarea: Styling seems okay -->
         <textarea placeholder="Your Message" rows="4"
           class="p-3 rounded bg-transparent border border-white placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2"></textarea>
 
-        <!-- Submit Button: Styling seems okay -->
         <button role="button"
           class="bg-[#b3a16c] text-white font-semibold py-3 px-6 rounded-full hover:bg-[#837342] transition col-span-2">
           {{'form.send' | translate}}
