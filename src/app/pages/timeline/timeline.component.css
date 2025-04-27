@@ -1,4 +1,93 @@
-.time-section{
-    background-image: linear-gradient(rgba(163,150,105,0.9),rgba(163,150,105,0.9)) ,url("/images/black-white-view-theatre.jpg");
+.time-section {
+    background-image: linear-gradient(rgba(163, 150, 105, 0.9), rgba(163, 150, 105, 0.9)), url("/images/black-white-view-theatre.jpg");
 
 }
+
+:host {
+    background-image: linear-gradient(rgba(163, 150, 105, 0.9), rgba(163, 150, 105, 0.9)), url("/images/black-white-view-theatre.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    @apply block w-full text-gray-200;
+    direction: rtl;
+    height: 80vh;
+  }
+  
+  .section-item {
+    transition: flex 0.7s cubic-bezier(0.645, 0.045, 0.355, 1),
+                background-color 0.5s ease,
+                min-height 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  
+    @screen md {
+      &:first-child {
+        @apply border-r border-l-0 border-white/10;
+      }
+    }
+  
+    .nav-title.md\:vertical-text {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+    }
+    .nav-number.md\:vertical-text-lg {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      @apply text-4xl;
+    }
+  
+    &.active {
+      @apply md:flex-grow md:flex-shrink md:basis-auto;
+      background-color: rgba(32, 60, 86, 0.85);
+  
+      .nav-elements {
+        @apply opacity-0 pointer-events-none bg-transparent;
+      }
+  
+      .item-content {
+        @apply md:opacity-100 md:scale-100 md:pointer-events-auto bg-transparent;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .section-item {
+       &.active {
+          min-height: 300px;
+  
+         .nav-elements {
+           @apply bg-black/30;
+  
+           .nav-arrow {
+             transform: rotate(90deg);
+           }
+           .nav-title { @apply text-white; }
+           .nav-number { @apply text-white/80; }
+         }
+  
+         .item-content {
+           height: auto;
+           padding-top: 0;
+           padding-bottom: 0;
+           transition: height 0.6s cubic-bezier(0.645, 0.045, 0.355, 1),
+                       padding 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+  
+           .content-inner {
+             @apply opacity-100 pt-8 pb-8;
+             transition: opacity 0.4s ease-out 0.3s;
+           }
+         }
+       }
+  
+       .item-content {
+          @apply relative h-0 px-5 overflow-hidden pointer-events-auto opacity-100 scale-100;
+  
+         .content-inner {
+           @apply opacity-0 py-0;
+         }
+       }
+    }
+  }
+  
+  .fas {
+      line-height: inherit;
+  }
