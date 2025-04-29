@@ -1,14 +1,15 @@
-import { AfterViewInit, Component, ElementRef, NgModule } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, NgModule } from '@angular/core';
 import { CarouselComponent } from "../carousel/carousel.component";
 import { CommonModule } from '@angular/common';
 import { TimelineComponent } from "../timeline/timeline.component";
 import { TranslatePipe } from '@ngx-translate/core';
+import { NavbarComponent } from "../../layouts/navbar/navbar.component";
 
 
 
 @Component({
   selector: 'app-home',
-  imports: [CarouselComponent, CommonModule, TimelineComponent, TranslatePipe],
+  imports: [CarouselComponent, CommonModule, TimelineComponent, TranslatePipe, ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -53,7 +54,7 @@ export class HomeComponent implements AfterViewInit {
   counter1 = 0;
   counter2 = 0;
   counter3 = 0;
-  private hasAnimated = false; // 🔥 علشان ميكررش الانيميشن كل مرة
+  private hasAnimated = false;
 
 
   ngAfterViewInit() {
@@ -64,13 +65,13 @@ export class HomeComponent implements AfterViewInit {
 
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
-          if (entry.isIntersecting && !this.hasAnimated) { // ✅ يتحقق انه داخل الشاشة ولسه مشتغلش
+          if (entry.isIntersecting && !this.hasAnimated) { 
             this.startCounter();
             this.hasAnimated = true;
-            observer.unobserve(entry.target); // 🔥 وقف المراقبة خلاص
+            observer.unobserve(entry.target);
           }
         });
-      }, { threshold: 0.5 }); // معناه نص العنصر يظهر
+      }, { threshold: 0.5 });
 
       observer.observe(counterSection);
     }
@@ -93,4 +94,7 @@ export class HomeComponent implements AfterViewInit {
       }
     }, stepTime);
   }
+
+
+
 }

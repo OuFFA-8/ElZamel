@@ -33,7 +33,6 @@
         "paragraph": "Since the first launch more than twenty-five years ago, and with the founders experience that preceded that period by a long way, attention was directed to the strength of professional competence with complete integrity and honesty, and as a result a number of successes were achieved in a number of fields."
     },
     "title3": "Company Accreditations",
-
     "form": {
         "title0": "title",
         "title": "CONTACT US WITH YOUR LEGAL REQUIREMENTS",
@@ -58,7 +57,6 @@
             "Shipping": "Shipping and Maritime Law"
         }
     },
-
     "footer": {
         "paragraph": "Established over twenty-five years ago, building on the founders' extensive prior experience, our focus has always been on fostering a strong professional culture combined with integrity and trustworthiness. This approach has led to numerous successes across various fields.",
         "connect": "Contact Us",
@@ -69,8 +67,62 @@
         "phone": "phone:",
         "follow": "Follow Us:",
         "email": "Email",
-        "hours": "Working Hours"  
+        "hours": "Working Hours"
+    },
+    "team": {
+        "titles": {
+            "1": "Mohammed bin Ahmad Al-Zamil",
+            "2": "Othman bin Mohammed Al-Zamil",
+            "3": "Majid bin Hassan Al-Mushaikah",
+            "4": "Mohammed bin Abdulkarim Al-Lahim",
+            "5": "Mohamed Ahmad Ajabna",
+            "6": "Tanvir Ashraf Mohammed",
+            "7": "Dr. Diaa bin Hafiz Siraj Al-Durani",
+            "8": "Faisal bin Abdullah Al-Shallali",
+            "9": "Khalid bin Abdulmohsen Al-Kadi",
+            "10": "Mahmoud Dawoud",
+            "11": "Abdulrahman bin Mohammed Abdulali",
+            "12": "Marwan bin Saleh Al-Tweijri  ",
+            "13": "Abdulaziz bin Mohammed Al-Misnad",
+            "14": "Abdulrahman bin Othman Al-Jameel",
+            "15": "Khalid Bin Obead Al Khairi",
+            "16": "Khalid bin Ahmad Al-Zamil",
+            "17": "Saleh bin Khaled Al-Duraibi",
+            "18": "Faisal bin Abdullah Al-Aqeel",
+            "19": "Abdulkarim bin Abdullah Al-Lahim",
+            "20": "Anas bin Abdulmohsen Al-Qadhi",
+            "21": "Abdullah Khaled Mohiuddin Sharoni",
+            "22": "Fahad bin Saad Al-Ajlan",
+            "23": "Abdulrahman bin Mohammed Al-Muhanna",
+            "24": "Asim Aloraidh",
+            "25": "Sufyan bin Suleiman bin Hamad Al-Sulai"
+        },
+        "subtitle": {
+            "1": "Founding Partner and Chairman of the Board",
+            "2": "Partner and Chief Executive Officer",
+            "3": "Counsel",
+            "4": "Counsel",
+            "5": "Counsel",
+            "6": "Counsel and Head of Legal Consultations Department",
+            "7": "Legal Advisor and Head of the Non-Profit Sector Department",
+            "8": "Lawyer and Head of Litigation Department",
+            "9": "Lawyer and Head of Corporate Department",
+            "10": "Senior Legal Advisor",
+            "11": "Attorney and Legal Advisor",
+            "12": "Attorney and Legal Advisor",
+            "13": "Attorney and Legal Advisor",
+            "14": "Attorney and Legal Advisor",
+            "15": "Attorney and Legal Advisor",
+            "16": "Attorney and Legal Advisor",
+            "17": "Lawyer and Legal Consultant",
+            "18": "Lawyer and Legal Specialist",
+            "19": "Legal Consultant",
+            "20": "Trainee Lawyer and Legal Consultant",
+            "21": "Legal Consultant",
+            "22": "Trainee Lawyer",
+            "23": "Trainee Lawyer",
+            "24": "Trainee Associate",
+            "25": "Trainee Lawyer"
+        }
     }
-
-
 }
