@@ -20,7 +20,7 @@ export class OurteamComponent {
 
   sections: Section[] = [
     { id: 1,  Title: 'team.titles.1', Text: 'team.subtitle.1', imageUrl: '/images/1.jpg' },
-    { id: 2,  Title: 'team.titles.2', Text:'team.subtitle.2', imageUrl: '/images/2.jpg' },
+    { id: 2,  Title: 'team.titles.2', Text: 'team.subtitle.2', imageUrl: '/images/2.jpg' },
     { id: 3,  Title: 'team.titles.3', Text: 'team.subtitle.3', imageUrl: '/images/3.jpg' },
     { id: 4,  Title: 'team.titles.4', Text: 'team.subtitle.4', imageUrl: '/images/4.jpg' },
     { id: 5,  Title: 'team.titles.5', Text: 'team.subtitle.5', imageUrl: '/images/5.jpg' },
