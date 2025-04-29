@@ -1,0 +1,58 @@
+<div class="bg-gray-50 min-h-screen py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+
+    <div [hidden]="!isLoading" class="text-center text-gray-600">
+      <p>Loading member details...</p>
+    </div>
+  
+    <div [hidden]="isLoading || !member" class="container mx-auto max-w-5xl">
+  
+      <div class="mb-8">
+        <a routerLink="/team" class="inline-flex items-center text-sm font-medium text-gray-600 hover:text-[#b3a16c] transition duration-150 ease-in-out">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 rtl:ml-2 rtl:mr-0" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+          </svg>
+          {{ 'team.back_button' | translate }}
+        </a>
+      </div>
+  
+      <div class="bg-white rounded-xl shadow-xl overflow-hidden animate-fade-in-up">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-0">
+  
+          <div class="lg:col-span-1 p-6 md:p-8 flex items-center justify-center lg:order-last rtl:lg:order-first">
+            <img [src]="member?.imageUrl || '/path/to/default/image.jpg'"
+                 [alt]="( (member?.Title ?? '') | translate ) || 'Team Member'" class="w-full max-w-xs h-auto rounded-lg shadow-lg object-cover aspect-square mx-auto">
+          </div>
+  
+          <div class="lg:col-span-2 p-6 md:p-8 lg:p-10 lg:order-first rtl:lg:order-last">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-2">
+              {{ ( (member?.Title ?? '') | translate ) || 'Member Name' }}
+            </h1>
+  
+            <p class="text-xl md:text-2xl font-semibold text-[#b3a16c] mb-6 md:mb-8">
+              {{ ( (member?.Text ?? '') | translate ) || 'Member Title' }}
+            </p>
+  
+            <hr class="border-gray-200 my-6 md:my-8">
+  
+            <!-- قسم النبذة التعريفية - سيظهر بشكل ثابت لأنه لا يوجد bioKey في البيانات الحالية -->
+            <h2 class="text-lg font-semibold text-gray-800 mb-3">{{ 'team.bio_title' | translate }}</h2>
+            <div class="text-base text-gray-700 leading-relaxed space-y-4">
+              <!-- يمكنك إضافة نص ثابت هنا أو ربطه بـ member?.bioKey إذا أضفته للبيانات -->
+              <p>{{ 'team.bio_placeholder' | translate }}</p> <!-- مثال على نص نائب -->
+            </div>
+  
+            <!-- قسم معلومات الاتصال - سيتم إخفاؤه لأنه لا يوجد email/phone في البيانات الحالية -->
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  
+    <div [hidden]="isLoading || member" class="text-center text-red-600 container mx-auto max-w-lg bg-white p-8 rounded-lg shadow-lg">
+      <p class="font-semibold">{{ 'team.not_found' | translate }}</p>
+      <a routerLink="/team" class="mt-4 inline-block bg-[#b3a16c] text-white px-4 py-2 rounded hover:bg-[#a1905e] transition duration-150">
+        {{ 'team.back_button' | translate }}
+      </a>
+    </div>
+  
+  </div>

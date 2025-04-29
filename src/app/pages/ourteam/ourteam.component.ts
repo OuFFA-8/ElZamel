@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
-import { NavbarComponent } from "../../layouts/navbar/navbar.component";
 
 interface Section {
   id: number;
@@ -46,5 +46,15 @@ export class OurteamComponent {
     { id: 25,  Title: 'team.titles.25', Text: 'team.subtitle.25', imageUrl: '/images/25.jpg' }
   ];
 
+
+  constructor(private router: Router) {}
+
+  // 4. إضافة دالة التوجيه
+  goToDetails(memberId: number): void {
+    // افترض أن مسار التفاصيل هو 'team-details/:id'
+    // قم بتغيير '/team-details' إذا كان المسار لديك مختلفًا
+    this.router.navigate(['/team-details', memberId]);
+    console.log('Navigating to details for member ID:', memberId); // للتحقق في الكونسول
+  }
 
 }
