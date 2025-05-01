@@ -180,6 +180,25 @@
             "25": "Sofian bin Sulaiman Al-Salim, a Trainee Lawyer at the main office in Riyadh, holds a Bachelor's degree in Sharia (Imam University, 2021). As part of the team, he participates in providing legal consultations, and drafting commercial contracts and agreements. His areas of training and work also include the procedures for forming and liquidating companies and commercial/non-profit entities, as well as arranging and holding their general assemblies. He is also gaining experience in litigation before courts and judicial bodies, in addition to participating in inheritance division procedures. He is proficient in Arabic."
         },
         "extra_section": "At the heart of Al Zamil and Al Kharashi Law Firm lies an exceptional team comprising a select group of expert lawyers who possess years of extensive experience and profound legal knowledge. Our lawyers are committed to providing the highest levels of legal service to our clients, relying on a thorough understanding of local and international laws and regulations, and a genuine passion for achieving justice. Thanks to their diverse specializations and accumulated expertise, our team forms an integrated legal force capable of handling the most complex legal challenges with efficiency and effectiveness, delivering innovative and reliable solutions that meet our clients' needs and exceed their expectations."
-
+    },
+    "event": {
+        "item1": {
+            "date": "April 30, 2025",
+            "category": "Our Work",
+            "title": "Latham & Watkins Advises on Paychex’s US$4.2 Billion Senior Notes Offering",
+            "description": "Firm represents the underwriters in the offering supporting Paychex’s completed acquisition of Paycor."
+        },
+        "item2": {
+            "date": "April 30, 2025",
+            "category": "Our Work",
+            "title": "Latham & Watkins Advises on Launch of Mantle Index Four Fund",
+            "description": "Investment funds team represents Mantle Guard Limited in the transaction."
+        },
+        "item3": {
+            "date": "April 30, 2025",
+            "category": "Our Work",
+            "title": "Latham & Watkins Advises Alpha Tau Medical in US$36.9 Million Registered Direct Offering",
+            "description": "Cross-border team represented the developer of the innovative alpha-radiation cancer therapy Alpha DaRT in the offering."
+        }
     }
 }

@@ -1,3 +1,4 @@
+import { EventDetailsComponent } from './pages/event-details/event-details.component';
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
@@ -43,6 +44,12 @@ export const routes: Routes = [
         path: 'contact',
         loadComponent: () =>
             import('./pages/contact/contact.component').then(m => m.ContactComponent),
+        title: 'الزامل والخرّاشي - للمحاماه والاستشارات القانونية'
+    },
+    {
+        path: 'event-details',
+        loadComponent: () =>
+            import('./pages/event-details/event-details.component').then(m => m.EventDetailsComponent),
         title: 'الزامل والخرّاشي - للمحاماه والاستشارات القانونية'
     },
     {

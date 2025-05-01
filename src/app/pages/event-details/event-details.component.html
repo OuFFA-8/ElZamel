@@ -1,0 +1,147 @@
+<!-- Overall Container: Centered with max-width and padding -->
+
+<img class="w-full h-96 mt-20" src="/images/event.png" alt="">
+
+<div class=" py-12 px-4 sm:px-6 lg:px-8  md:max-w-7xl mx-auto">
+
+    <!-- Header Section -->
+    <header class="mb-8 md:mb-12">
+        <!-- Category/Breadcrumb -->
+        <p class="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2">
+            OUR WORK
+        </p>
+        <!-- Main Title -->
+        <h1 class="text-3xl md:text-4xl font-light text-gray-900 mb-3 leading-tight">
+            Latham & Watkins Advises on Paychex's US$4.2 Billion Senior Notes Offering
+        </h1>
+        <!-- Date -->
+        <p class="text-base text-gray-600 mb-6">
+            April 30, 2025
+        </p>
+        <!-- Short Intro / Separator -->
+        <div class="border-b border-gray-200 pb-6 mb-8">
+            <p class="text-base text-gray-700">
+                Firm represents the underwriters in the offering supporting Paychex's completed acquisition of Paycor.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content Area: Flex layout for side icons + main text -->
+    <div class="flex flex-col md:flex-row md:gap-12 lg:gap-16">
+
+        <!-- Social Icons Column (Appears first on mobile, left on desktop) -->
+        <aside class="w-full md:w-12 flex-shrink-0 mb-8 md:mb-0">
+            <!-- Ensure Font Awesome CSS is linked in your project! -->
+            <div class="flex flex-row md:flex-col gap-5 md:gap-6 justify-start md:justify-start items-center md:items-start">
+                <!-- LinkedIn Icon -->
+                <a href="#" aria-label="Share on LinkedIn" class="text-gray-400 hover:text-gray-600 transition-colors duration-200 text-xl">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <!-- Facebook Icon -->
+                <a href="#" aria-label="Share on Facebook" class="text-gray-400 hover:text-gray-600 transition-colors duration-200 text-xl">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                 <!-- X (Twitter) Icon -->
+                 <a href="#" aria-label="Share on X" class="text-gray-400 hover:text-gray-600 transition-colors duration-200 text-xl">
+                    <i class="fab fa-x-twitter"></i>
+                 </a>
+                <!-- Email Icon -->
+                <a href="#" aria-label="Share via Email" class="text-gray-400 hover:text-gray-600 transition-colors duration-200 text-xl">
+                    <!-- Using the solid envelope -->
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Text Column -->
+        <article class="flex-grow">
+             <!-- Using Tailwind Typography plugin classes -->
+            <div class="prose prose-lg text-gray-800 max-w-none leading-relaxed">
+                <p class="mb-6">
+                    Paychex, Inc. (Nasdaq: PAYX) announced the pricing of a public offering of US$4.2 billion aggregate principal amount of senior notes, consisting of US$1.5 billion aggregate principal amount of 5.100% senior notes due 2030, US$1.5 billion aggregate principal amount of 5.350% senior notes due 2032, and US$1.2 billion aggregate principal amount of 5.600% senior notes due 2035. The offering closed on April 10, 2025. Net proceeds from the offering were used to fund the previously announced acquisition of Paycor HCM, Inc. (Paycor), including the payment of related fees and expenses, with any remaining net proceeds for general corporate purposes. The acquisition closed on April 14, 2025.
+                </p>
+                <p>
+                    Latham & Watkins LLP represented the underwriters in the offering with a team led by New York partner Corey Wright and New York counsel Hana Nah, with associates Amanda Farrish and Sophia Dilworth. Advice was also provided on tax matters by New York partner Bora Bozkurt, with associate Joyce Shin; on data privacy matters by Bay Area partner Robert Blamires, with associate Kathryn Parsons-Reponte; and on intellectual property matters by New York partner Jeffrey Tochner, with associate Sebastian Moss.
+                </p>
+                 <!-- Add more paragraphs as needed -->
+            </div>
+        </article>
+
+    </div>
+
+</div>
+
+
+
+
+
+<section aria-labelledby="contacts-heading" class="mt-16 md:mt-20 pt-10 border-t md:max-w-7xl mx-auto border-gray-200">
+    <div class="flex flex-col md:flex-row items-start">
+
+        <!-- Vertical "CONTACTS" Label & Line Column -->
+        <!-- Using fixed width (md:w-10) on medium screens and up -->
+        <!-- Removed padding-right (md:pr-*) -->
+        <!-- Added justify-center -->
+        <div class="relative w-full md:w-10 flex flex-row md:flex-col items-center justify-center mb-6 md:mb-0">
+
+            <!-- Vertical Text Container -->
+            <!-- Added w-full and justify-center for better centering within fixed width parent -->
+            <div class="flex-shrink-0 md:h-full flex items-center justify-center mr-4 md:mr-0 w-full">
+                 <h2 id="contacts-heading"
+                    class="text-xs font-semibold uppercase text-gray-500 tracking-widest whitespace-nowrap [writing-mode:vertical-rl] transform rotate-180">
+                    Contacts
+                </h2>
+            </div>
+
+            <!-- Vertical Line -->
+            <!-- Still positioned absolute to the right edge of the parent (now narrower) -->
+            <div class="hidden md:block absolute top-0 right-0 bottom-0 w-px bg-gray-300"></div>
+
+            <!-- Horizontal Line (for small screens) -->
+            <div class="block md:hidden h-px bg-gray-300 flex-grow ml-4"></div>
+        </div>
+
+        <!-- Contact Cards Container -->
+        <!-- !! Added margin-left (md:ml-*) to create space next to the fixed-width label column !! -->
+        <div class="flex-grow grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-10 md:ml-8 lg:ml-10">
+
+            <!-- Contact Card 1 -->
+            <div class="w-full">
+                <!-- !! Replace src with the actual image path !! -->
+                <img src="/path/to/placeholder-male.jpg" alt="Corey Wright headshot"
+                     class="w-full h-auto object-cover mb-4 max-w-[240px] sm:max-w-full">
+                <div class="space-y-1 text-sm">
+                    <p class="font-semibold text-gray-900">Corey Wright</p>
+                    <p class="text-red-700">New York</p> <!-- Adjust color if needed -->
+                    <p>
+                        <a href="mailto:corey.wright@lw.com" class="text-red-700 hover:underline">corey.wrightlw.com</a>
+                    </p>
+                    <p class="text-red-700">+1.212.906.1294</p>
+                </div>
+            </div>
+
+            <!-- Contact Card 2 -->
+            <div class="w-full">
+                 <!-- !! Replace src with the actual image path !! -->
+                 <img src="/path/to/placeholder-female.jpg" alt="Hana Nah headshot"
+                      class="w-full h-auto object-cover mb-4 max-w-[240px] sm:max-w-full">
+                 <div class="space-y-1 text-sm">
+                     <p class="font-semibold text-gray-900">Hana Nah</p>
+                     <p class="text-red-700">New York</p> <!-- Adjust color if needed -->
+                     <p>
+                         <a href="mailto:hana.nah@lw.com" class="text-red-700 hover:underline">hana.nahlw.com</a>
+                     </p>
+                     <p class="text-red-700">+1.212.906.1738</p>
+                 </div>
+            </div>
+
+            <!-- Add more contact cards here if needed -->
+            <!-- <div class="w-full"> ... </div> -->
+
+        </div> <!-- End Contact Cards Container -->
+    </div> <!-- End Main Flex Container for Section -->
+</section>
+
+<!-- ****************************************************** -->
+<!-- END: Contacts Section                               -->
+<!-- ****************************************************** -->
