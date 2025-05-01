@@ -6,13 +6,13 @@
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-0">
 
 
-          <div class="lg:col-span-1 p-6 md:p-8 lg:p-10 flex items-center justify-center lg:order-last  bg-gradient-to-br from-gray-50 to-gray-100 animate-image-entry">
+          <div class="lg:col-span-1 p-6 md:p-8 lg:p-10 flex items-center justify-center lg:order-first  bg-gradient-to-br from-gray-50 to-gray-100 animate-image-entry">
             <img [src]="member.imageUrl "
                  [alt]="(member.Title | translate)"
                  class="w-full max-w-[280px] md:max-w-[320px] h-auto rounded-lg shadow-lg object-cover aspect-square mx-auto border-4 border-white">
           </div>
 
-          <div class="lg:col-span-2 p-6 md:p-8 lg:p-10 lg:order-first  animate-text-entry text-start md:text-start">
+          <div class="lg:col-span-2 p-6 md:p-8 lg:p-10 lg:order-last  animate-text-entry text-start md:text-start">
             <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-2 leading-tight">
               {{ (member.Title | translate) }}
             </h1>

@@ -1,67 +1,127 @@
+<div class="backimg  bg-cover text-white py-12 md:py-14 mt-24 border-b-8 border-[#061933]">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-4xl md:text-5xl font-bold mb-2">
+      {{"team.maintitle" | translate }}
+    </h1>
+
+  </div>
+</div>
 
 
-<div class="bg-[#a18f5e] text-white py-12 md:py-14 mt-24 border-b-8 border-[#061933]">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 class="text-4xl md:text-5xl font-bold mb-2">
-        {{"team.maintitle" | translate }} 
-      </h1>
+<section class="py-12 md:py-8 bg-white">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
 
-      <!-- <p class="text-sm text-gray-200">
-        {{ 'team.maintitle' | translate }} / {{ 'team.maintitle' | translate }}
-      </p> -->
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12 items-center">
+
+ 
+      <div class="lg:col-span-1 flex  items-center">
+   
+        <i class="fa-solid fa-landmark text-6xl md:text-7xl lg:text-8xl text-[#061933]"></i>
+      </div>
+
+    
+      <div class="lg:col-span-3 text-start">
+        <p class="text-base text-gray-900 leading-relaxed mb-4">
+          {{ 'team.extra_section' | translate }}
+        </p>
+      </div>
+
     </div>
   </div>
-
-
-<section class="py-12 md:py-16 bg-[#061933]"> 
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center">
-  
-
-        <div class="lg:order-first flex text-start">
- 
-            <i class="fa-solid fa-landmark md:text-8xl text-white "></i>
-        
-        </div>
-  
-  
-        <div class="lg:col-span-2 lg:order-last  text-start">
-          <p class="text-base text-gray-50 leading-relaxed mb-4">
-            <!-- {{ 'ourteam.extra_section.p1' | translate }} -->
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis odio ducimus reprehenderit ipsa sunt.
-          </p>
-          <p class="text-base text-gray-50 leading-relaxed">
-            <!-- {{ 'ourteam.extra_section.p2' | translate }} -->
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis odio ducimus reprehenderit ipsa sunt.
-          </p>
-        </div>
-  
-      </div>
-    </div>
-  </section>
+</section>
 
 
 <section class="py-12 bg-gray-50 ">
-    <div class="container mx-auto px-4">
+  <div class="container mx-auto px-4">
 
-        <div class="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3  gap-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3  gap-8">
 
-            @for (member of teamMembers; track member.id) {
-            <div class="team-member group relative overflow-hidden rounded-lg shadow-md cursor-pointer"
-                 (click)="goToDetails(member.id)">
+      @for (member of teamMembers; track member.id) {
+      <div class="team-member group relative overflow-hidden rounded-lg shadow-md cursor-pointer"
+        (click)="goToDetails(member.id)">
 
-                <img [src]="member.imageUrl" [alt]="(member.Title | translate) || 'Team Member'"
-                    class="w-full h-auto object-cover block transition-transform duration-300 ease-in-out group-hover:scale-105">
+        <img [src]="member.imageUrl" [alt]="(member.Title | translate) || 'Team Member'"
+          class="w-full h-auto object-cover block transition-transform duration-300 ease-in-out group-hover:scale-105">
 
-                <div class="overlay absolute bottom-0 left-0 right-0 bg-[#b3a16c] bg-opacity-90 text-white p-4 text-center
+        <div class="overlay absolute bottom-0 left-0 right-0 bg-[#b3a16c] bg-opacity-90 text-white p-4 text-center
                       transform translate-y-full group-hover:translate-y-0
                       transition-transform duration-300 ease-in-out">
-                    <h3 class="text-xl font-bold mb-1">{{ member.Title | translate }}</h3>
-                    <p class="text-md">{{ member.Text | translate }}</p>
-                </div>
-            </div>
-            }
-
+          <h3 class="text-xl font-bold mb-1">{{ member.Title | translate }}</h3>
+          <p class="text-md">{{ member.Text | translate }}</p>
         </div>
+      </div>
+      }
+
     </div>
+  </div>
+</section>
+
+
+<section class="our-section relative w-full min-h-[110vh] sm:min-h-[90vh] md:h-auto md:min-h-[80vh] lg:h-screen bg-cover bg-center py-10 md:py-0">
+  <div class="absolute inset-0"></div>
+
+  <div class="relative z-10 flex flex-col md:flex-row items-center justify-center md:justify-between max-w-[1325px] mx-auto px-4 sm:px-6 py-10 md:py-16 h-full gap-10 md:gap-6">
+
+    <div class="text-white max-w-lg text-center md:text-start md:mb-0 lg:mb-16 xl:mb-52 w-full md:w-1/2">
+      <h1 class="text-3xl md:text-4xl font-bold mb-4 leading-loose">
+        {{'form.title' | translate}}
+      </h1>
+      <p class="mb-6 text-base sm:text-lg">
+        {{'form.title2' | translate}}
+      </p>
+      <button class="bg-white text-blue-900 font-semibold py-2 px-6 rounded-full hover:bg-gray-100 transition">
+        {{'form.connect' | translate}}
+      </button>
+    </div>
+
+    <div
+      class="bg-white bg-opacity-20 backdrop-blur-md p-6 md:p-8 rounded-xl w-full max-w-md md:w-1/2 mt-0">
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+        <input type="text" placeholder="First Name"
+          class="p-3 rounded bg-transparent border border-white placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2 md:col-span-1">
+
+        <input type="text" placeholder="Last Name"
+          class="p-3 rounded bg-transparent border border-white placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2 md:col-span-1">
+
+        <input type="email" placeholder="Email"
+          class="p-3 rounded bg-transparent border border-white placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2">
+
+        <div class="col-span-2 flex gap-2 items-center">
+          <input type="text" placeholder="Mobile Number "
+            class="flex-1 p-3 rounded bg-transparent border border-white placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c]">
+        </div>
+
+        <select
+          class="p-3 rounded bg-transparent border border-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2">
+          <option class="text-black" value="" disabled selected>Select Service...</option>
+          <option class="text-black">{{'form.group.Corporate' | translate}}</option>
+          <option class="text-black">{{'form.group.Banking' | translate}}</option>
+           <option class="text-black">{{'form.group.Investment' | translate}}</option>
+          <option class="text-black">{{'form.group.Information' | translate}}</option>
+          <option class="text-black">{{'form.group.Intellectual' | translate}}</option>
+          <option class="text-black">{{'form.group.Employment' | translate}}</option>
+          <option class="text-black">{{'form.group.Dispute' | translate}}</option>
+          <option class="text-black">{{'form.group.Foreign' | translate}}</option>
+          <option class="text-black">{{'form.group.Government' | translate}}</option>
+          <option class="text-black">{{'form.group.Capital' | translate}}</option>
+          <option class="text-black">{{'form.group.Environmental' | translate}}</option>
+          <option class="text-black">{{'form.group.Insurance' | translate}}</option>
+          <option class="text-black">{{'form.group.Legal' | translate}}</option>
+          <option class="text-black">{{'form.group.Real' | translate}}</option>
+          <option class="text-black">{{'form.group.Shipping' | translate}}</option>
+        </select>
+
+        <textarea placeholder="Your Message" rows="4"
+          class="p-3 rounded bg-transparent border border-white placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2"></textarea>
+
+        <button role="button"
+          class="bg-[#b3a16c] text-white font-semibold py-3 px-6 rounded-full hover:bg-[#837342] transition col-span-2">
+          {{'form.send' | translate}}
+        </button>
+
+      </form>
+    </div>
+
+  </div>
 </section>
