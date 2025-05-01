@@ -1,27 +1,66 @@
 
-<section class="py-12 bg-gray-50 mt-24">
+
+<div class="bg-[#a18f5e] text-white py-12 md:py-14 mt-24 border-b-8 border-[#061933]">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl md:text-5xl font-bold mb-2">
+        {{"team.maintitle" | translate }} 
+      </h1>
+
+      <!-- <p class="text-sm text-gray-200">
+        {{ 'team.maintitle' | translate }} / {{ 'team.maintitle' | translate }}
+      </p> -->
+    </div>
+  </div>
+
+
+<section class="py-12 md:py-16 bg-[#061933]"> 
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center">
+  
+
+        <div class="lg:order-first flex text-start">
+ 
+            <i class="fa-solid fa-landmark md:text-8xl text-white "></i>
+        
+        </div>
+  
+  
+        <div class="lg:col-span-2 lg:order-last  text-start">
+          <p class="text-base text-gray-50 leading-relaxed mb-4">
+            <!-- {{ 'ourteam.extra_section.p1' | translate }} -->
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis odio ducimus reprehenderit ipsa sunt.
+          </p>
+          <p class="text-base text-gray-50 leading-relaxed">
+            <!-- {{ 'ourteam.extra_section.p2' | translate }} -->
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis odio ducimus reprehenderit ipsa sunt.
+          </p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+
+<section class="py-12 bg-gray-50 ">
     <div class="container mx-auto px-4">
-        <h2 class="text-4xl  font-bold text-center mb-8 text-gray-800"> {{"team.maintitle" | translate }} </h2>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 md:grid-cols-3  xl:grid-cols-4  gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3  gap-8">
 
-            @for (section of sections; track section.id) {
-            <!-- Member  -->
-            <div (click)="goToDetails(section.id)" class="team-member group relative overflow-hidden rounded-lg shadow-md cursor-pointer">
-                <img [src]="section.imageUrl" alt="{{section.Title | translate}}"
+            @for (member of teamMembers; track member.id) {
+            <div class="team-member group relative overflow-hidden rounded-lg shadow-md cursor-pointer"
+                 (click)="goToDetails(member.id)">
+
+                <img [src]="member.imageUrl" [alt]="(member.Title | translate) || 'Team Member'"
                     class="w-full h-auto object-cover block transition-transform duration-300 ease-in-out group-hover:scale-105">
 
-                <!-- Slide-up Overlay -->
-                <div class="overlay absolute bottom-0 left-0 right-0 bg-[#b3a16c] bg-opacity-90  text-white p-4 text-center
+                <div class="overlay absolute bottom-0 left-0 right-0 bg-[#b3a16c] bg-opacity-90 text-white p-4 text-center
                       transform translate-y-full group-hover:translate-y-0
                       transition-transform duration-300 ease-in-out">
-                    <h3 class="text-xl  font-bold mb-1">{{section.Title | translate}}</h3>
-                    <p class="text-md ">{{section.Text | translate }}</p>
+                    <h3 class="text-xl font-bold mb-1">{{ member.Title | translate }}</h3>
+                    <p class="text-md">{{ member.Text | translate }}</p>
                 </div>
             </div>
-        }
-
-
+            }
 
         </div>
     </div>
