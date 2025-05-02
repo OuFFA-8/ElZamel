@@ -6,13 +6,13 @@ import { provideClientHydration, withEventReplay } from '@angular/platform-brows
 import { HttpClient, provideHttpClient, withFetch } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { MyTranslateService } from './core/services/myTranslate/my-translate.service';
-
+import { provideAnimations } from '@angular/platform-browser/animations';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, '/i18n/', '.json');
 }
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes) ,provideHttpClient(withFetch()), provideClientHydration(withEventReplay()), 
+  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes),provideAnimations() ,provideHttpClient(withFetch()), provideClientHydration(withEventReplay()), 
     importProvidersFrom(TranslateModule.forRoot({
       defaultLanguage: 'ar',
       loader: {

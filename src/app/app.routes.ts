@@ -47,7 +47,7 @@ export const routes: Routes = [
         title: 'الزامل والخرّاشي - للمحاماه والاستشارات القانونية'
     },
     {
-        path: 'event-details',
+        path: 'event-details/:id',  
         loadComponent: () =>
             import('./pages/event-details/event-details.component').then(m => m.EventDetailsComponent),
         title: 'الزامل والخرّاشي - للمحاماه والاستشارات القانونية'
