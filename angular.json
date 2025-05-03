@@ -24,11 +24,16 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },{ 
+              "glob": "**/*",
+              "input": "node_modules/leaflet/dist/images",
+              "output": "/assets/leaflet/images/"
+            }
             ],
             "styles": [
               "node_modules/swiper/swiper-bundle.min.css",
               "./node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "node_modules/leaflet/dist/leaflet.css",
               "src/styles.css"
             ],
             "scripts": [
