@@ -1,49 +1,29 @@
-<section class="mt-24">
-  <div #mapContainerDiv class="w-full h-[60vh] md:h-[50vh]"></div>
+<section class="mt-8 md:mt-24">
+  <div class="w-full h-[50vh] md:h-[60vh]">
+    <google-map height="100%" width="100%" [options]="mapOptions">
+
+      @for(branch of branches(); track branch.id) {
+      <map-marker [position]="{ lat: branch.lat, lng: branch.lng }" [title]="branch.name"
+        [options]="markerOptions"></map-marker>
+      }
+    </google-map>
+  </div>
 
   <div class="bg-gray-100 p-4 md:p-6">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-
-      <!-- اللوب الخارجي لعرض كل الفروع -->
       @for (branch of branches(); track branch.id) {
-        <div class="bg-white rounded-lg shadow overflow-hidden transition-all duration-300 ease-in-out">
-
-          <!-- الجزء العلوي القابل للنقر (يبقى كما هو) -->
-          <div
-            (click)="toggleBranchDetails(branch.id)"
-            role="button"
-            tabindex="0"
-            (keydown.enter)="toggleBranchDetails(branch.id)"
-            class="p-5 md:p-6 cursor-pointer hover:bg-gray-50 transition duration-150 ease-in-out flex justify-between items-center"
-          >
-            <p class="font-semibold text-lg text-gray-800">{{ branch.name | translate}}</p>
-            <svg
-               class="w-5 h-5 text-gray-400 transform transition-transform duration-200 ease-in-out"
-               [class.rotate-180]="expandedBranchId() === branch.id"
-               xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-            </svg>
-          </div>
-
-          <!-- قسم التفاصيل المنسدل (يظهر/يختفي ككتلة واحدة) -->
-          @if (expandedBranchId() === branch.id) {
-            <div class="px-5 md:px-6 pb-5 border-t border-gray-200 text-sm text-gray-700 space-y-2 animate-fade-in-down">
-              <!-- لا يوجد لوب هنا، فقط عرض البيانات مباشرة -->
-              <p class="mt-2">{{ branch.address | translate }}</p>
-              @if(branch.Box) { <p>{{ branch.Box | translate }}</p> }
-              @if(branch.tel) { <p>هاتف: <a href="tel:{{branch.tel}}" class="text-blue-600 hover:underline">{{ branch.tel }}</a></p> }
-              @if(branch.phone) { <p>Phone: <a href="tel:{{branch.phone}}" class="text-blue-600 hover:underline">{{ branch.phone }}</a></p> }
-              @if(branch.number) { <p>الرقم الموحد: <a href="tel:{{branch.number}}" class="text-blue-600 hover:underline">{{ branch.number }}</a></p> }
-              @if(branch.open) { <p>اوقات العمل: {{ branch.open | translate }}</p> }
-              @if(branch.email) { <p>البريد الالكتروني: <a href="mailto:{{branch.email}}" class="text-blue-600 hover:underline">{{ branch.email }}</a></p> }
-            </div>
-          }
-
-        </div> <!-- نهاية حاوية الفرع -->
+      <div (click)="goToBranch(branch.id)" role="button" tabindex="0" (keydown.enter)="goToBranch(branch.id)"
+        class="bg-white p-4 rounded-md shadow cursor-pointer hover:shadow-lg hover:bg-gray-50 transition duration-200 ease-in-out text-center min-w-[180px]">
+        <p class="font-semibold text-gray-800 text-lg mb-1">{{ branch.name | translate}}</p>
+        @if(branch.address) {
+        <p class="text-xs text-gray-500">{{ branch.address | translate}}</p>
+        } @else {
+        <p class="text-xs text-gray-400 italic">لا يوجد عنوان متوفر</p>
+        }
+      </div>
       } @empty {
-          <p class="text-gray-500 col-span-full text-center py-4">No branches available.</p>
+      <p class="text-gray-500 col-span-full text-center py-4">No branches available.</p>
       }
-
     </div>
   </div>
 </section>

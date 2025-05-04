@@ -24,20 +24,15 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              },{ 
-              "glob": "**/*",
-              "input": "node_modules/leaflet/dist/images",
-              "output": "/assets/leaflet/images/"
-            }
+              }
             ],
             "styles": [
               "node_modules/swiper/swiper-bundle.min.css",
-              "./node_modules/@fortawesome/fontawesome-free/css/all.min.css",
-              "node_modules/leaflet/dist/leaflet.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "src/styles.css"
             ],
             "scripts": [
-              "./node_modules/flowbite/dist/flowbite.min.js"
+              "node_modules/flowbite/dist/flowbite.min.js"
             ],
             "server": "src/main.server.ts",
             "outputMode": "server",
