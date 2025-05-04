@@ -8,18 +8,18 @@
       </div>
     <!-- ===== قسم المستطيلات (أصغر ومتباعدة) ===== -->
     <div class="container mx-auto h-[90vh]"> <!-- لاحظ: h-[90vh] قد يسبب مشاكل في التمرير إذا كان المحتوى أطول -->
-        <div class="flex flex-col items-center mb-10">
+        <div class="flex flex-col items-center mb-10 ">
 
             <!-- زيادة قيمة gap أكثر -->
-            <div class="flex flex-col sm:flex-row flex-wrap justify-center items-stretch gap-10 md:gap-12 lg:gap-16">
+            <div class="flex flex-col sm:flex-row flex-wrap justify-center items-stretch gap-10 md:gap-12 lg:gap-16  ">
               @for (branch of allBranchesData; track branch.id) {
               <button
                 type="button"
                 (click)="selectBranch(branch)"
-                [class]="getRectangleClasses(branch)">
+                [class]="getRectangleClasses(branch)" >
 
                 <!-- محتوى المستطيل (أصغر) -->
-                <div class="flex items-center space-x-3 space-x-reverse text-right">
+                <div class="flex items-center space-x-3 space-x-reverse text-right ">
                   <!-- أيقونة أصغر -->
                   <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-br from-[#061933] to-[#061933] text-white text-lg">
                     <i class="fas fa-building"></i>

@@ -115,13 +115,12 @@ export class BranchesComponent implements OnInit {
 
   // دالة كلاسات المستطيل (تبقى كما هي)
   getRectangleClasses(branch: BranchDetails): string {
-    const baseClasses = 'relative w-full sm:w-auto bg-white rounded-lg shadow-md p-4 cursor-pointer transition-all duration-300 ease-in-out border-2 border-transparent';
+    const baseClasses = 'relative w-full sm:w-auto bg-white rounded-lg shadow-md p-4  cursor-pointer transition-all duration-300 ease-in-out border-2 border-transparent ';
     const hoverClasses = 'hover:shadow-lg hover:border-[#061933] hover:scale-[1.06]   ';
     if (this.selectedBranch?.id === branch.id) {
-      return `${baseClasses} border-[#061933] ring-2 ring-[#061933] shadow-lg scale-[1.02] `;
+      return `${baseClasses} border-[#061933] ring-2 ring-[#061933] shadow-lg scale-[1.02]  `;
     } else {
-      return `${baseClasses} ${hoverClasses}`;
+      return `${baseClasses} ${hoverClasses} `;
     }
   }
 }
-

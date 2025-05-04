@@ -53,6 +53,12 @@ export const routes: Routes = [
         title: 'الزامل والخرّاشي - للمحاماه والاستشارات القانونية'
     },
     {
+        path: 'service/:id',  
+        loadComponent: () =>
+            import('./pages/service-detail/service-detail.component').then(m => m.ServiceDetailComponent),
+        title: 'الزامل والخرّاشي - للمحاماه والاستشارات القانونية'
+    },
+    {
         path: '**',
         loadComponent: () =>
             import('./pages/notfound/notfound.component').then(m => m.NotfoundComponent),
