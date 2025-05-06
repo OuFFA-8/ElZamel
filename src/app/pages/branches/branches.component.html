@@ -1,22 +1,22 @@
 <div class="w-full  bg-gray-50">
-  
+
   <div
-  class="banner-section bg-banner relative bg-gray-800 text-white h-64 md:h-[65vh] flex items-center justify-center text-center overflow-hidden ">
+    class="banner-section bg-banner relative bg-gray-800 text-white h-64 md:h-[65vh] flex items-center justify-center text-center overflow-hidden ">
 
-  <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
-  <div class="relative z-20 px-4 pt-10">
-    <h1 class="text-4xl md:text-5xl lg:text-6xl hover:text-[#a39669] duration-300 font-bold pb-3">
-      {{ 'navbar.services.main' | translate }}
-    </h1>
-    <button (click)="scrollToContent($event)" aria-label="Scroll down" class="mt-4 text-2xl animate-bounce">
-      <i class="fas fa-chevron-down text-[#a39669]"></i>
-    </button>
+    <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+    <div class="relative z-20 px-4 pt-10">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl hover:text-[#a39669] duration-300 font-bold pb-3">
+        {{ 'navbar.branches' | translate }}
+      </h1>
+      <button (click)="scrollToContent($event)" aria-label="Scroll down" class="mt-4 text-2xl animate-bounce">
+        <i class="fas fa-chevron-down text-[#a39669]"></i>
+      </button>
+    </div>
   </div>
-</div>
 
 
 
-d  <div class="container mx-auto h-[90vh] my-10 " id="content-area"  > 
+  <div class="container mx-auto h-[90vh] my-10 " id="content-area">
     <div class="flex flex-col items-center mb-10 ">
 
       <!-- زيادة قيمة gap أكثر -->
@@ -86,7 +86,8 @@ d  <div class="container mx-auto h-[90vh] my-10 " id="content-area"  >
             <div class="flex items-start gap-4">
               <div
                 class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-gray-200 hover:bg-[#a39669] duration-500 hover:text-white text-[#061933] mt-1">
-                <i class="fa-solid fa-location-dot"></i></div>
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
               <div>
                 <h3 class="text-lg font-semibold text-gray-900 mb-1">Address</h3> @for(line of
                 selectedBranch.addressLines; track $index) { <p class="text-gray-600 text-sm">{{ line }}</p> }
@@ -96,7 +97,8 @@ d  <div class="container mx-auto h-[90vh] my-10 " id="content-area"  >
             <div class="flex items-start gap-4">
               <div
                 class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-gray-200 hover:bg-[#a39669] duration-500 hover:text-white text-[#061933] mt-1">
-                <i class="fas fa-envelope"></i></div>
+                <i class="fas fa-envelope"></i>
+              </div>
               <div>
                 <h3 class="text-lg font-semibold text-gray-900 mb-1">Mail</h3> @for(email of selectedBranch.emails;
                 track $index) { <p class="text-gray-600 ltr-text text-sm">{{ email }}</p> }
@@ -106,7 +108,8 @@ d  <div class="container mx-auto h-[90vh] my-10 " id="content-area"  >
             <div class="flex items-start gap-4">
               <div
                 class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-gray-200 hover:bg-[#a39669] duration-500 hover:text-white text-[#061933] mt-1">
-                <i class="fas fa-phone-alt"></i></div>
+                <i class="fas fa-phone-alt"></i>
+              </div>
               <div>
                 <h3 class="text-lg font-semibold text-gray-900 mb-1">Phone</h3> @for(phone of
                 selectedBranch.phoneNumbers; track $index) { <p class="text-gray-600 ltr-text text-sm">{{ phone }}</p> }
@@ -115,7 +118,8 @@ d  <div class="container mx-auto h-[90vh] my-10 " id="content-area"  >
             <div class="flex items-start gap-4">
               <div
                 class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-gray-200 hover:bg-[#a39669] duration-500 hover:text-white text-[#061933] mt-1">
-                <i class="fas fa-phone-alt"></i></div>
+                <i class="fas fa-phone-alt"></i>
+              </div>
               <div>
                 <h3 class="text-lg font-semibold text-gray-900 mb-1">Mutual Number</h3> @for(phone of
                 selectedBranch.phoneNumbers; track $index) { <p class="text-gray-600 ltr-text text-sm">{{ phone }}</p> }
@@ -124,7 +128,8 @@ d  <div class="container mx-auto h-[90vh] my-10 " id="content-area"  >
             <div class="flex items-start gap-4">
               <div
                 class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-gray-200 hover:bg-[#a39669] duration-500 hover:text-white  text-[#061933] mt-1">
-                <i class="fa-solid fa-clock"></i></div>
+                <i class="fa-solid fa-clock"></i>
+              </div>
               <div>
                 <h3 class="text-lg font-semibold text-gray-900 mb-1">Opening Hours</h3> @for(phone of
                 selectedBranch.phoneNumbers; track $index) { <p class="text-gray-600 ltr-text text-sm">{{ phone }}</p> }
@@ -142,6 +147,6 @@ d  <div class="container mx-auto h-[90vh] my-10 " id="content-area"  >
       </div>
       }
     </div>
-  </div> 
+  </div>
 
 </div>

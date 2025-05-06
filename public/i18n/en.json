@@ -19,7 +19,7 @@
             "par7": "Corporate Services: Providing expert legal assistance for corporations...",
             "sec8": "Division of estates"
         },
-        "team": "Our team",
+        "team": "Our Team",
         "event": "Events",
         "branches": "Our branches",
         "contact": "Contact us",
@@ -204,17 +204,86 @@
             "description": "Cross-border team represented the developer of the innovative alpha-radiation cancer therapy Alpha DaRT in the offering."
         }
     },
-    "carousel":{
-        "tit1" : "Protect your rights and secure your assets",
-        "span1" : "With the support of",
-        "span2" : "a renowned house of expertise",
-        "span3" : "With the guidance",
-        "span4" : "of legal support leadership",
-        "tit2" : "Be part of a success story ",
-        "span5" : "that has lasted ",
-        "span6" : "25 years ",
-        "mainspan" : "With expertise and professionalism in delivering the best solutions and services"
-
-
+    "carousel": {
+        "tit1": "Protect your rights and secure your assets",
+        "span1": "With the support of",
+        "span2": "a renowned house of expertise",
+        "span3": "With the guidance",
+        "span4": "of legal support leadership",
+        "tit2": "Be part of a success story ",
+        "span5": "that has lasted ",
+        "span6": "25 years ",
+        "mainspan": "With expertise and professionalism in delivering the best solutions and services"
+    },
+    "services": {
+        "main": {
+            "span": "AREAS OF PRACTICE",
+            "title": "PROFESSIONAL SERVICES",
+            "paragraph": " Adipiscing elit, sed do eiusmod tempor incididunt ut labore. Adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+        },
+        "section1": {
+            "title": "Litigation and Dispute Resolution",
+            "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+            "title2": "PROCEDURES AND RIGHTS",
+            "paragraph1": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?",
+            "paragraph2": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?"
+        },
+        "section2": {
+            "title": "CRIMINAL LAW",
+            "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+            "title2": "PROCEDURES AND RIGHTS",
+            "paragraph1": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?",
+            "paragraph2": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?"
+        },
+        "section3": {
+            "title": "Studies and legislation",
+            "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+            "title2": "PROCEDURES AND RIGHTS",
+            "paragraph1": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?",
+            "paragraph2": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?"
+        },
+        "section4": {
+            "title": "Labor system and labor relations",
+            "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+            "title2": "PROCEDURES AND RIGHTS",
+            "paragraph1": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?",
+            "paragraph2": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?"
+        },
+        "section5": {
+            "title": "Real estate regulations",
+            "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+            "title2": "PROCEDURES AND RIGHTS",
+            "paragraph1": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?",
+            "paragraph2": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?"
+        },
+        "section6": {
+            "title": "Endowments and the non-profit",
+            "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+            "title2": "PROCEDURES AND RIGHTS",
+            "paragraph1": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?",
+            "paragraph2": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?"
+        },
+        "section7": {
+            "title": "Zakat and tax",
+            "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+            "title2": "PROCEDURES AND RIGHTS",
+            "paragraph1": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?",
+            "paragraph2": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?"
+        },
+        "section8": {
+            "title": "Division of estates",
+            "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+            "title2": "PROCEDURES AND RIGHTS",
+            "paragraph1": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?",
+            "paragraph2": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?"
+        },
+        "button": "DETAILS",
+        "form": {
+            "contact": "CONTACT US",
+            "name": "Your Name",
+            "email": "Email",
+            "message": "Message",
+            "send": "Send"
+        }
     }
 }

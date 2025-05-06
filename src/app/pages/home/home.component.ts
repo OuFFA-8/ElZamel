@@ -103,14 +103,10 @@ export class HomeComponent implements AfterViewInit {
 
 
   readonly logos = signal<Logo[]>([
-    { id: 1, src: '/images/favicon.png', alt: 'شعار 1' },
-    { id: 2, src: '/images/favicon.png', alt: 'شعار 2' },
-    { id: 3, src: '/images/favicon.png', alt: 'شعار 3' },
-    { id: 4, src: '/images/favicon.png', alt: 'شعار 4' },
-    { id: 5, src: '/images/favicon.png', alt: 'شعار 5' },
-    { id: 6, src: '/images/favicon.png', alt: 'شعار 6' },
-    { id: 7, src: '/images/favicon.png', alt: 'شعار 7' },
-    // <-- !! أضف المزيد هنا إذا كان العدد قليل جداً !!
+    { id: 1, src: '/images/logo-1.png', alt: 'شعار 1' },
+    { id: 2, src: '/images/logo-2.png', alt: 'شعار 2' },
+    { id: 3, src: '/images/logo-3.png', alt: 'شعار 3' },
+    { id: 4, src: '/images/logo-4.png', alt: 'شعار 4' }
   ]);
 
   readonly duplicatedLogos = computed(() => {

@@ -16,13 +16,13 @@ export class ServicesComponent {
 
   public services: Signal<ServiceItem[]>; 
 
-  @Input() sectionSubtitle: string = "AREAS OF PRACTICE";
-  @Input() sectionTitle: string = "PROFESSIONAL SERVICES";
-  @Input() sectionDescription: string = "Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.";
+  @Input() sectionSubtitle: string = "services.main.span";
+  @Input() sectionTitle: string = "services.main.title";
+  @Input() sectionDescription: string = "services.main.paragraph";
 
   constructor(private servicesDataService: ServicesDataService) {
     this.services = this.servicesDataService.services;
-    console.log('Services Signal Value in Constructor:', this.services()); // اطبع القيمة هنا
+    console.log('Services Signal Value in Constructor:', this.services()); 
   }
 
   scrollToContent(event: MouseEvent): void {

@@ -8,7 +8,7 @@
     <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
     <div class="relative z-20 px-4 pt-10">
       <h1 class="text-4xl md:text-5xl lg:text-6xl hover:text-[#a39669] duration-300 font-bold pb-3">
-        {{ currentService.title }}
+        {{ currentService.title | translate }}
       </h1>
       <button (click)="scrollToContent($event)" aria-label="Scroll down" class="mt-4 text-2xl animate-bounce">
         <i class="fas fa-chevron-down text-[#a39669]"></i>
@@ -16,22 +16,20 @@
     </div>
   </div>
 
-  
+
 
   <div class="main-content-section bg-[#4A453A] py-12 md:py-16 lg:py-20" id="content-area">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12 items-start">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start">
 
-        <div class="content-column lg:col-span-3 text-gray-200 space-y-8 leading-relaxed">
-          <p>
-            {{ currentService.fullDescription || 'Default description text...' }}
-          </p>
+        <div class="content-column lg:col-span-2 text-gray-200 space-y-8 leading-relaxed">
+          <img src="/images/black-white-view-theatre.jpg" alt="Main section image" class="rounded-lg shadow-md mb-6">
 
-          <h2 class="text-2xl font-semibold  pt-4 text-white">
-            {{ currentService.contentSection2Title || 'Default Section 2 Title' }}
+          <h2 class="text-2xl font-semibold pt-4 text-white">
+            {{ currentService.contentSection1Title | translate }}
           </h2>
           <p>
-            {{ currentService.contentSection2Body || 'Default section 2 body text...' }}
+            {{ currentService.contentSection1Body| translate }}
           </p>
 
           @if(currentService.image1 || currentService.image2) {
@@ -42,29 +40,55 @@
               class="rounded-lg shadow-md object-cover w-full h-48"> }
           </div>
           }
-
-          <h2 class="text-2xl font-semibold  pt-4 text-white">
-            {{ currentService.contentSection3Title || 'Default Section 3 Title' }}
-          </h2>
           <p>
-            {{ currentService.contentSection3Body || 'Default section 3 body text...' }}
+            {{ currentService.contentSection2Body | translate }}
           </p>
+
 
         </div>
 
         <div class="sidebar-form lg:col-span-1">
+           <!-- تم الإبقاء على lg:col-span-1 (لأن الشبكة الرئيسية تغيرت) -->
           <div class="bg-[#F5F5F0] p-6 md:p-8 rounded-lg shadow-lg">
+            <!-- الفورم يظل كما هو -->
+            <form action="#" method="POST" class="space-y-6">
+              <h3 class="text-xl text-start font-semibold text-gray-900 mb-6">{{'services.form.contact' |translate}}</h3>
+
+              <!-- حقل الاسم -->
+              <div>
+                <label for="name" class="text-start block text-sm font-medium text-gray-700 mb-1">{{'services.form.name' |translate}}</label>
+                <input type="text" name="name" id="name" autocomplete="name" required
+                  class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-[#b3a16c] focus:border-[#b3a16c] sm:text-sm">
+              </div>
+
+              <!-- حقل البريد الإلكتروني -->
+              <div>
+                <label for="email" class="text-start block text-sm font-medium text-gray-700 mb-1">{{'services.form.email' |translate}}</label>
+                <input type="email" name="email" id="email" autocomplete="email" required
+                  class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-[#b3a16c] focus:border-[#b3a16c] sm:text-sm">
+              </div>
+
+              <!-- حقل الرسالة -->
+              <div>
+                <label for="message" class="text-start block text-sm font-medium text-gray-700 mb-1">{{'services.form.message' |translate}}</label>
+                <textarea id="message" name="message" rows="4" required
+                  class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-[#b3a16c] focus:border-[#b3a16c] sm:text-sm"></textarea>
+              </div>
+
+              <div>
+                <button type="submit"
+                  class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#4A453A] hover:bg-[#3a362f] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#b3a16c] transition duration-150 ease-in-out">
+                  {{'services.form.send' |translate}}
+                </button>
+              </div>
+            </form>
+            <!-- نهاية الفورم -->
           </div>
         </div>
 
-      </div>
-    </div>
-  </div>
+      </div> 
+    </div> 
+  </div> 
 
-  } @else {
-  <div class="text-center py-20">
-    <p class="text-xl text-gray-500">Loading service details or service not found...</p>
-    <a routerLink="/services" class="mt-4 inline-block text-blue-600 hover:underline">Go back to services</a>
-  </div>
   }
 </div>
