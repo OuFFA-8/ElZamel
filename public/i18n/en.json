@@ -286,7 +286,7 @@
             "send": "Send"
         }
     },
-    "branches":{
+    "branches": {
         "address": "Address",
         "phone": "Phone",
         "phone2": "Mutual Number",
@@ -298,5 +298,24 @@
         "addressLine1": "Mekka Al-Mokarama Road (Jasr Al-Khalej)",
         "addressLine2": "King Fahed Road (NSH Tower)",
         "addressLine3": "The Headquarters Business Park Tower"
+    },
+    "contact": {
+        "main": {
+            "span1": "CHECK",
+            "title": "OUR MISSION",
+            "span2": "If you want high quality and professional moving services look no further.",
+            "paragraph": "1st Choice Movers is a local San Diego moving company that provides professional San Diego moves. We're a San Diego moving company that serves all San Diego areas. No move is too big or small, we do small, medium and very large moves, and plan the most efficient route to make your move a smooth transition.",
+            "span3": "Call us for your upcoming move!"
+        },
+        "sec": {
+            "title1": "Our Location:",
+            "span1": "46 Blair Court, Slater, MO 65349",
+            "title2": "Open Hours:",
+            "span2": "Weekdays 8.00-18.00, Sat: off",
+            "title3": "Our Email:",
+            "span3": "exampleexample.com",
+            "title4": "Call Us Today:",
+            "span4": "+123-456-7890"
+        }
     }
 }
