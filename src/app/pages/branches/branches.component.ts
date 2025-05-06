@@ -8,13 +8,15 @@ interface BranchDetails {
   id: number;
   name: string;
   shortName: string;
-  addressLines: string[];
-  phoneNumbers: string[];
+  addressLines: string;
+  phoneNumbers?: string;
   emails: string[];
   mapEmbedUrl: string;
   socialLinks?: SocialLink[];
-  mainHeading?: string; // العنوان الرئيسي للفرع
+  mainHeading?: string; 
   subHeading?: string;
+  hours?: string;
+  MutualNumber: string;
 }
 
 interface SocialLink {
@@ -79,31 +81,23 @@ export class BranchesComponent implements OnInit {
 
 
   allBranchesData: BranchDetails[] = [
-    // *** بيانات الفروع الصحيحة ***
-     { id: 1, name: 'الفرع الرئيسي : الرياض', shortName: 'الفرع الرئيسي : الرياض', addressLines: ['طريق مكة المكرمة ، جسر الخليج'], phoneNumbers: [' '], emails: ['zk@zk-legal.com'], mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4221.407487119673!2d46.719560481823365!3d24.69267349002198!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f038f92ad4285%3A0x2c70c9947f5734ac!2sZamil%20and%20Kharashi%20for%20Law%20Firm!5e0!3m2!1sen!2sus!4v1746333306077!5m2!1sen!2sus', socialLinks: [] },
-     { id: 2, name: 'المنطقة الشرقية : الخبر', shortName: 'المنطقة الشرقية : الخبر', addressLines: ['طريق الملك فهد ، برج NSH'], phoneNumbers: ['...'], emails: [' info@zk-legal.com'], mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7151.15395905835!2d50.199194!3d26.340194!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49e8b72d39626b%3A0xfac87c3508eeb3f6!2sNSH%20Tower%2C%206389%20King%20Fahd%20Road%2C%20Al%20Rakah%20Al%20Janubiyah%2C%20Al%20Khobar%2034227%2C%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1746333187166!5m2!1sen!2sus', socialLinks: [] },
-     { id: 3, name: 'المنطقة الغربية : جدة', shortName: 'المنطقة الغربية : جدة', addressLines: ['طريق الملك فهد ، برج NSH'], phoneNumbers: [''], emails: ['jed@zk-legal.com'], mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7419.153308684319!2d39.108289!3d21.602442!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3dbabb0e53c41%3A0xf11d981517c55a1f!2sThe%20Headquarters%20Business%20Park!5e0!3m2!1sen!2sus!4v1746332044326!5m2!1sen!2sus', socialLinks: [] },
+     { id: 1, name: 'branches.location1', shortName: 'branches.location1', addressLines: 'branches.addressLine1', phoneNumbers: '0114733303', MutualNumber: ' 920009756 ',  hours: 'Sat-Thur 8:30am- 5pm', emails: ['zk@zk-legal.com'], mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4221.407487119673!2d46.719560481823365!3d24.69267349002198!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f038f92ad4285%3A0x2c70c9947f5734ac!2sZamil%20and%20Kharashi%20for%20Law%20Firm!5e0!3m2!1sen!2sus!4v1746333306077!5m2!1sen!2sus', socialLinks: [  ] },
+     { id: 2, name: 'branches.location2', shortName: 'branches.location2', addressLines: 'branches.addressLine2', phoneNumbers: '0138147677', MutualNumber:' 920009756',  hours: 'Sat-Thur 8:30am- 5pm', emails: [' info@zk-legal.com'], mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7151.15395905835!2d50.199194!3d26.340194!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49e8b72d39626b%3A0xfac87c3508eeb3f6!2sNSH%20Tower%2C%206389%20King%20Fahd%20Road%2C%20Al%20Rakah%20Al%20Janubiyah%2C%20Al%20Khobar%2034227%2C%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1746333187166!5m2!1sen!2sus', socialLinks: [] },
+     { id: 3, name: 'branches.location3', shortName: 'branches.location3', addressLines: 'branches.addressLine3', MutualNumber: '920009756',  hours: 'Sat-Thur 8:30am- 5pm', emails: ['jed@zk-legal.com'],  mapEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7419.153308684319!2d39.108289!3d21.602442!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3dbabb0e53c41%3A0xf11d981517c55a1f!2sThe%20Headquarters%20Business%20Park!5e0!3m2!1sen!2sus!4v1746332044326!5m2!1sen!2sus', socialLinks: [] },
   ];
 
-  // --- تعديل: تعيين قيمة أولية لـ selectedBranch ---
-  // سنقوم بذلك في ngOnInit لضمان أن allBranchesData قد تم تهيئتها
   selectedBranch: BranchDetails | null = null;
 
   constructor(private cdRef: ChangeDetectorRef) {}
 
-  // --- استخدام ngOnInit لتعيين القيمة الأولية ---
   ngOnInit(): void {
-    // تأكد من أن المصفوفة ليست فارغة قبل الوصول للعنصر الأول
     if (this.allBranchesData && this.allBranchesData.length > 0) {
       this.selectedBranch = this.allBranchesData[0];
     }
   }
 
-  // دالة اختيار الفرع (تبقى كما هي مع إعادة تشغيل الأنيميشن)
   selectBranch(branch: BranchDetails): void {
     if (this.selectedBranch?.id === branch.id) {
-      // لا تفعل شيئًا إذا ضغطت على نفس الفرع المفتوح حاليًا
-      // أو يمكنك اختيار إغلاقه إذا أردت: this.selectedBranch = null;
       return;
     }
     this.selectedBranch = null;
@@ -113,7 +107,6 @@ export class BranchesComponent implements OnInit {
     }, 0);
   }
 
-  // دالة كلاسات المستطيل (تبقى كما هي)
   getRectangleClasses(branch: BranchDetails): string {
     const baseClasses = 'relative w-full sm:w-auto bg-white rounded-lg shadow-md p-4  cursor-pointer transition-all duration-300 ease-in-out border-2 border-transparent ';
     const hoverClasses = 'hover:shadow-lg hover:border-[#061933] hover:scale-[1.06]   ';

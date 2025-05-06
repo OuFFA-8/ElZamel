@@ -33,7 +33,7 @@
             </div>
             <!-- اسم الفرع (نص أصغر) -->
             <div class="flex-1">
-              <h3 class="text-base font-semibold text-gray-800">{{ branch.shortName }}</h3>
+              <h3 class="text-base font-semibold ms-3 text-gray-800">{{ branch.shortName |translate }}</h3>
             </div>
           </div>
 
@@ -60,17 +60,12 @@
         <div class="p-6 md:p-8 border-b border-gray-200 text-center details-title-anim">
           <!-- **** إضافة كلاس الأنيميشن **** -->
           <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-2 leading-tight">
-            {{ selectedBranch.mainHeading || selectedBranch.name }}
+            {{ selectedBranch.name | translate}}
           </h1>
-          @if(selectedBranch.subHeading) {
-          <p class="text-sm font-semibold text-gray-500 tracking-wider uppercase">
-            {{ selectedBranch.subHeading }}
-          </p>
-          }
+
         </div>
 
-        <!-- Grid الخريطة والمعلومات -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-0"> <!-- لاحظ أنك تستخدم 6 أعمدة هنا؟ للتأكد -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-0">
           <!-- الخريطة (مع كلاس الأنيميشن) -->
           <div class="map-container lg:col-span-3 h-120 lg:h-full lg:min-h-[400px] map-container-anim">
             <!-- **** إضافة كلاس الأنيميشن **** -->
@@ -78,10 +73,8 @@
               allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <!-- المعلومات (مع كلاس الأنيميشن) -->
-          <!-- لاحظ أن الخريطة col-span-3 والمعلومات col-span-3 يكملان 6 أعمدة -->
           <div
             class="contact-details lg:col-span-3 p-6 md:p-8 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10 contact-details-anim">
-            <!-- **** إضافة كلاس الأنيميشن **** -->
             <!-- العنوان -->
             <div class="flex items-start gap-4">
               <div
@@ -89,8 +82,9 @@
                 <i class="fa-solid fa-location-dot"></i>
               </div>
               <div>
-                <h3 class="text-lg font-semibold text-gray-900 mb-1">Address</h3> @for(line of
-                selectedBranch.addressLines; track $index) { <p class="text-gray-600 text-sm">{{ line }}</p> }
+                <h3 class="text-lg font-semibold text-gray-900 mb-1">{{ 'branches.address' |translate }}</h3>
+                <p class="text-gray-600 ltr-text text-sm">{{ selectedBranch.addressLines | translate }}</p>
+
               </div>
             </div>
             <!-- البريد -->
@@ -100,7 +94,8 @@
                 <i class="fas fa-envelope"></i>
               </div>
               <div>
-                <h3 class="text-lg font-semibold text-gray-900 mb-1">Mail</h3> @for(email of selectedBranch.emails;
+                <h3 class="text-lg font-semibold text-gray-900 mb-1">{{ 'branches.email' |translate }}</h3> @for(email
+                of selectedBranch.emails;
                 track $index) { <p class="text-gray-600 ltr-text text-sm">{{ email }}</p> }
               </div>
             </div>
@@ -111,8 +106,8 @@
                 <i class="fas fa-phone-alt"></i>
               </div>
               <div>
-                <h3 class="text-lg font-semibold text-gray-900 mb-1">Phone</h3> @for(phone of
-                selectedBranch.phoneNumbers; track $index) { <p class="text-gray-600 ltr-text text-sm">{{ phone }}</p> }
+                <h3 class="text-lg font-semibold text-gray-900 mb-1">{{ 'branches.phone' |translate }}</h3>
+                <p class="text-gray-600 ltr-text text-sm">{{ selectedBranch.phoneNumbers }}</p>
               </div>
             </div>
             <div class="flex items-start gap-4">
@@ -121,8 +116,8 @@
                 <i class="fas fa-phone-alt"></i>
               </div>
               <div>
-                <h3 class="text-lg font-semibold text-gray-900 mb-1">Mutual Number</h3> @for(phone of
-                selectedBranch.phoneNumbers; track $index) { <p class="text-gray-600 ltr-text text-sm">{{ phone }}</p> }
+                <h3 class="text-lg font-semibold text-gray-900 mb-1">{{ 'branches.phone2' |translate }}</h3>
+                <p class="text-gray-600 ltr-text text-sm">{{ selectedBranch.MutualNumber }}</p>
               </div>
             </div>
             <div class="flex items-start gap-4">
@@ -131,17 +126,11 @@
                 <i class="fa-solid fa-clock"></i>
               </div>
               <div>
-                <h3 class="text-lg font-semibold text-gray-900 mb-1">Opening Hours</h3> @for(phone of
-                selectedBranch.phoneNumbers; track $index) { <p class="text-gray-600 ltr-text text-sm">{{ phone }}</p> }
+                <h3 class="text-lg font-semibold text-gray-900 mb-1">{{ 'branches.hours' |translate }}</h3>
+                <p class="text-gray-600 ltr-text text-sm">{{ selectedBranch.hours }}</p>
               </div>
             </div>
-            <!-- التواصل الاجتماعي -->
-            <!-- @if(selectedBranch.socialLinks && selectedBranch.socialLinks.length > 0) {
-                      <div class="flex items-start gap-4">
-                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-gray-200 hover:bg-[#a39669] duration-500 hover:text-white text-[#061933] mt-1"><i class="fas fa-share-alt"></i></div>
-                        <div> <h3 class="text-lg font-semibold text-gray-900 mb-2">Social account</h3> <div class="flex flex-wrap gap-3"> @for(link of selectedBranch.socialLinks; track link.platform) { <a [href]="link.url" target="_blank" [title]="link.platform" class="w-12 h-12 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-gray-800 transition-colors duration-200"><i [class]="link.icon"></i></a> } </div> </div>
-                      </div>
-                    } -->
+
           </div>
         </div>
       </div>

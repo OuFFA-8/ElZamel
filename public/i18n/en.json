@@ -285,5 +285,18 @@
             "message": "Message",
             "send": "Send"
         }
+    },
+    "branches":{
+        "address": "Address",
+        "phone": "Phone",
+        "phone2": "Mutual Number",
+        "email": "Email",
+        "hours": "Opening Hours",
+        "location1": "Main Branch: Riyadh",
+        "location2": "Eastern Region: Khobar",
+        "location3": "Western Region: Jeddah",
+        "addressLine1": "Mekka Al-Mokarama Road (Jasr Al-Khalej)",
+        "addressLine2": "King Fahed Road (NSH Tower)",
+        "addressLine3": "The Headquarters Business Park Tower"
     }
 }
