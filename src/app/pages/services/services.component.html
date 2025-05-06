@@ -3,11 +3,11 @@
 
   <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
   <div class="relative z-20 px-4 pt-10">
-    <h1 class="text-4xl md:text-5xl lg:text-6xl hover:text-[#368ab7] duration-300 font-bold pb-3">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl hover:text-[#a39669] duration-300 font-bold pb-3">
       {{ 'navbar.services.main' | translate }}
     </h1>
     <button (click)="scrollToContent($event)" aria-label="Scroll down" class="mt-4 text-2xl animate-bounce">
-      <i class="fas fa-chevron-down text-[#368ab7]"></i>
+      <i class="fas fa-chevron-down text-[#a39669]"></i>
     </button>
   </div>
 </div>
@@ -17,7 +17,7 @@
   <div class="max-w-7xl mx-auto">
 
     <div class="text-center mb-12 md:mb-16">
-      <p class="text-sm font-semibold text-[#368ab7] tracking-wider uppercase mb-2">
+      <p class="text-sm font-semibold text-[#a39669] tracking-wider uppercase mb-2">
         {{ sectionSubtitle | translate }}
       </p>
       <h2 class="text-3xl md:text-4xl  font-bold text-gray-800">
@@ -34,7 +34,7 @@
       <div
         class="service-card group flex flex-col items-center py-16 px-5 bg-[#f1f5ed]  text-center transition-shadow duration-300 hover:shadow-lg">
 
-        <div class="mb-6 text-5xl text-[#368ab7] group-hover:text-slate-900 duration-500 ">
+        <div class="mb-6 text-5xl text-[#a39669] group-hover:text-slate-900 duration-500 ">
           <i [class]="service.iconClass"></i>
         </div>
 
@@ -50,7 +50,7 @@
           <div class="mt-auto">
             <!-- **** استخدام routerLink **** -->
             <a [routerLink]="['/service', service.id]"
-              class="inline-flex items-center font-semibold text-sm  text-[#368ab7] duration-500 group-hover:text-slate-900  transition-colors">
+              class="inline-flex items-center font-semibold text-sm  text-[#a39669] duration-500 group-hover:text-slate-900  transition-colors">
               <i class="fas fa-arrow-right transition-transform duration-200 group-hover:translate-x-1"></i>
               <span class="ms-2 uppercase tracking-wider">{{ "services.button" | translate}}</span>
             </a>
