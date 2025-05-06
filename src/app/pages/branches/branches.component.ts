@@ -123,4 +123,12 @@ export class BranchesComponent implements OnInit {
       return `${baseClasses} ${hoverClasses} `;
     }
   }
+
+  scrollToContent(event: MouseEvent): void {
+    event.preventDefault(); 
+    const contentArea = document.getElementById('content-area');
+    if (contentArea) {
+      contentArea.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }

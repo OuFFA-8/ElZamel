@@ -29,4 +29,13 @@ export class OurteamComponent implements OnInit {
     this.router.navigate(['/team-details', memberId]);
     console.log('Navigating to details for member ID:', memberId);
   }
+
+
+  scrollToContent(event: MouseEvent): void {
+    event.preventDefault(); 
+    const contentArea = document.getElementById('content-area');
+    if (contentArea) {
+      contentArea.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }

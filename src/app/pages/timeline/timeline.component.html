@@ -1,39 +1,3 @@
-<!-- <div class="relative bg-cover bg-center bg-no-repeat min-h-[100%] time-section ">
-
-  <h2 class="text-4xl font-bold text-[#061933]   top-0  pt-10 z-10 px-20 ">
-    {{'timeline.main' | translate}}
-  </h2>
-  <div class="h-full w-full flex items-center justify-center px-6 py-12">
-
-    <div class="w-[80%] md:h-[50vh]  text-white space-y-8 pr-3 relative  ">
-
-      <div
-        class="timeline-item border-s-4 border-white ps-4 transition-opacity duration-500 opacity-100 ">
-        <h3 class=" font-bold mb-2 text-3xl text-[#061933] duration-500">2000</h3>
-        <p class="text-sm  leading-relaxed">
-          {{'timeline.paragraph' | translate}}</p>
-      </div>
-
-      <div
-        class="timeline-item border-s-4 border-white ps-4 transition-opacity duration-500 opacity-30 group hover:opacity-100">
-        <h3 class="text-2xl font-bold mb-2 group-hover:text-3xl group-hover:text-[#061933] duration-500">2003</h3>
-        <p class="text-sm leading-relaxed">
-          {{'timeline.paragraph' | translate}}</p>
-      </div>
-
-      <div
-        class="timeline-item border-s-4 border-white ps-4 transition-opacity duration-500 opacity-30 group hover:opacity-100">
-        <h3 class="text-2xl font-bold mb-2 group-hover:text-3xl group-hover:text-[#061933] duration-500">2015</h3>
-        <p class="text-sm leading-relaxed">
-          {{'timeline.paragraph' | translate}}</p>
-      </div>
-
-    </div>
-  </div>
-</div> -->
-
-
-
 
 <div class="flex w-full h-full overflow-hidden flex-col md:flex-row">
   @for (section of sections; track section.id) {
@@ -47,10 +11,10 @@
           <i class="fas fa-arrow-up"></i>
         </div>
         <div class="nav-title text-base md:text-lg font-medium text-white/60 mx-4 md:mx-0 whitespace-nowrap transition-colors duration-300 ease-linear order-2 md:order-none md:vertical-text">
-          {{ section.navTitle }}
+          {{ section.navTitle | translate }}
         </div>
         <div class="nav-number text-base md:text-4xl font-bold text-white/50 md:text-white/10 whitespace-nowrap transition-colors duration-300 ease-linear order-1 md:order-none md:vertical-text-lg">
-          {{ section.navNumber }}
+          {{ section.navNumber | translate }}
         </div>
       </div>
 
@@ -60,10 +24,10 @@
             <img [src]="section.imageUrl" [alt]="section.contentTitle" class="max-w-full h-auto max-h-[40vh] w-full md:max-h-[60vh] object-contain rounded-lg">
           </div>
           <div class="content-text flex-1 text-center md:text-right ">
-            <h2 class="text-2xl md:text-3xl xl:md:text-4xl font-semibold mb-4 text-[#061933]">{{ section.contentTitle }}</h2>
-            <p class="text-sm md:text-base mb-6 text-black leading-relaxed bg-[#e0e0e0d9] lg:p-6 text-justify 2xl:text-2xl">{{ section.contentText }}</p>
-            <button class="cta-button inline-flex items-center bg-[#b3a16c] border border-white/30 text-white text-xs md:text-lg xl:text-xl py-2 px-4 md:py-2.5 md:px-6 rounded-full cursor-pointer transition-colors duration-300 hover:bg-[#80734a] hover:border-white/50 mb-2">
-              تفاصيل أكثر <i class="fas fa-arrow-left mr-2 transition-transform duration-300 ease-out hover:translate-x-[-5px]"></i>
+            <h2 class="text-2xl md:text-3xl xl:md:text-4xl font-semibold mb-4 text-[#061933]">{{ section.contentTitle | translate }}</h2>
+            <p class="text-sm md:text-base mb-6 text-black leading-relaxed bg-[#e0e0e0d9] lg:p-6 text-justify 2xl:text-2xl">{{ section.contentText | translate }}</p>
+            <button class="cta-button inline-flex items-center bg-[#b3a16c] border border-white/30 text-white text-xs md:text-lg  py-2 px-4 md:py-2.5 md:px-6 rounded-full cursor-pointer transition-colors duration-300 hover:bg-[#80734a] hover:border-white/50 mb-2">
+              {{ 'timeline.button' | translate }} <i class="fas fa-arrow-left mr-2 transition-transform duration-300 ease-out hover:translate-x-[-5px]"></i>
             </button>
           </div>
         </div>

@@ -1,15 +1,20 @@
-import { AfterViewInit, Component, ElementRef, HostListener, NgModule } from '@angular/core';
+import { AfterViewInit, Component, computed, ElementRef, HostListener, NgModule, signal } from '@angular/core';
 import { CarouselComponent } from "../carousel/carousel.component";
 import { CommonModule } from '@angular/common';
 import { TimelineComponent } from "../timeline/timeline.component";
 import { TranslatePipe } from '@ngx-translate/core';
 import { NavbarComponent } from "../../layouts/navbar/navbar.component";
 
+interface Logo {
+  id: number;
+  src: string;
+  alt: string; // إضافة وصف بديل للوجو لتحسين إمكانية الوصول
+}
 
 
 @Component({
   selector: 'app-home',
-  imports: [CarouselComponent, CommonModule, TimelineComponent, TranslatePipe, ],
+  imports: [CarouselComponent, CommonModule, TimelineComponent, TranslatePipe,],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -65,7 +70,7 @@ export class HomeComponent implements AfterViewInit {
 
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
-          if (entry.isIntersecting && !this.hasAnimated) { 
+          if (entry.isIntersecting && !this.hasAnimated) {
             this.startCounter();
             this.hasAnimated = true;
             observer.unobserve(entry.target);
@@ -97,4 +102,26 @@ export class HomeComponent implements AfterViewInit {
 
 
 
+  readonly logos = signal<Logo[]>([
+    { id: 1, src: '/images/favicon.png', alt: 'شعار 1' },
+    { id: 2, src: '/images/favicon.png', alt: 'شعار 2' },
+    { id: 3, src: '/images/favicon.png', alt: 'شعار 3' },
+    { id: 4, src: '/images/favicon.png', alt: 'شعار 4' },
+    { id: 5, src: '/images/favicon.png', alt: 'شعار 5' },
+    { id: 6, src: '/images/favicon.png', alt: 'شعار 6' },
+    { id: 7, src: '/images/favicon.png', alt: 'شعار 7' },
+    // <-- !! أضف المزيد هنا إذا كان العدد قليل جداً !!
+  ]);
+
+  readonly duplicatedLogos = computed(() => {
+    const currentLogos = this.logos();
+    if (!Array.isArray(currentLogos) || currentLogos.length === 0) {
+      return []; 
+    }
+    return [...currentLogos, ...currentLogos];
+  });
+
+  readonly logoCount = computed(() => this.logos().length);
+
+  readonly animationDuration = computed(() => `${(this.logos()?.length || 10) * 6}s`);
 }

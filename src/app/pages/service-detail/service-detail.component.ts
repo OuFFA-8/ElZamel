@@ -3,11 +3,12 @@ import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ServicesDataService, ServiceItem } from  '../../core/services/services/services-data.service'; 
 import { SafeUrlPipe } from '../../shared/pipes/safe-url.pipe';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-service-detail',
   standalone: true,
-  imports: [ CommonModule, RouterModule ],
+  imports: [ CommonModule, RouterModule  , TranslatePipe],
   templateUrl: './service-detail.component.html',
   styleUrls: ['./service-detail.component.css']
 })
@@ -16,6 +17,7 @@ export class ServiceDetailComponent implements OnInit {
   private route = inject(ActivatedRoute);
   private router = inject(Router); 
   private servicesDataService = inject(ServicesDataService);
+
 
   service = signal<ServiceItem | undefined>(undefined);
 

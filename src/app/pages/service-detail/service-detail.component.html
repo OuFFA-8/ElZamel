@@ -1,69 +1,70 @@
 <!-- service-detail.component.html -->
 <div>
-    @if (service(); as currentService) { 
+  @if (service(); as currentService) {
+
+  <div
+    class="banner-section bg-banner relative bg-gray-800 text-white h-64 md:h-[65vh] flex items-center justify-center text-center overflow-hidden ">
+
+    <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+    <div class="relative z-20 px-4 pt-10">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl hover:text-[#a39669] duration-300 font-bold pb-3">
+        {{ currentService.title }}
+      </h1>
+      <button (click)="scrollToContent($event)" aria-label="Scroll down" class="mt-4 text-2xl animate-bounce">
+        <i class="fas fa-chevron-down text-[#a39669]"></i>
+      </button>
+    </div>
+  </div>
+
   
-      <div class="banner-section relative bg-gray-800 text-white h-64 md:h-80 flex items-center justify-center text-center overflow-hidden mt-20">
-        @if(currentService.bannerImageUrl) {
-          <img [src]="currentService.bannerImageUrl" [alt]="currentService.title + ' banner'" class="absolute inset-0 w-full h-full object-cover z-0">
-        } @else {
-           <div class="absolute inset-0 bg-gradient-to-r from-gray-700 to-gray-900 z-0"></div>
-        }
-        <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
-        <div class="relative z-20 px-4">
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold">
-            {{ currentService.title }}
-          </h1>
-           <button (click)="scrollToContent($event)" aria-label="Scroll down" class="mt-4 text-2xl animate-bounce">
-              <i class="fas fa-chevron-down"></i>
-           </button>
+
+  <div class="main-content-section bg-[#4A453A] py-12 md:py-16 lg:py-20" id="content-area">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12 items-start">
+
+        <div class="content-column lg:col-span-3 text-gray-200 space-y-8 leading-relaxed">
+          <p>
+            {{ currentService.fullDescription || 'Default description text...' }}
+          </p>
+
+          <h2 class="text-2xl font-semibold  pt-4 text-white">
+            {{ currentService.contentSection2Title || 'Default Section 2 Title' }}
+          </h2>
+          <p>
+            {{ currentService.contentSection2Body || 'Default section 2 body text...' }}
+          </p>
+
+          @if(currentService.image1 || currentService.image2) {
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 py-4">
+            @if(currentService.image1) { <img [src]="currentService.image1" alt="Service image 1"
+              class="rounded-lg shadow-md object-cover w-full h-48"> }
+            @if(currentService.image2) { <img [src]="currentService.image2" alt="Service image 2"
+              class="rounded-lg shadow-md object-cover w-full h-48"> }
+          </div>
+          }
+
+          <h2 class="text-2xl font-semibold  pt-4 text-white">
+            {{ currentService.contentSection3Title || 'Default Section 3 Title' }}
+          </h2>
+          <p>
+            {{ currentService.contentSection3Body || 'Default section 3 body text...' }}
+          </p>
+
         </div>
+
+        <div class="sidebar-form lg:col-span-1">
+          <div class="bg-[#F5F5F0] p-6 md:p-8 rounded-lg shadow-lg">
+          </div>
+        </div>
+
       </div>
-  
-      <div class="main-content-section bg-[#4A453A] py-12 md:py-16 lg:py-20" id="content-area">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12 items-start">
-  
-            <div class="content-column lg:col-span-3 text-gray-200 space-y-8 leading-relaxed">
-              <p>
-                {{ currentService.fullDescription || 'Default description text...' }}
-              </p>
-  
-              <h2 class="text-2xl font-semibold font-serif pt-4 text-white">
-                {{ currentService.contentSection2Title || 'Default Section 2 Title' }}
-              </h2>
-              <p>
-                {{ currentService.contentSection2Body || 'Default section 2 body text...' }}
-              </p>
-  
-               @if(currentService.image1 || currentService.image2) {
-               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 py-4">
-                  @if(currentService.image1) { <img [src]="currentService.image1" alt="Service image 1" class="rounded-lg shadow-md object-cover w-full h-48"> }
-                  @if(currentService.image2) { <img [src]="currentService.image2" alt="Service image 2" class="rounded-lg shadow-md object-cover w-full h-48"> }
-               </div>
-              }
-  
-              <h2 class="text-2xl font-semibold font-serif pt-4 text-white">
-                {{ currentService.contentSection3Title || 'Default Section 3 Title' }}
-              </h2>
-              <p>
-                {{ currentService.contentSection3Body || 'Default section 3 body text...' }}
-              </p>
-  
-            </div> 
-  
-            <div class="sidebar-form lg:col-span-1">
-               <div class="bg-[#F5F5F0] p-6 md:p-8 rounded-lg shadow-lg">
-               </div>
-            </div> 
-  
-          </div> 
-        </div> 
-      </div> 
-  
-    } @else { 
-      <div class="text-center py-20">
-        <p class="text-xl text-gray-500">Loading service details or service not found...</p>
-         <a routerLink="/services" class="mt-4 inline-block text-blue-600 hover:underline">Go back to services</a>
-      </div>
-    }
-  </div> 
+    </div>
+  </div>
+
+  } @else {
+  <div class="text-center py-20">
+    <p class="text-xl text-gray-500">Loading service details or service not found...</p>
+    <a routerLink="/services" class="mt-4 inline-block text-blue-600 hover:underline">Go back to services</a>
+  </div>
+  }
+</div>

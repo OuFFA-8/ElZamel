@@ -47,4 +47,12 @@ export class EventsComponent {
     this.router.navigate(['/event-details', id]);
   }
 
+
+  scrollToContent(event: MouseEvent): void {
+    event.preventDefault(); 
+    const contentArea = document.getElementById('content-area');
+    if (contentArea) {
+      contentArea.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }

@@ -1,52 +1,65 @@
-<div class="py-16 px-4 sm:px-6 lg:px-8 bg-white mt-20">
+<div
+  class="banner-section bg-banner relative bg-gray-800 text-white h-64 md:h-[65vh] flex items-center justify-center text-center overflow-hidden ">
+
+  <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+  <div class="relative z-20 px-4 pt-10">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl hover:text-[#a39669] duration-300 font-bold pb-3">
+      {{ 'navbar.services.main' | translate }}
+    </h1>
+    <button (click)="scrollToContent($event)" aria-label="Scroll down" class="mt-4 text-2xl animate-bounce">
+      <i class="fas fa-chevron-down text-[#a39669]"></i>
+    </button>
+  </div>
+</div>
+
+
+<div class="py-16 px-4 sm:px-6 lg:px-8 bg-white " id="content-area">
   <div class="max-w-7xl mx-auto">
 
     <div class="text-center mb-12 md:mb-16">
       <p class="text-sm font-semibold text-gray-500 tracking-wider uppercase mb-2">
-        {{ sectionSubtitle }}
+        {{ sectionSubtitle | translate }}
       </p>
       <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-800">
-        {{ sectionTitle }}
+        {{ sectionTitle | translate }}
       </h2>
       <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-        {{ sectionDescription }}
+        {{ sectionDescription | translate}}
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
 
       <!-- **** استخدام Signal في @for **** -->
       <!-- لاحظ استدعاء services() للحصول على القيمة الحالية للـ Signal -->
       @for (service of services(); track service.id) {
       <div
-        class="service-card group flex flex-col items-center bg-[#F5F5F0] p-8 text-center transition-shadow duration-300 hover:shadow-lg">
+        class="service-card group flex flex-col items-center  bg-[#a39669] p-8 text-center transition-shadow duration-300 hover:shadow-lg">
 
-        <div class="mb-6 text-5xl text-gray-700">
+        <div class="mb-6 text-5xl text-gray-200 group-hover:text-slate-900 duration-500 ">
           <i [class]="service.iconClass"></i>
         </div>
 
-        <div class="flex flex-col items-center flex-grow w-full">
-          <h4 class="text-xl font-serif font-semibold tracking-wide text-gray-800 mb-3">
-            {{ service.title }}
+        <div class="flex flex-col items-center flex-grow w-full ">
+          <h4
+            class="text-xl font-serif font-semibold tracking-wide group-hover:text-slate-900 duration-500  text-gray-200 mb-3">
+            {{ service.title | translate }}
           </h4>
           <!-- **** استخدام shortDescription **** -->
-          <p class="text-gray-600 leading-relaxed mb-6 flex-grow">
-            {{ service.shortDescription }}
+          <p class="text-gray-200 leading-relaxed mb-6 flex-grow group-hover:text-slate-900 duration-500 ">
+            {{ service.shortDescription | translate}}
           </p>
           <div class="mt-auto">
             <!-- **** استخدام routerLink **** -->
             <a [routerLink]="['/service', service.id]"
-              class="inline-flex items-center font-semibold text-sm text-gray-700 hover:text-gray-900 transition-colors">
+              class="inline-flex items-center font-semibold text-sm  text-gray-200 group-hover:text-slate-900 duration-500   transition-colors">
               <i class="fas fa-arrow-right transition-transform duration-200 group-hover:translate-x-1"></i>
               <span class="ms-2 uppercase tracking-wider">DETAILS</span>
             </a>
           </div>
         </div>
       </div>
-      } @empty {
-      <p class="col-span-full text-center text-gray-500">No professional services listed at the moment.</p>
       }
-
     </div>
   </div>
 </div>

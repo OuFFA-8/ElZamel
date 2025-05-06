@@ -22,3 +22,8 @@ body {
   @apply font-NotoKufi;
 }
 
+
+.bg-banner {
+  @apply bg-cover bg-center h-96;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255,0.2 )), url('/images/header-1.jpg');
+}

@@ -51,7 +51,7 @@ export class NavbarComponent {
 
   private checkIsHome(url: string): boolean {
     // ****** عدّل الشرط ده ليناسب الـ URL بتاع الهوم بيدج عندك ******
-    return url === '/' || url === '/home';
+    return url === '/' || url === '/home' || url === '/services' || url === '/ourteam' || url === '/events' || url === '/branches'|| url === '/service/1' || url === '/service/2' || url === '/service/3'|| url === '/service/4'|| url === '/service/5'|| url === '/service/6'|| url === '/service/7' ; 
   }
 
   // الـ HostListener هيشتغل بس في المتصفح بطبيعته، بس بنحط الشرط جوا onScroll كمان للأمان

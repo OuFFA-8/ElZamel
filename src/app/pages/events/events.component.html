@@ -1,14 +1,20 @@
-<div class="backimg  bg-cover text-white py-10 md:py-20 mt-24 ">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 class="text-4xl md:text-5xl text-start font-bold mb-2">
-        {{"team.maintitle" | translate }}
-      </h1>
-  
-    </div>
+<div
+  class="banner-section bg-banner relative bg-gray-800 text-white h-64 md:h-[65vh] flex items-center justify-center text-center overflow-hidden ">
+
+  <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+  <div class="relative z-20 px-4 pt-10">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl hover:text-[#a39669] duration-300 font-bold pb-3">
+      {{ 'navbar.services.main' | translate }}
+    </h1>
+    <button (click)="scrollToContent($event)" aria-label="Scroll down" class="mt-4 text-2xl animate-bounce">
+      <i class="fas fa-chevron-down text-[#a39669]"></i>
+    </button>
   </div>
+</div>
+  
 
 
-<div class="  space-y-5 p-4 md:px-8 bg-gray-200  md:pb-20" @listAnimation>
+<div class="  space-y-5 p-4 md:px-8 bg-gray-200  md:pb-20" id="content-area"  @listAnimation>
 
     @for (item of workItems; track item.title) {
     <div (click)="navigateToDetails(item.id)" role="button"  class=" container mx-auto flex flex-col md:flex-row bg-white hover:bg-gray-100 md:p-4 overflow-hidden border border-gray-200 cursor-pointer hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#a39669] transition-shadow duration-1000 ease-in-out"
