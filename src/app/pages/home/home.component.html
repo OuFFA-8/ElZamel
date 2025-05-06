@@ -24,6 +24,34 @@
 
 <app-timeline></app-timeline>
 
+<section class=" py-10  bg-[#a39669]">
+  <div id="counterSection"
+    class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center">
+
+
+    <div class="flex flex-col items-center">
+      <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-200">+{{counter1}}</h2>
+      <p class="mt-2 text-gray-200 text-lg md:text-xl">{{'form.title0' | translate}}</p>
+    </div>
+
+    <div class="flex flex-col items-center">
+      <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-200">+{{counter2}}</h2>
+      <p class="mt-2 text-gray-200 text-lg md:text-xl">{{'form.title0' | translate}}</p>
+    </div>
+
+    <div class="flex flex-col items-center">
+      <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-200">+{{counter3}}</h2>
+      <p class="mt-2 text-gray-200 text-lg md:text-xl">{{'form.title0' | translate}}</p>
+    </div>
+
+    <div class="flex flex-col items-center">
+      <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-200">+{{counter3}}</h2>
+      <p class="mt-2 text-gray-200 text-lg md:text-xl">{{'form.title0' | translate}}</p>
+    </div>
+
+  </div>
+</section>
+
 <section class="our-section w-full min-h-72 py-12 sm:py-16 md:py-20 bg-cover bg-center bg-no-repeat">
   <div class="m-section container mx-auto px-4">
 
@@ -264,6 +292,8 @@
 </section>
 
 
+
+
 <section class="bg-white w-full container mx-auto px-4 pt-10">
 
   <h2 class="text-3xl sm:text-4xl md:text-5xl text-[#061933] mb-5 font-bold pb-6 md:pb-10"> {{'title3' | translate}}
@@ -302,100 +332,5 @@
 
 
 
-<section class=" py-10  bg-[#a39669]">
-  <div id="counterSection"
-    class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center">
 
 
-    <div class="flex flex-col items-center">
-      <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-200">+{{counter1}}</h2>
-      <p class="mt-2 text-gray-200 text-lg md:text-xl">{{'form.title0' | translate}}</p>
-    </div>
-
-    <div class="flex flex-col items-center">
-      <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-200">+{{counter2}}</h2>
-      <p class="mt-2 text-gray-200 text-lg md:text-xl">{{'form.title0' | translate}}</p>
-    </div>
-
-    <div class="flex flex-col items-center">
-      <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-200">+{{counter3}}</h2>
-      <p class="mt-2 text-gray-200 text-lg md:text-xl">{{'form.title0' | translate}}</p>
-    </div>
-
-    <div class="flex flex-col items-center">
-      <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-200">+{{counter3}}</h2>
-      <p class="mt-2 text-gray-200 text-lg md:text-xl">{{'form.title0' | translate}}</p>
-    </div>
-
-  </div>
-</section>
-
-<section
-  class="our-section relative w-full min-h-[110vh] sm:min-h-[90vh] md:h-auto md:min-h-[80vh] lg:h-screen bg-cover bg-center py-10 md:py-0">
-  <div class="absolute inset-0"></div>
-
-  <div
-    class="relative z-10 flex flex-col md:flex-row items-center justify-center md:justify-between max-w-[1325px] mx-auto px-4 sm:px-6 py-10 md:py-16 h-full gap-10 md:gap-6">
-
-    <div class="text-white max-w-lg text-center md:text-start md:mb-0 lg:mb-16 xl:mb-52 w-full md:w-1/2">
-      <h1 class="text-3xl md:text-4xl font-bold mb-4 leading-loose">
-        {{'form.title' | translate}}
-      </h1>
-      <p class="mb-6 text-base sm:text-lg">
-        {{'form.title2' | translate}}
-      </p>
-      <button class="bg-white text-blue-900 font-semibold py-2 px-6 rounded-full hover:bg-gray-100 transition">
-        {{'form.connect' | translate}}
-      </button>
-    </div>
-
-    <div class="bg-white bg-opacity-20 backdrop-blur-md p-6 md:p-8 rounded-xl w-full max-w-md md:w-1/2 mt-0">
-      <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
-
-        <input type="text" placeholder="First Name"
-          class="p-3 rounded bg-transparent border border-white placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2 md:col-span-1">
-
-        <input type="text" placeholder="Last Name"
-          class="p-3 rounded bg-transparent border border-white placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2 md:col-span-1">
-
-        <input type="email" placeholder="Email"
-          class="p-3 rounded bg-transparent border border-white placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2">
-
-        <div class="col-span-2 flex gap-2 items-center">
-          <input type="text" placeholder="Mobile Number "
-            class="flex-1 p-3 rounded bg-transparent border border-white placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c]">
-        </div>
-
-        <select
-          class="p-3 rounded bg-transparent border border-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2">
-          <option class="text-black" value="" disabled selected>Select Service...</option>
-          <option class="text-black">{{'form.group.Corporate' | translate}}</option>
-          <option class="text-black">{{'form.group.Banking' | translate}}</option>
-          <option class="text-black">{{'form.group.Investment' | translate}}</option>
-          <option class="text-black">{{'form.group.Information' | translate}}</option>
-          <option class="text-black">{{'form.group.Intellectual' | translate}}</option>
-          <option class="text-black">{{'form.group.Employment' | translate}}</option>
-          <option class="text-black">{{'form.group.Dispute' | translate}}</option>
-          <option class="text-black">{{'form.group.Foreign' | translate}}</option>
-          <option class="text-black">{{'form.group.Government' | translate}}</option>
-          <option class="text-black">{{'form.group.Capital' | translate}}</option>
-          <option class="text-black">{{'form.group.Environmental' | translate}}</option>
-          <option class="text-black">{{'form.group.Insurance' | translate}}</option>
-          <option class="text-black">{{'form.group.Legal' | translate}}</option>
-          <option class="text-black">{{'form.group.Real' | translate}}</option>
-          <option class="text-black">{{'form.group.Shipping' | translate}}</option>
-        </select>
-
-        <textarea placeholder="Your Message" rows="4"
-          class="p-3 rounded bg-transparent border border-white placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2"></textarea>
-
-        <button role="button"
-          class="bg-[#b3a16c] text-white font-semibold py-3 px-6 rounded-full hover:bg-[#837342] transition col-span-2">
-          {{'form.send' | translate}}
-        </button>
-
-      </form>
-    </div>
-
-  </div>
-</section>
