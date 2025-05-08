@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { TimelineComponent } from "../timeline/timeline.component";
 import { TranslatePipe } from '@ngx-translate/core';
 import { NavbarComponent } from "../../layouts/navbar/navbar.component";
+import { RouterLink } from '@angular/router';
 
 interface Logo {
   id: number;
@@ -14,7 +15,7 @@ interface Logo {
 
 @Component({
   selector: 'app-home',
-  imports: [CarouselComponent, CommonModule, TimelineComponent, TranslatePipe,],
+  imports: [CarouselComponent, CommonModule, TimelineComponent, TranslatePipe, RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
