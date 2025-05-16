@@ -29,7 +29,7 @@
     "timeline": {
         "1": {
             "title": "About Us",
-            "mainTitle": "Al Zamil & Al Kharashi Law Firm",
+            "mainTitle": "A solid career spanning over 25 years",
             "paragraph": "Since its establishment in 1421 AH (2000 AD), Al Zamil & Al Kharashi Law Firm and Legal Consultations has set its sights on providing distinguished legal services, representing its clients before judicial and legislative authorities in the Kingdom, according to the highest professional standards",
             "paragraph2": "The firm began with a clear vision based on attracting legal talents and forming a professional team that works with a precise methodology This enabled it to meet its clients' needs efficiently and in line with the economic and developmental transformations in the Kingdom",
             "paragraph3": "The firm has solidified its position as a prominent legal expertise house in the fields of commercial cases, family business structuring, and regulatory services for the private sector, which has enhanced its presence and reputation in the local market Building on this success, the firm expanded by opening offices in the Eastern Province and Jeddah, affirming its commitment to providing professional service with global standards",
@@ -38,15 +38,15 @@
         "2": {
             "title": "Our Vision",
             "mainTitle": "Towards Legal Leadership with Global Standards",
-            "paragraph": "At Al Zamil & Al Kharashi Law Firm and Legal Consultations, we provide specialized legal services based on high professionalism, precision, and commitment, to meet our clients' needs with confidence and exceptional quality."
+            "paragraph": "To be a leader in providing specialized legal services and contributing to the development of the judicial and professional environment in the Kingdom of Saudi Arabia."
         },
         "3": {
-            "title": "Experience",
+            "title": "Our message",
             "mainTitle": "A Quarter Century of Legal Excellence in the Kingdom",
-            "paragraph": "For over 25 years, we have continued to provide effective and integrated legal solutions, relying on extensive experience and a deep understanding of the laws and regulations in the Kingdom of Saudi Arabia."
+            "paragraph": "Providing high-quality legal services based on professionalism and commitment, meeting clients' expectations and enhancing the firm's position as a trusted source of legal expertise."
         },
         "4": {
-            "title": "Geographical Presence",
+            "title": "Our goals",
             "mainTitle": "A Legal Presence Extending Across the Kingdom",
             "paragraph": "We take pride in serving our clients throughout the Kingdom, through our offices and service range in Riyadh, the Eastern Province, and the Western Province, to be close to your requirements wherever you are."
         },
@@ -224,15 +224,18 @@
         }
     },
     "carousel": {
-        "tit1": "Protect your rights and secure your assets",
-        "span1": "With the support of",
-        "span2": "a renowned house of expertise",
-        "span3": "With the guidance",
-        "span4": "of legal support leadership",
-        "tit2": "Be part of a success story ",
-        "span5": "that has lasted ",
-        "span6": "25 years ",
-        "mainspan": "With expertise and professionalism in delivering the best solutions and services"
+        "tit1": "Towards legal leadership",
+        "span1": "with",
+        "span2": "international standards",
+        "tit2": "A quarter century of legal",
+        "span3": "excellence in the",
+        "span4": "Kingdom ",
+        "tit3": "A legal presence that",
+        "span5": "extends across the",
+        "span6": "Kingdom ",
+        "mainspan1": "At Al Zamil & Al Kharashi Law Firm, we provide specialized legal services based on high professionalism, precision, and commitment, meeting our clients' needs with confidence and exceptional quality.",
+        "mainspan2": "For over 25 years, we have continued to provide effective and comprehensive legal solutions, based on extensive experience and a deep understanding of the laws and regulations in the Kingdom of Saudi Arabia.",
+        "mainspan3": "We pride ourselves on serving our clients across the Kingdom, through our offices and service areas in Riyadh, the Eastern Province, and the Western Province, ensuring we are close to your needs wherever you are."
     },
     "services": {
         "main": {
