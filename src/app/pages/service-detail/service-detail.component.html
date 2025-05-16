@@ -25,12 +25,34 @@
         <div class="content-column lg:col-span-2 text-gray-600 space-y-8 leading-relaxed">
           <img src="/images/black-white-view-theatre.jpg" alt="Main section image" class="rounded-lg shadow-md mb-6">
 
-          <h2 class="text-2xl font-semibold pt-4 text-[#061933]">
-            {{ currentService.contentSection1Title | translate }}
+          <h2 class="text-2xl font-semibold pt-2 text-[#061933]">
+            {{ (currentService.contentSection1Title ?? '') | translate }}
+          </h2>
+          @if ( currentService.contentSection1Body && !currentService.mainSpan1 ) {
+          <p>
+            {{ (currentService.contentSection1Body ) | translate }}
+          </p>
+          }
+          @if (currentService.contentSection5Title && currentService.contentSection5Body ) {
+          <h2 class="text-2xl font-semibold pt-2 text-[#061933]">
+            {{ currentService.contentSection5Title | translate }}
           </h2>
           <p>
-            {{ currentService.contentSection1Body| translate }}
+            {{ currentService.contentSection5Body | translate }}
           </p>
+          }
+          @if (currentService.contentSection3Body && currentService.contentSection1Body &&
+          currentService.contentSection2Body && currentService.mainSpan1 ) {
+          <p>
+            {{ (currentService.contentSection1Body ) | translate }}
+          </p>
+          <p>
+            {{ (currentService.contentSection2Body ) | translate }}
+          </p>
+          <p>
+            {{ (currentService.contentSection3Body ) | translate }}
+          </p>
+          }
 
           @if(currentService.image1 || currentService.image2) {
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 py-4">
@@ -40,37 +62,151 @@
               class="rounded-lg shadow-md object-cover w-full h-48"> }
           </div>
           }
-          <p>
-            {{ currentService.contentSection2Body | translate }}
-          </p>
 
+          @if (currentService.contentSection6Title && currentService.contentSection6Body ) {
+          <h2 class="text-2xl font-semibold pt-2 text-[#061933]">
+            {{ currentService.contentSection6Title | translate }}
+          </h2>
+          <p>
+            {{ currentService.contentSection6Body | translate }}
+          </p>
+          }
+          @if (currentService.contentSection7Title && currentService.contentSection7Body ) {
+          <h2 class="text-2xl font-semibold pt-2 text-[#061933]">
+            {{ currentService.contentSection7Title | translate }}
+          </h2>
+          <p>
+            {{ currentService.contentSection7Body | translate }}
+          </p>
+          }
+
+          @if ( currentService.contentSection1Body && !currentService.mainSpan1 ) {
+          <p>
+            {{ (currentService.contentSection2Body ?? '') | translate }}
+          </p>
+          <p>
+            {{ (currentService.contentSection3Body ?? '') | translate }}
+          </p>
+          <p>
+            {{ (currentService.contentSection4Body ?? '') | translate }}
+          </p>
+          }
+          @if ( currentService.contentSection1Body && !currentService.mainSpan1 ) {
+
+          <ul class="list-disc pl-6 space-y-2">
+            @if (currentService.span1) {
+            <li>{{ (currentService.span1) | translate }}</li>
+            }
+            @if (currentService.span2) {
+            <li>{{ (currentService.span2) | translate }}</li>
+            }
+            @if (currentService.span3) {
+            <li>{{ (currentService.span3) | translate }}</li>
+            }
+            @if (currentService.span4) {
+            <li>{{ (currentService.span4) | translate }}</li>
+            }
+            @if (currentService.span5) {
+            <li>{{ (currentService.span5) | translate }}</li>
+            }
+            @if (currentService.span6) {
+            <li>{{ (currentService.span6) | translate }}</li>
+            }
+            @if (currentService.span7) {
+            <li>{{ (currentService.span7) | translate }}</li>
+            }
+            @if (currentService.span8) {
+            <li>{{ (currentService.span8) | translate }}</li>
+            }
+            @if (currentService.span9) {
+            <li>{{ (currentService.span9) | translate }}</li>
+            }
+            @if (currentService.span10) {
+            <li>{{ (currentService.span10) | translate }}</li>
+            }
+
+          </ul>
+          }
+          @else if (currentService.contentSection1Body && currentService.mainSpan1 && currentService.mainSpan2) {
+
+          <span class="text-slate-900 font-bold"> {{ (currentService.mainSpan1 ) | translate }} </span>
+          <ul class="list-disc pl-6 space-y-2 pb-10">
+            @if (currentService.span1) {
+            <li>{{ (currentService.span1) | translate }}</li>
+            }
+            @if (currentService.span2) {
+            <li>{{ (currentService.span2) | translate }}</li>
+            }
+            @if (currentService.span3) {
+            <li>{{ (currentService.span3) | translate }}</li>
+            }
+            @if (currentService.span4) {
+            <li>{{ (currentService.span4) | translate }}</li>
+            }
+            @if (currentService.span5) {
+            <li>{{ (currentService.span5) | translate }}</li>
+            }
+            @if (currentService.span6) {
+            <li>{{ (currentService.span6) | translate }}</li>
+            }
+            @if (currentService.span7) {
+            <li>{{ (currentService.span7) | translate }}</li>
+            }
+          </ul>
+          <span class="text-slate-900 font-bold"> {{ (currentService.mainSpan2  ) | translate }} </span>
+          <ul class="list-disc pl-6 space-y-2">
+            @if (currentService.span8) {
+            <li>{{ (currentService.span8) | translate }}</li>
+            }
+            @if (currentService.span9) {
+            <li>{{ (currentService.span9) | translate }}</li>
+            }
+            @if (currentService.span10) {
+            <li>{{ (currentService.span10) | translate }}</li>
+            }
+            @if (currentService.span11) {
+            <li>{{ (currentService.span11) | translate }}</li>
+            }
+            @if (currentService.span12) {
+            <li>{{ (currentService.span12) | translate }}</li>
+            }
+            @if (currentService.span13) {
+            <li>{{ (currentService.span13) | translate }}</li>
+            }
+
+          </ul>
+          }
 
         </div>
 
         <div class="sidebar-form lg:col-span-1">
-           <!-- تم الإبقاء على lg:col-span-1 (لأن الشبكة الرئيسية تغيرت) -->
+          <!-- تم الإبقاء على lg:col-span-1 (لأن الشبكة الرئيسية تغيرت) -->
           <div class="bg-[#061933] p-6 md:p-8 rounded-lg shadow-lg">
             <!-- الفورم يظل كما هو -->
             <form action="#" method="POST" class="space-y-6">
               <h3 class="text-xl text-start font-semibold text-white mb-6">{{'services.form.contact' |translate}}</h3>
-              
+
               <!-- حقل الاسم -->
               <div>
-                <label for="name" class="text-start block text-sm font-medium text-white mb-1">{{'services.form.name' |translate}}</label>
+                <label for="name" class="text-start block text-sm font-medium text-white mb-1">{{'services.form.name'
+                  |translate}}</label>
                 <input type="text" name="name" id="name" autocomplete="name" required
                   class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-100 focus:outline-none focus:ring-[#b3a16c] focus:border-[#b3a16c] sm:text-sm">
               </div>
 
               <!-- حقل البريد الإلكتروني -->
               <div>
-                <label for="email" class="text-start block text-sm font-medium text-white mb-1">{{'services.form.email' |translate}}</label>
+                <label for="email" class="text-start block text-sm font-medium text-white mb-1">{{'services.form.email'
+                  |translate}}</label>
                 <input type="email" name="email" id="email" autocomplete="email" required
                   class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-100 focus:outline-none focus:ring-[#b3a16c] focus:border-[#b3a16c] sm:text-sm">
               </div>
 
               <!-- حقل الرسالة -->
               <div>
-                <label for="message" class="text-start block text-sm font-medium text-white mb-1">{{'services.form.message' |translate}}</label>
+                <label for="message"
+                  class="text-start block text-sm font-medium text-white mb-1">{{'services.form.message'
+                  |translate}}</label>
                 <textarea id="message" name="message" rows="4" required
                   class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-100 focus:outline-none focus:ring-[#b3a16c] focus:border-[#b3a16c] sm:text-sm"></textarea>
               </div>
@@ -86,9 +222,9 @@
           </div>
         </div>
 
-      </div> 
-    </div> 
-  </div> 
+      </div>
+    </div>
+  </div>
 
   }
 </div>

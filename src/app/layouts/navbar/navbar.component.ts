@@ -78,7 +78,7 @@ export class NavbarComponent implements AfterViewInit {
   }
 
   private checkIsHome(url: string): boolean {
-    return url === '/' || url === '/home' || url === '/services' || url === '/ourteam' || url === '/events' || url === '/branches'|| url === '/service/1' || url === '/service/2' || url === '/service/3'|| url === '/service/4'|| url === '/service/5'|| url === '/service/6'|| url === '/service/7' ;
+    return url === '/' || url === '/home' || url === '/services' || url === '/ourteam' || url === '/events' || url === '/branches'|| url === '/service/1' || url === '/service/2' || url === '/service/3'|| url === '/service/4'|| url === '/service/5'|| url === '/service/6'|| url === '/service/7' || url === '/service/8' || url === '/service/9' ;
   }
 
   @HostListener('window:scroll')

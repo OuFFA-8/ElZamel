@@ -6,7 +6,10 @@ interface Section {
   navTitle: string;
   navNumber: string;
   contentTitle: string;
-  contentText: string;
+  contentText1: string;
+  contentText2?: string;
+  contentText3?: string;
+  contentText4?: string;
   imageUrl: string;
 }
 
@@ -19,10 +22,10 @@ interface Section {
 export class TimelineComponent implements OnInit {
 
   sections: Section[] = [
-    { id: 1, navTitle: 'timeline.title1', navNumber: '2013', contentTitle: 'timeline.firm', contentText: 'timeline.paragraph', imageUrl: '/images/pexels-sora-shimazaki-5668484.jpg' },
-    { id: 2, navTitle: 'timeline.title2', navNumber: '2015', contentTitle: 'timeline.firm', contentText: 'timeline.paragraph', imageUrl: '/images/pexels-sora-shimazaki-5668484.jpg' },
-    { id: 3, navTitle: 'timeline.title3', navNumber: '2200', contentTitle: 'timeline.firm', contentText: 'timeline.paragraph', imageUrl: '/images/pexels-sora-shimazaki-5668484.jpg' },
-    { id: 4, navTitle: 'timeline.title4', navNumber: '2004', contentTitle: 'timeline.firm', contentText: 'timeline.paragraph', imageUrl: '/images/pexels-sora-shimazaki-5668484.jpg' }
+    { id: 1, navTitle: 'timeline.1.title', contentTitle: 'timeline.1.mainTitle', navNumber: '2013', contentText1: 'timeline.1.paragraph', imageUrl: '/images/pexels-sora-shimazaki-5668484.jpg', contentText2: 'timeline.1.paragraph2', contentText3: 'timeline.1.paragraph3', contentText4: 'timeline.1.paragraph4' },
+    { id: 2, navTitle: 'timeline.2.title', contentTitle: 'timeline.2.mainTitle', navNumber: '2015', contentText1: 'timeline.2.paragraph', imageUrl: '/images/pexels-sora-shimazaki-5668484.jpg', },
+    { id: 3, navTitle: 'timeline.3.title', contentTitle: 'timeline.3.mainTitle', navNumber: '2200', contentText1: 'timeline.3.paragraph', imageUrl: '/images/pexels-sora-shimazaki-5668484.jpg', },
+    { id: 4, navTitle: 'timeline.4.title', contentTitle: 'timeline.4.mainTitle', navNumber: '2004', contentText1: 'timeline.4.paragraph', imageUrl: '/images/pexels-sora-shimazaki-5668484.jpg', }
   ];
 
   selectedSection: Section | null = null;

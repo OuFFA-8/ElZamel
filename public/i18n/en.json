@@ -27,10 +27,29 @@
         "arabic": "Arabic (SA)"
     },
     "timeline": {
-        "title1": "Who We Are",
-        "title2": "Our Vision",
-        "title3": "Our Mission",
-        "title4": "Our Goals",
+        "1": {
+            "title": "About Us",
+            "mainTitle": "Al Zamil & Al Kharashi Law Firm",
+            "paragraph": "Since its establishment in 1421 AH (2000 AD), Al Zamil & Al Kharashi Law Firm and Legal Consultations has set its sights on providing distinguished legal services, representing its clients before judicial and legislative authorities in the Kingdom, according to the highest professional standards",
+            "paragraph2": "The firm began with a clear vision based on attracting legal talents and forming a professional team that works with a precise methodology This enabled it to meet its clients' needs efficiently and in line with the economic and developmental transformations in the Kingdom",
+            "paragraph3": "The firm has solidified its position as a prominent legal expertise house in the fields of commercial cases, family business structuring, and regulatory services for the private sector, which has enhanced its presence and reputation in the local market Building on this success, the firm expanded by opening offices in the Eastern Province and Jeddah, affirming its commitment to providing professional service with global standards",
+            "paragraph4": "It is an ambitious journey, driven by a firm belief in our role in serving justice and a genuine contribution to shaping a promising legal future for the Kingdom"
+        },
+        "2": {
+            "title": "Our Vision",
+            "mainTitle": "Towards Legal Leadership with Global Standards",
+            "paragraph": "At Al Zamil & Al Kharashi Law Firm and Legal Consultations, we provide specialized legal services based on high professionalism, precision, and commitment, to meet our clients' needs with confidence and exceptional quality."
+        },
+        "3": {
+            "title": "Experience",
+            "mainTitle": "A Quarter Century of Legal Excellence in the Kingdom",
+            "paragraph": "For over 25 years, we have continued to provide effective and integrated legal solutions, relying on extensive experience and a deep understanding of the laws and regulations in the Kingdom of Saudi Arabia."
+        },
+        "4": {
+            "title": "Geographical Presence",
+            "mainTitle": "A Legal Presence Extending Across the Kingdom",
+            "paragraph": "We take pride in serving our clients throughout the Kingdom, through our offices and service range in Riyadh, the Eastern Province, and the Western Province, to be close to your requirements wherever you are."
+        },
         "firm": "Al-Zamel and Al-Kharashi Law Firm",
         "button": "For more",
         "paragraph": "Since its establishment in 2000 (1421 AH), Al-Zamil & Al-Kharashi Law Firm has consistently pursued excellence as a leading legal entity in the Kingdom of Saudi Arabia. Committed to providing high-quality legal services with exceptional professionalism, the firm has built a reputation for serving clients before judicial and legal institutions, offering expert legal and Sharia counsel. The firm’s foundation is rooted in attracting specialized legal consultants and a highly skilled team that operates under a structured methodology. With a focus on expertise, talent, and collaboration, Al-Zamil & Al-Kharashi has delivered premium legal services aligned with the region's economic growth. Its distinguished reputation in commercial legal services and family business restructuring has earned it a prominent place in the market, and with new branches in the Eastern Province and Jeddah, the firm continues to expand its reach and offer world-class services to its clients."
@@ -222,60 +241,105 @@
             "paragraph": " Adipiscing elit, sed do eiusmod tempor incididunt ut labore. Adipiscing elit, sed do eiusmod tempor incididunt ut labore."
         },
         "section1": {
+            "title": "Corporate and Commercial Consulting",
+            "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+            "title2": "PROCEDURES AND RIGHTS",
+            "paragraph1": "Al Zamil & Al Kharashi Law Firm provides a comprehensive range of specialized legal services in the corporate and commercial sector, including legal consultations related to establishing commercial entities and structuring them in accordance with regulatory frameworks. The firm also issues regulatory licenses to practice commercial activities and provides full legal support in mergers and acquisitions, including preparing agreements and conducting due diligence to ensure the integrity of procedures and reduce risks.",
+            "paragraph2": "Our services include registering names, trademarks, and intellectual and industrial property rights, in addition to providing legal consultations on corporate governance, drafting internal regulations, and organizing general assembly meetings in accordance with regulatory requirements"
+        },
+        "section2": {
+            "title": "Real Estate Consulting and Matters",
+            "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+            "title2": "PROCEDURES AND RIGHTS",
+            "paragraph1": "The firm provides a number of specialized legal services in the real estate field, including drafting and reviewing partnership, sale, purchase, lease, and real estate investment contracts, in addition to establishing, governing, and restructuring real estate funds to achieve efficiency and regulatory compliance. The firm also has expertise in liquidating real estate contributions and resolving related disputes, in addition to dividing and sorting joint properties, whether by mutual consent or by force. Services also include processing real estate deeds, title deeds, and fulfilling regulatory requirements for ownership documentation.",
+            "paragraph2": "Our legal team conducts due diligence on real estate assets and properties, submits the required documents, and represents clients before the State Real Estate Authority and the Deeds Cassation Committee. The firm also represents clients in real estate disputes, including claims to prove ownership or usufruct and overlapping deeds",
+            "paragraph3": "Our services also include representing clients in expropriation and compensation lawsuits, providing specialized legal advice on real estate registration systems, real estate transaction tax and exemption cases, vacant land fees, off-plan sales and leasing, in addition to studies related to urban zoning rules"
+        },
+        "section3": {
+            "title": "Labor Law",
+            "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+            "title2": "PROCEDURES AND RIGHTS",
+            "paragraph1": "The firm offers a comprehensive range of specialized legal services related to the labor system, based on extensive experience in the labor system and its executive regulations, as well as related regulations, including the civil service system, health insurance, and social insurance. Our services include the following:",
+            "span1": "Preparing, reviewing, and documenting employment contracts.",
+            "span2": "Drafting internal labor regulations in accordance with the labor law.",
+            "span3": "Providing specialized legal advice to various local and foreign entities to ensure that their labor practices comply with applicable regulations. Providing proactive solutions that contribute to avoiding potential disputes through amicable settlement mechanisms and effective negotiation between the parties. ",
+            "span4": "Pleading and representing clients before labor courts at all stages of litigation"
+        },
+        "section4": {
             "title": "Litigation and Dispute Resolution",
             "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
             "title2": "PROCEDURES AND RIGHTS",
-            "paragraph1": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?",
-            "paragraph2": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?"
-        },
-        "section2": {
-            "title": "CRIMINAL LAW",
-            "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-            "title2": "PROCEDURES AND RIGHTS",
-            "paragraph1": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?",
-            "paragraph2": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?"
-        },
-        "section3": {
-            "title": "Studies and legislation",
-            "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-            "title2": "PROCEDURES AND RIGHTS",
-            "paragraph1": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?",
-            "paragraph2": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?"
-        },
-        "section4": {
-            "title": "Labor system and labor relations",
-            "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-            "title2": "PROCEDURES AND RIGHTS",
-            "paragraph1": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?",
-            "paragraph2": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?"
+            "paragraph1": "The company's Litigation and Dispute Resolution Department represents its clients and pleads on their behalf before courts, judicial authorities, and arbitration bodies of various levels and specializations. The department also provides Sharia and legal opinions and advice to clients regarding existing and potential disputes, and offers the best ways to prevent disputes and disagreements, including the following:",
+            "span1": "Commercial cases.",
+            "span2": "Real estate cases.",
+            "span3": "Financial and legal cases.",
+            "span4": "Administrative cases.",
+            "span5": "Zakat and tax cases.",
+            "span6": "Estate and division cases.",
+            "span7": "Wills and endowments cases.",
+            "span8": "Arbitration, mediation, and alternative dispute resolution cases.",
+            "span9": "Intellectual property, copyright, and trademark cases.",
+            "span10": "Family business and enterprise cases"
         },
         "section5": {
-            "title": "Real estate regulations",
+            "title": "Capital Markets",
             "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
             "title2": "PROCEDURES AND RIGHTS",
-            "paragraph1": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?",
-            "paragraph2": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?"
+            "paragraph1": "Al Zamil & Al Kharashi Law Firm provides a range of legal services related to the financial market, including the following:",
+            "span1": "Representation before the Committee for the Resolution of Securities Disputes and the Appeal Committee for Securities Disputes.",
+            "span2": "Providing legal studies and consultations to entities listed on the financial market and authorized persons.",
+            "span3": "Preparing, drafting, and reviewing the internal regulations and policies of companies listed on the financial market.",
+            "span4": "Preparing and reviewing the terms and conditions of various types of investment funds.",
+            "span5": "Submitting requests to view securities data and investment accounts of deceased persons, and related procedures.",
+            "span6": "Providing legal studies and consultations on securities and related matters"
         },
         "section6": {
-            "title": "Endowments and the non-profit",
+            "title": "Studies, Legislation, and Contracts",
             "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-            "title2": "PROCEDURES AND RIGHTS",
-            "paragraph1": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?",
-            "paragraph2": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?"
+            "paragraph1": "The company has extensive experience in preparing, drafting, and reviewing legal studies, legislation, regulations, and commercial contracts. This is based on extensive experience and a thorough understanding of the legal and regulatory environment for more than twenty-five years, making it one of the most capable companies specializing in this field",
+            "title5": "In the field of preparing legal studies:",
+            "paragraph5": "The company provides comprehensive legal analyses covering various sectors, by preparing specialized studies in administrative, commercial, financial, investment, and real estate aspects, in addition to studying relevant regulations, legislation, and disputes, ensuring the soundness of legal decisions.These services include providing legal feasibility studies, which assess the extent to which proposed projects comply with existing regulations and legal frameworks, analyze legal risks and responsibilities, and propose the best regulatory structures to help protect assets, enhance compliance, and build trust with stakeholders",
+            "title6": "In the field of legislation,",
+            "paragraph6": "the company contributes to the development and drafting of legislation and regulations in line with best practices. It has played a role in developing and implementing some regulations and laws in Saudi Arabia and has worked closely with ministries and government agencies, as well as specialized consultancies, to offer its expertise in this field. This is due to its familiarity and understanding of the legal, regulatory, and economic situation. It has also contributed to providing legal services to a number of governmental and private entities in this regard. Its work on projects drafting legislation and regulations for these entities included providing comprehensive advice to achieve their goals and objectives",
+            "title7": "In the field of drafting and reviewing contracts and agreements",
+            "paragraph7": "Al Zamil & Al Kharashi Law Firm has extensive experience in drafting and reviewing commercial contracts and agreements of various types, ensuring the protection of clients' interests and reducing legal risks. The firm's legal and Sharia team relies on a precise methodology that ensures sound drafting, including the necessary obligations and guarantees, while providing specialized consultations that enable clients to make sound legal decisions. Our services also include preparing and reviewing merger and acquisition contracts, settlements, financial transactions, corporate employment contracts, supply contracts, commercial franchises, and investment agreements, while verifying their compliance with regulations and legislation and amending them when necessary to enhance legal protection and contractual fairness"
         },
         "section7": {
-            "title": "Zakat and tax",
+            "title": "Family Wealth",
             "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
             "title2": "PROCEDURES AND RIGHTS",
-            "paragraph1": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?",
-            "paragraph2": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?"
+            "paragraph1": "Based on Al Zamil & Al Kharashi Law Firm's deep understanding of the importance of family entities as a pivotal pillar of economic development, the firm provides specialized legal services in the field of family wealth.",
+            "paragraph2": "It is concerned with restructuring family assets to achieve efficiency and sustainability. We work to prepare and draft family charters that regulate relationships between generations and establish a legal framework that preserves unity of decision-making and protects wealth from dispersion and conflict. We also provide services for drafting internal regulations and decisions for family businesses, ensuring a balance between corporate governance and family privacy, thus achieving the sustainability of these companies across generations."
         },
         "section8": {
-            "title": "Division of estates",
+            "title": "Endowments and Non-Profit Entities",
             "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
             "title2": "PROCEDURES AND RIGHTS",
-            "paragraph1": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?",
-            "paragraph2": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quae tenetur eum maiores sed deserunt eveniet, perferendis consequatur sapiente? Voluptate laboriosam cum consectetur, dolores veritatis placeat pariatur at modi sequi sed odio temporibus magnam quisquam distinctio sapiente delectus id tempora dignissimos aspernatur mollitia! Laudantium culpa molestias, inventore natus repellat illo beatae minus modi autem magnam possimus, itaque facilis iusto. Voluptas dolorem ipsam harum atque delectus cum ad accusamus veritatis dignissimos nisi ea deleniti tempora, sequi aliquam, dolor hic voluptates consectetur qui quod et tenetur laboriosam vero fugiat commodi? Eos repellat nulla expedita voluptatem ipsa, atque explicabo tenetur nihil dolorum doloremque?"
+            "paragraph1": "The non-profit sector in the Kingdom makes a significant contribution to sustainable development. Vision 2030 emphasizes empowering this sector and increasing its contribution to the gross domestic product. The sector, with its endowments and organizations, is witnessing remarkable growth, with the enactment of its own systems, regulations, and rules.",
+            "paragraph2": "In an effort to advance the endowment and non-profit sector and raise its efficiency, we have established a specialized department within the company dedicated to this sector, which is responsible for meeting a wide range of the needs of the endowment and non-profit sector",
+            "paragraph3": "We rely on the use of accumulated experience and individual skills to establish innovative non-profit products, develop an endowment strategy for the benefit of its affiliated entities, improve its work in accordance with governance rules, and strive to provide unique solutions to meet the needs of our clients and understand their aspirations to achieve goals and face challenges.",
+            "mainSpan1": "Our services are characterized by a thorough understanding and a modern vision coupled with a comprehensive legacy of experience gained through working with public and private non-profit entities and organizations. Our services include:",
+            "span1": "Drafting endowment documents, in accordance with the donors' conditions and stated objectives, in accordance with rules and regulations.",
+            "span2": "Establishing non-profit entities, funds, and endowment investment portfolios, selecting the appropriate structure for them, and organizing them using the best available legal means.",
+            "span3": "Preparing and drafting the articles of association, internal regulations, and governance rules for non-profit entities of all kinds.",
+            "span4": "Developing plans, policies, and procedural manuals for non-profit entities.",
+            "span5": "Addressing old and inactive endowments and resolving their problems to ensure their sustainability.",
+            "span6": "Providing consultations, giving legal opinions, and reviewing matters that clients wish to inquire about regarding their investments and contracts.",
+            "span7": "Serving as secretaries of boards of supervisors and boards of trustees.",
+            "mainSpan2": "Our success in fulfilling our clients' aspirations is demonstrated by the completion of numerous projects, including:",
+            "span8": "Preparing a draft non-profit company bylaw.",
+            "span9": "Providing legal advice for the structuring, establishment, organization, and governance of several major endowment and non-profit entities.",
+            "span10": "Finding legal solutions and innovations to regulate endowment assets and the mechanisms for dealing with them.",
+            "span11": "Reviving dormant endowments by obtaining judicial precedents authorizing the investment of their funds deposited with the competent authorities in investment funds and portfolios until an alternative is found for the endowed assets.",
+            "span12": "Obtaining judicial permissions to own endowments and wills in commercial entities without the need to allocate their share in specific assets.",
+            "span13": "Developing old endowment documents for a number of large endowments and amending them according to modern formulas to enable them to achieve development and sustainability"
+        },
+        "section9": {
+            "title": "Zakat and Tax Matters",
+            "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+            "title2": "PROCEDURES AND RIGHTS",
+            "paragraph1": "Al Zamil & Al Kharashi Law Firm provides specialized legal services in the field of zakat and tax, including providing legal advice on regulatory issues related to zakat and tax systems and analyzing clients' obligations in accordance with applicable laws and regulations.",
+            "paragraph2": "The firm also represents its clients before the competent zakat and tax committees and prepares relevant legal memoranda and pleadings, ensuring the protection of their interests and safeguarding their legal rights with high efficiency and professionalism"
         },
         "button": "DETAILS",
         "form": {
