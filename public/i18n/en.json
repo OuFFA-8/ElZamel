@@ -47,8 +47,12 @@
         },
         "4": {
             "title": "Our goals",
-            "mainTitle": "A Legal Presence Extending Across the Kingdom",
-            "paragraph": "We take pride in serving our clients throughout the Kingdom, through our offices and service range in Riyadh, the Eastern Province, and the Western Province, to be close to your requirements wherever you are."
+            "mainTitle": "Our goals",
+            "paragraph": "Representing clients efficiently before judicial and legislative authorities",
+            "paragraph2": "Developing legal solutions that keep pace with market and regulatory changes",
+            "paragraph3": "Supporting business sustainability through professional advisory services",
+            "paragraph4": "Attracting and developing legal competencies to ensure professional excellence",
+            "paragraph5": "Enhancing institutional presence locally and regionally"
         },
         "firm": "Al-Zamel and Al-Kharashi Law Firm",
         "button": "For more",
@@ -201,7 +205,7 @@
             "24": "Asim bin Hamad Al-Oraidh, a Trainee Lawyer at the main office in Riyadh, holds a Bachelor's in Sharia with honors (Umm Al-Qura University, 2022) and a recent LLM in Business Law (University of Southern California, 2024). Participating within the team, he is gaining experience in specialized areas of business law including Mergers & Acquisitions, Corporate Governance, Commercial Transactions, Joint Ventures, and Corporate Structuring, in addition to Capital Market transactions. He is notably proficient in three languages: Arabic, English, and Turkish.",
             "25": "Sofian bin Sulaiman Al-Salim, a Trainee Lawyer at the main office in Riyadh, holds a Bachelor's degree in Sharia (Imam University, 2021). As part of the team, he participates in providing legal consultations, and drafting commercial contracts and agreements. His areas of training and work also include the procedures for forming and liquidating companies and commercial/non-profit entities, as well as arranging and holding their general assemblies. He is also gaining experience in litigation before courts and judicial bodies, in addition to participating in inheritance division procedures. He is proficient in Arabic."
         },
-        "extra_section": "At the heart of Al Zamil and Al Kharashi Law Firm lies an exceptional team comprising a select group of expert lawyers who possess years of extensive experience and profound legal knowledge. Our lawyers are committed to providing the highest levels of legal service to our clients, relying on a thorough understanding of local and international laws and regulations, and a genuine passion for achieving justice. Thanks to their diverse specializations and accumulated expertise, our team forms an integrated legal force capable of handling the most complex legal challenges with efficiency and effectiveness, delivering innovative and reliable solutions that meet our clients' needs and exceed their expectations."
+        "extra_section": "At Al Zamil & Al Kharashi Law Firm, behind our success stands a distinguished legal team that combines deep experience with a renewed vision. Our team is not only experts in regulations and legislation, but also partners in providing innovative legal solutions based on a thorough understanding and concern for the client's interest. With their diverse expertise and passion for justice, we make a difference in every case we handle"
     },
     "event": {
         "item1": {
@@ -241,18 +245,18 @@
         "main": {
             "span": "AREAS OF PRACTICE",
             "title": "PROFESSIONAL SERVICES",
-            "paragraph": " Adipiscing elit, sed do eiusmod tempor incididunt ut labore. Adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+            "paragraph": " We are distinguished by our expertise and professionalism in providing specialized legal services with a high level of accuracy and transparency."
         },
         "section1": {
             "title": "Corporate and Commercial Consulting",
-            "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+            "span": "The company offers a number of specialized legal services in the corporate and commercial sector.",
             "title2": "PROCEDURES AND RIGHTS",
             "paragraph1": "Al Zamil & Al Kharashi Law Firm provides a comprehensive range of specialized legal services in the corporate and commercial sector, including legal consultations related to establishing commercial entities and structuring them in accordance with regulatory frameworks. The firm also issues regulatory licenses to practice commercial activities and provides full legal support in mergers and acquisitions, including preparing agreements and conducting due diligence to ensure the integrity of procedures and reduce risks.",
             "paragraph2": "Our services include registering names, trademarks, and intellectual and industrial property rights, in addition to providing legal consultations on corporate governance, drafting internal regulations, and organizing general assembly meetings in accordance with regulatory requirements"
         },
         "section2": {
             "title": "Real Estate Consulting and Matters",
-            "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+            "span": "The company provides a number of specialized legal services in the real estate field.",
             "title2": "PROCEDURES AND RIGHTS",
             "paragraph1": "The firm provides a number of specialized legal services in the real estate field, including drafting and reviewing partnership, sale, purchase, lease, and real estate investment contracts, in addition to establishing, governing, and restructuring real estate funds to achieve efficiency and regulatory compliance. The firm also has expertise in liquidating real estate contributions and resolving related disputes, in addition to dividing and sorting joint properties, whether by mutual consent or by force. Services also include processing real estate deeds, title deeds, and fulfilling regulatory requirements for ownership documentation.",
             "paragraph2": "Our legal team conducts due diligence on real estate assets and properties, submits the required documents, and represents clients before the State Real Estate Authority and the Deeds Cassation Committee. The firm also represents clients in real estate disputes, including claims to prove ownership or usufruct and overlapping deeds",
@@ -260,7 +264,7 @@
         },
         "section3": {
             "title": "Labor Law",
-            "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+            "span": "The company provides a comprehensive range of legal services specializing in the labor system.",
             "title2": "PROCEDURES AND RIGHTS",
             "paragraph1": "The firm offers a comprehensive range of specialized legal services related to the labor system, based on extensive experience in the labor system and its executive regulations, as well as related regulations, including the civil service system, health insurance, and social insurance. Our services include the following:",
             "span1": "Preparing, reviewing, and documenting employment contracts.",
@@ -270,7 +274,7 @@
         },
         "section4": {
             "title": "Litigation and Dispute Resolution",
-            "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+            "span": "The firm's Litigation and Dispute Resolution Department represents and advocates on behalf of the firm's clients.",
             "title2": "PROCEDURES AND RIGHTS",
             "paragraph1": "The company's Litigation and Dispute Resolution Department represents its clients and pleads on their behalf before courts, judicial authorities, and arbitration bodies of various levels and specializations. The department also provides Sharia and legal opinions and advice to clients regarding existing and potential disputes, and offers the best ways to prevent disputes and disagreements, including the following:",
             "span1": "Commercial cases.",
@@ -286,7 +290,7 @@
         },
         "section5": {
             "title": "Capital Markets",
-            "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+            "span": "The company provides a number of specialized legal services in A set of legal services related to the financial market.",
             "title2": "PROCEDURES AND RIGHTS",
             "paragraph1": "Al Zamil & Al Kharashi Law Firm provides a range of legal services related to the financial market, including the following:",
             "span1": "Representation before the Committee for the Resolution of Securities Disputes and the Appeal Committee for Securities Disputes.",
@@ -298,7 +302,7 @@
         },
         "section6": {
             "title": "Studies, Legislation, and Contracts",
-            "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+            "span": "The company has extensive experience in the field of preparing legal studies",
             "paragraph1": "The company has extensive experience in preparing, drafting, and reviewing legal studies, legislation, regulations, and commercial contracts. This is based on extensive experience and a thorough understanding of the legal and regulatory environment for more than twenty-five years, making it one of the most capable companies specializing in this field",
             "title5": "In the field of preparing legal studies:",
             "paragraph5": "The company provides comprehensive legal analyses covering various sectors, by preparing specialized studies in administrative, commercial, financial, investment, and real estate aspects, in addition to studying relevant regulations, legislation, and disputes, ensuring the soundness of legal decisions.These services include providing legal feasibility studies, which assess the extent to which proposed projects comply with existing regulations and legal frameworks, analyze legal risks and responsibilities, and propose the best regulatory structures to help protect assets, enhance compliance, and build trust with stakeholders",
@@ -309,14 +313,14 @@
         },
         "section7": {
             "title": "Family Wealth",
-            "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+            "span": "The firm provides specialized legal services in the field of family wealth.",
             "title2": "PROCEDURES AND RIGHTS",
             "paragraph1": "Based on Al Zamil & Al Kharashi Law Firm's deep understanding of the importance of family entities as a pivotal pillar of economic development, the firm provides specialized legal services in the field of family wealth.",
             "paragraph2": "It is concerned with restructuring family assets to achieve efficiency and sustainability. We work to prepare and draft family charters that regulate relationships between generations and establish a legal framework that preserves unity of decision-making and protects wealth from dispersion and conflict. We also provide services for drafting internal regulations and decisions for family businesses, ensuring a balance between corporate governance and family privacy, thus achieving the sustainability of these companies across generations."
         },
         "section8": {
             "title": "Endowments and Non-Profit Entities",
-            "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+            "span": "The non-profit sector in the Kingdom makes a significant contribution to sustainable development",
             "title2": "PROCEDURES AND RIGHTS",
             "paragraph1": "The non-profit sector in the Kingdom makes a significant contribution to sustainable development. Vision 2030 emphasizes empowering this sector and increasing its contribution to the gross domestic product. The sector, with its endowments and organizations, is witnessing remarkable growth, with the enactment of its own systems, regulations, and rules.",
             "paragraph2": "In an effort to advance the endowment and non-profit sector and raise its efficiency, we have established a specialized department within the company dedicated to this sector, which is responsible for meeting a wide range of the needs of the endowment and non-profit sector",
@@ -339,7 +343,7 @@
         },
         "section9": {
             "title": "Zakat and Tax Matters",
-            "span": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+            "span": "The company provides specialized legal services in the field of Zakat and taxation.",
             "title2": "PROCEDURES AND RIGHTS",
             "paragraph1": "Al Zamil & Al Kharashi Law Firm provides specialized legal services in the field of zakat and tax, including providing legal advice on regulatory issues related to zakat and tax systems and analyzing clients' obligations in accordance with applicable laws and regulations.",
             "paragraph2": "The firm also represents its clients before the competent zakat and tax committees and prepares relevant legal memoranda and pleadings, ensuring the protection of their interests and safeguarding their legal rights with high efficiency and professionalism"
