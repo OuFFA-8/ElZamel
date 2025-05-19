@@ -28,7 +28,6 @@
       </button>
     </div>
 
-    <!-- القايمة المنسدلة للموبايل -->
     <div #mobileMenu class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
       id="navbar-language">
       <ul
@@ -42,7 +41,9 @@
         </li>
         <li>
           <button (click)="closeMobileMenuOnClick()" id="dropdownNavbarLink" routerLink="/services"
-            routerLinkActive="text-[#b3a16c]" data-dropdown-toggle="dropdownNavbar" data-dropdown-trigger="hover" class="flex items-center justify-between w-full py-2 px-3 md:p-0 rounded hover:bg-gray-100
+            routerLinkActive="text-[#b3a16c] font-medium"
+            data-dropdown-toggle="dropdownNavbar" data-dropdown-trigger="hover"
+            class="flex items-center justify-between w-full py-2 px-3 md:p-0 rounded hover:bg-gray-100
             md:hover:bg-transparent md:border-0 md:hover:text-[#b3a16c] transition-colors duration-200">
             {{ 'navbar.services.main' | translate }}
             <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -51,35 +52,84 @@
                 d="m1 1 4 4 4-4" />
             </svg>
           </button>
+
+          <!-- Dropdown menu -->
           <div id="dropdownNavbar"
-            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
-            <ul class="py-2 text-sm" aria-labelledby="dropdownLargeButton">
-              <li><a (click)="closeMobileMenuOnClick()" routerLink="service/1" routerLinkActive="bg-[#b3a16c]"
-                  class="block px-4 py-2 hover:bg-gray-100 text-slate-900">{{ 'services.section1.title' | translate }}</a>
+            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-xl shadow-lg w-60 md:w-64 mt-1 md:mt-1.5">
+            <!-- 
+      - rounded-xl: For a softer, more modern look.
+      - shadow-lg: A more pronounced shadow.
+      - w-60 md:w-64: Increased width. Adjust as needed for your longest text.
+      - mt-1 md:mt-1.5: Slight margin-top to visually separate from the trigger, especially since md:p-0 on trigger.
+      - Removed divide-y as items will have their own rounded corners.
+    -->
+            <ul class="p-1.5 text-sm text-gray-800" aria-labelledby="dropdownLargeButton">
+              <!-- 
+        - p-1.5: Padding around all items.
+        - text-gray-800: Slightly darker text for better readability.
+      -->
+              <li>
+                <a (click)="closeMobileMenuOnClick()" routerLink="service/1" routerLinkActive="bg-[#b3a16c] text-white"
+                  [routerLinkActiveOptions]="{exact: true}"
+                  class="block px-3.5 py-2.5 rounded-lg hover:bg-gray-100 hover:text-[#b3a16c] whitespace-nowrap transition-colors duration-150 ease-in-out">
+                  {{ 'services.section1.title' | translate }}
+                </a>
               </li>
-              <li><a (click)="closeMobileMenuOnClick()" routerLink="service/2" routerLinkActive="bg-[#b3a16c]"
-                  class="block px-4 py-2 hover:bg-gray-100 text-slate-900">{{ 'services.section2.title' | translate }}</a>
+              <li>
+                <a (click)="closeMobileMenuOnClick()" routerLink="service/2" routerLinkActive="bg-[#b3a16c] text-white"
+                  [routerLinkActiveOptions]="{exact: true}"
+                  class="block px-3.5 py-2.5 rounded-lg hover:bg-gray-100 hover:text-[#b3a16c] whitespace-nowrap transition-colors duration-150 ease-in-out">
+                  {{ 'services.section2.title' | translate }}
+                </a>
               </li>
-              <li><a (click)="closeMobileMenuOnClick()" routerLink="service/3" routerLinkActive="bg-[#b3a16c]"
-                  class="block px-4 py-2 hover:bg-gray-100 text-slate-900">{{ 'services.section3.title' | translate }}</a>
+              <li>
+                <a (click)="closeMobileMenuOnClick()" routerLink="service/3" routerLinkActive="bg-[#b3a16c] text-white"
+                  [routerLinkActiveOptions]="{exact: true}"
+                  class="block px-3.5 py-2.5 rounded-lg hover:bg-gray-100 hover:text-[#b3a16c] whitespace-nowrap transition-colors duration-150 ease-in-out">
+                  {{ 'services.section3.title' | translate }}
+                </a>
               </li>
-              <li><a (click)="closeMobileMenuOnClick()" routerLink="service/4" routerLinkActive="bg-[#b3a16c]"
-                  class="block px-4 py-2 hover:bg-gray-100 text-slate-900">{{ 'services.section4.title' | translate }}</a>
+              <li>
+                <a (click)="closeMobileMenuOnClick()" routerLink="service/4" routerLinkActive="bg-[#b3a16c] text-white"
+                  [routerLinkActiveOptions]="{exact: true}"
+                  class="block px-3.5 py-2.5 rounded-lg hover:bg-gray-100 hover:text-[#b3a16c] whitespace-nowrap transition-colors duration-150 ease-in-out">
+                  {{ 'services.section4.title' | translate }}
+                </a>
               </li>
-              <li><a (click)="closeMobileMenuOnClick()" routerLink="service/5" routerLinkActive="bg-[#b3a16c]"
-                  class="block px-4 py-2 hover:bg-gray-100 text-slate-900">{{ 'services.section5.title' | translate }}</a>
+              <li>
+                <a (click)="closeMobileMenuOnClick()" routerLink="service/5" routerLinkActive="bg-[#b3a16c] text-white"
+                  [routerLinkActiveOptions]="{exact: true}"
+                  class="block px-3.5 py-2.5 rounded-lg hover:bg-gray-100 hover:text-[#b3a16c] whitespace-nowrap transition-colors duration-150 ease-in-out">
+                  {{ 'services.section5.title' | translate }}
+                </a>
               </li>
-              <li><a (click)="closeMobileMenuOnClick()" routerLink="service/6" routerLinkActive="bg-[#b3a16c]"
-                  class="block px-4 py-2 hover:bg-gray-100 text-slate-900">{{ 'services.section6.title' | translate }}</a>
+              <li>
+                <a (click)="closeMobileMenuOnClick()" routerLink="service/6" routerLinkActive="bg-[#b3a16c] text-white"
+                  [routerLinkActiveOptions]="{exact: true}"
+                  class="block px-3.5 py-2.5 rounded-lg hover:bg-gray-100 hover:text-[#b3a16c] whitespace-nowrap transition-colors duration-150 ease-in-out">
+                  {{ 'services.section6.title' | translate }}
+                </a>
               </li>
-              <li><a (click)="closeMobileMenuOnClick()" routerLink="service/7" routerLinkActive="bg-[#b3a16c]"
-                  class="block px-4 py-2 hover:bg-gray-100 text-slate-900">{{ 'services.section7.title' | translate }}</a>
+              <li>
+                <a (click)="closeMobileMenuOnClick()" routerLink="service/7" routerLinkActive="bg-[#b3a16c] text-white"
+                  [routerLinkActiveOptions]="{exact: true}"
+                  class="block px-3.5 py-2.5 rounded-lg hover:bg-gray-100 hover:text-[#b3a16c] whitespace-nowrap transition-colors duration-150 ease-in-out">
+                  {{ 'services.section7.title' | translate }}
+                </a>
               </li>
-              <li><a (click)="closeMobileMenuOnClick()" routerLink="service/8" routerLinkActive="bg-[#b3a16c]"
-                  class="block px-4 py-2 hover:bg-gray-100 text-slate-900">{{ 'services.section8.title' | translate }}</a>
+              <li>
+                <a (click)="closeMobileMenuOnClick()" routerLink="service/8" routerLinkActive="bg-[#b3a16c] text-white"
+                  [routerLinkActiveOptions]="{exact: true}"
+                  class="block px-3.5 py-2.5 rounded-lg hover:bg-gray-100 hover:text-[#b3a16c] whitespace-nowrap transition-colors duration-150 ease-in-out">
+                  {{ 'services.section8.title' | translate }}
+                </a>
               </li>
-              <li><a (click)="closeMobileMenuOnClick()" routerLink="service/9" routerLinkActive="bg-[#b3a16c]"
-                  class="block px-4 py-2 hover:bg-gray-100 text-slate-900">{{ 'services.section9.title' | translate }}</a>
+              <li>
+                <a (click)="closeMobileMenuOnClick()" routerLink="service/9" routerLinkActive="bg-[#b3a16c] text-white"
+                  [routerLinkActiveOptions]="{exact: true}"
+                  class="block px-3.5 py-2.5 rounded-lg hover:bg-gray-100 hover:text-[#b3a16c] whitespace-nowrap transition-colors duration-150 ease-in-out">
+                  {{ 'services.section9.title' | translate }}
+                </a>
               </li>
             </ul>
           </div>

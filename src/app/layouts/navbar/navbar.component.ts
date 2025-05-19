@@ -16,6 +16,7 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
     TranslatePipe, // ضروري لـ  `translate` pipe
     RouterLink,
     RouterLinkActive
+
   ],
   standalone: true,
   templateUrl: './navbar.component.html',
