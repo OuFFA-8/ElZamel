@@ -18,7 +18,7 @@ export class EventDataService {
   workItems: WorkItem[] = [ 
     {
       id: 1, 
-      imageUrl:'/images/event.png',
+      imageUrl:'/images/event.webp',
       date: 'event.item1.date',
       category: 'event.item1.category',
       title: 'event.item1.title',
@@ -27,7 +27,7 @@ export class EventDataService {
     },
     {
       id: 2, 
-      imageUrl: '/images/black-white-view-theatre.jpg',
+      imageUrl: '/images/black-white-view-theatre.webp',
       date: 'event.item2.date',
       category: 'event.item2.category',
       title: 'event.item2.title',
@@ -36,7 +36,7 @@ export class EventDataService {
     },
     {
       id: 3,
-      imageUrl: '/images/event.png',
+      imageUrl: '/images/event.webp',
       date: 'event.item3.date',
       category: 'event.item3.category',
       title: 'event.item3.title',

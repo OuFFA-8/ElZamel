@@ -1,5 +1,5 @@
 <div>
-  <div class="hidden md:flex w-full md:h-[67vh] overflow-hidden flex-col md:flex-row">
+  <div class="hidden md:flex w-full md:h-[75vh] overflow-hidden flex-col md:flex-row">
     @for (section of sections; track section.id) {
     <div
       class="section-item relative w-full md:w-auto md:h-full cursor-pointer overflow-hidden flex-shrink-0 basis-auto md:basis-[70px] border-b md:border-b-0 md:border-l border-white/10 last:border-b-0 md:last:border-l min-h-[70px] md:min-h-0"
@@ -20,7 +20,7 @@
         </div> -->
       </div>
       <div
-        class="item-content relative md:absolute md:inset-0 w-full h-0 md:h-full p-0 md:px-10 md:py-6 box-border opacity-100 md:opacity-0 scale-100 md:scale-95 pointer-events-auto md:pointer-events-none bg-transparent overflow-hidden md:overflow-y-auto">
+        class="item-content relative md:absolute md:inset-0 w-full h-0 md:h-full p-0 md:px-10 md:py-12 box-border opacity-100 md:opacity-0 scale-100 md:scale-95 pointer-events-auto md:pointer-events-none bg-transparent overflow-hidden md:overflow-y-auto">
         <div
           class="content-inner flex flex-col md:flex-row gap-8 md:gap-8 md:items-start h-auto md:h-full pt-8 md:pt-0 pb-8 md:pb-0 px-5 md:px-0 opacity-0 md:opacity-100">
           <div class="content-image  text-center mx-auto md:mx-0 mb-5 md:mb-0 bg-gray-400">
@@ -87,7 +87,7 @@
     @if (selectedSection) {
     <div class="mobile-specific-content p-6 w-full min-h-screen">
       <div class="content-image text-center mx-auto mb-5 w-full ">
-        <img src="/images/black-white-view-theatre.jpg" [alt]="selectedSection.contentTitle"
+        <img src="/images/black-white-view-theatre.webp" [alt]="selectedSection.contentTitle"
           class="max-w-full h-auto max-h-[40vh] w-full object-contain rounded-lg">
       </div>
       <div class="content-text flex-1 text-center">

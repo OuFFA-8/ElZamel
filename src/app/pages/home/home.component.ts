@@ -5,6 +5,7 @@ import { TimelineComponent } from "../timeline/timeline.component";
 import { TranslatePipe } from '@ngx-translate/core';
 import { NavbarComponent } from "../../layouts/navbar/navbar.component";
 import { RouterLink } from '@angular/router';
+import { AnimateOnScrollDirective } from '../../shared/directives/animate-on-scroll.directive';
 
 interface Logo {
   id: number;
@@ -15,7 +16,7 @@ interface Logo {
 
 @Component({
   selector: 'app-home',
-  imports: [CarouselComponent, CommonModule, TimelineComponent, TranslatePipe, RouterLink],
+  imports: [CarouselComponent, CommonModule, TimelineComponent, TranslatePipe, RouterLink ,AnimateOnScrollDirective ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -104,10 +105,10 @@ export class HomeComponent implements AfterViewInit {
 
 
   readonly logos = signal<Logo[]>([
-    { id: 1, src: '/images/logo-1.png', alt: 'شعار 1' },
-    { id: 2, src: '/images/logo-2.png', alt: 'شعار 2' },
-    { id: 3, src: '/images/logo-3.png', alt: 'شعار 3' },
-    { id: 4, src: '/images/logo-4.png', alt: 'شعار 4' }
+    { id: 1, src: '/images/logo-1.webp', alt: 'شعار 1' },
+    { id: 2, src: '/images/logo-2.webp', alt: 'شعار 2' },
+    { id: 3, src: '/images/logo-3.webp', alt: 'شعار 3' },
+    { id: 4, src: '/images/logo-4.webp', alt: 'شعار 4' }
   ]);
 
   readonly duplicatedLogos = computed(() => {

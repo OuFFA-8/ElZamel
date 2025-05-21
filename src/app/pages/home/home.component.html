@@ -14,7 +14,7 @@
                 class="fa-solid fa-angle-up fa-rotate-90 "></i></span></button>
         </div>
       </div>
-      <img src="/images/LAW2.png" class="w-full object-cover h-[250px] sm:h-[300px] md:h-[350px]" alt="Law Firm Image">
+      <img src="/images/LAW2.webp" class="w-full object-cover h-[250px] sm:h-[300px] md:h-[350px]" alt="Law Firm Image">
     </div>
 
     <app-timeline></app-timeline>
@@ -22,11 +22,14 @@
   </div>
 </section> -->
 
-<app-timeline ></app-timeline>
+<app-timeline appAnimateOnScroll animationClass="animate-fade-in-up"
+  class=" bg-[#a39669] opacity-0">
+</app-timeline>
 
 
 
-<section class="our-section w-full min-h-72 py-12 sm:py-16 md:py-20 bg-cover bg-center bg-no-repeat">
+<section appAnimateOnScroll animationClass="animate-fade-in-up"
+  class=" bg-[#a39669] opacity-0" class="our-section w-full min-h-72 py-12 sm:py-16 md:py-20 bg-cover bg-center bg-no-repeat">
   <div class="m-section container mx-auto px-4">
 
     <h2 class="text-3xl sm:text-4xl md:text-5xl text-[#a39669] mb-5 font-bold pb-6 md:pb-10"> <span
@@ -48,11 +51,11 @@
 
             <div class="flex flex-grow items-center justify-center gap-2 ">
               <span class="text-base sm:text-md">{{'services.section1.title' | translate}}</span>
-              
+
             </div>
             <i class="fa-solid fa-arrow-up fa-rotate-by text-3xl md:text-4xl duration-500 flex-shrink-0"
-                [class.rotate-[225deg]]="open1" [class.text-[#a39669]]="open1" [class.text-white]="!open1"
-                style="--fa-rotate-angle: 45deg;"></i>
+              [class.rotate-[225deg]]="open1" [class.text-[#a39669]]="open1" [class.text-white]="!open1"
+              style="--fa-rotate-angle: 45deg;"></i>
 
             <div class="absolute bottom-1 left-0 right-0 h-px z-0 duration-1000" [class.bg-[#a39669]]="open1"
               [class.bg-white]="!open1">
@@ -83,11 +86,11 @@
 
             <div class="flex-grow flex justify-center items-center ">
               <span class="text-base sm:text-lg md:text-lg">{{'services.section2.title' | translate}}</span>
-              
+
             </div>
             <i class="fa-solid fa-arrow-up fa-rotate-by font text-3xl md:text-4xl duration-500 flex-shrink-0"
-                [class.rotate-[225deg]]="open2" [class.text-[#a39669]]="open2" [class.text-white]="!open2"
-                style="--fa-rotate-angle: 45deg;"></i>
+              [class.rotate-[225deg]]="open2" [class.text-[#a39669]]="open2" [class.text-white]="!open2"
+              style="--fa-rotate-angle: 45deg;"></i>
 
             <div class="absolute bottom-1 left-0 right-0 h-px z-0 duration-1000" [class.bg-[#a39669]]="open2"
               [class.bg-white]="!open2"></div>
@@ -115,11 +118,11 @@
 
             <div class="flex-grow flex justify-center items-center mx-2">
               <span class="text-base sm:text-lg">{{'services.section4.title' | translate}}</span>
-              
+
             </div>
             <i class="fa-solid fa-arrow-up fa-rotate-by font text-3xl md:text-4xl duration-500 flex-shrink-0"
-                [class.rotate-[225deg]]="open4" [class.text-[#a39669]]="open4" [class.text-white]="!open4"
-                style="--fa-rotate-angle: 45deg;"></i>
+              [class.rotate-[225deg]]="open4" [class.text-[#a39669]]="open4" [class.text-white]="!open4"
+              style="--fa-rotate-angle: 45deg;"></i>
 
             <div class="absolute bottom-1 left-0 right-0 h-px z-0 duration-1000" [class.bg-[#a39669]]="open4"
               [class.bg-white]="!open4">
@@ -148,11 +151,11 @@
 
             <div class="flex-grow flex justify-center items-center ">
               <span class="text-base sm:text-md">{{'services.section6.title' | translate}}</span>
-              
+
             </div>
             <i class="fa-solid fa-arrow-up fa-rotate-by font text-3xl md:text-4xl duration-500 flex-shrink-0"
-                [class.rotate-[225deg]]="open6" [class.text-[#a39669]]="open6" [class.text-white]="!open6"
-                style="--fa-rotate-angle: 45deg;"></i>
+              [class.rotate-[225deg]]="open6" [class.text-[#a39669]]="open6" [class.text-white]="!open6"
+              style="--fa-rotate-angle: 45deg;"></i>
 
             <div class="absolute bottom-1 left-0 right-0 h-px z-0 duration-1000" [class.bg-[#a39669]]="open6"
               [class.bg-white]="!open6">
@@ -180,11 +183,11 @@
             </div>
             <div class="flex-grow flex justify-center items-center mx-2">
               <span class="text-base sm:text-lg md:text-xl">{{'services.section3.title' | translate}}</span>
-              
+
             </div>
             <i class="fa-solid fa-arrow-up fa-rotate-by font text-3xl md:text-4xl duration-500 flex-shrink-0"
-                [class.rotate-[225deg]]="open3" [class.text-[#a39669]]="open3" [class.text-white]="!open3"
-                style="--fa-rotate-angle: 45deg;"></i>
+              [class.rotate-[225deg]]="open3" [class.text-[#a39669]]="open3" [class.text-white]="!open3"
+              style="--fa-rotate-angle: 45deg;"></i>
             <div class="absolute bottom-1 left-0 right-0 h-px z-0 duration-1000" [class.bg-[#a39669]]="open3"
               [class.bg-white]="!open3"></div>
           </div>
@@ -208,11 +211,11 @@
             </div>
             <div class="flex-grow flex justify-center items-center mx-2">
               <span class="text-base sm:text-lg md:text-xl">{{'services.section5.title' | translate}}</span>
-              
+
             </div>
             <i class="fa-solid fa-arrow-up fa-rotate-by font text-3xl md:text-4xl duration-500 flex-shrink-0"
-                [class.rotate-[225deg]]="open5" [class.text-[#a39669]]="open5" [class.text-white]="!open5"
-                style="--fa-rotate-angle: 45deg;"></i>
+              [class.rotate-[225deg]]="open5" [class.text-[#a39669]]="open5" [class.text-white]="!open5"
+              style="--fa-rotate-angle: 45deg;"></i>
             <div class="absolute bottom-1 left-0 right-0 h-px z-0 duration-1000" [class.bg-[#a39669]]="open5"
               [class.bg-white]="!open5"></div>
           </div>
@@ -236,11 +239,11 @@
             </div>
             <div class="flex-grow flex justify-center items-center mx-2">
               <span class="text-base sm:text-lg md:text-xl">{{'services.section7.title' | translate}}</span>
-              
+
             </div>
             <i class="fa-solid fa-arrow-up fa-rotate-by font text-3xl md:text-4xl duration-500 flex-shrink-0"
-                [class.rotate-[225deg]]="open7" [class.text-[#a39669]]="open7" [class.text-white]="!open7"
-                style="--fa-rotate-angle: 45deg;"></i>
+              [class.rotate-[225deg]]="open7" [class.text-[#a39669]]="open7" [class.text-white]="!open7"
+              style="--fa-rotate-angle: 45deg;"></i>
             <div class="absolute bottom-1 left-0 right-0 h-px z-0 duration-1000" [class.bg-[#a39669]]="open7"
               [class.bg-white]="!open7"></div>
           </div>
@@ -258,14 +261,15 @@
 
     </div>
     <div class=" flex justify-end text-[#a39669] mt-8 md:mt-10">
-      <button routerLink="/services" class=" text-lg sm:text-xl font-bold hover:underline ">{{'timeline.button' | translate}} <span><i
-            class="fa-solid fa-angle-up fa-rotate-90 "></i></span></button>
+      <button routerLink="/services" class=" text-lg sm:text-xl font-bold hover:underline ">{{'timeline.button' |
+        translate}} <span><i class="fa-solid fa-angle-up fa-rotate-90 "></i></span></button>
     </div>
 
   </div>
 </section>
 
-<section class=" py-10  bg-[#a39669]">
+<section appAnimateOnScroll animationClass="animate-fade-in-up"
+  class=" bg-[#a39669] opacity-0" class=" py-10  bg-[#a39669]">
   <div id="counterSection"
     class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center">
 
@@ -293,43 +297,34 @@
   </div>
 </section>
 
-<section class="bg-white w-full container mx-auto px-4 pt-10">
+<section appAnimateOnScroll animationClass="animate-fade-in-up"
+  class=" bg-[#a39669] opacity-0" class="bg-white w-full container mx-auto px-4 pt-10">
 
   <h2 class="text-3xl sm:text-4xl md:text-5xl text-[#061933] mb-5 font-bold pb-6 md:pb-10"> {{'title3' | translate}}
   </h2>
 
 
- 
+
 </section>
 
-<div class="relative w-full overflow-hidden bg-white pb-10 group" dir="ltr">
-  <div class="absolute left-0 top-0 h-full w-20 md:w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
-  <div class="absolute right-0 top-0 h-full w-20 md:w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+<div  class="relative w-full overflow-hidden bg-white pb-10 group" dir="ltr">
+  <div
+    class="absolute left-0 top-0 h-full w-20 md:w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none">
+  </div>
+  <div
+    class="absolute right-0 top-0 h-full w-20 md:w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none">
+  </div>
 
   <div
     class="flex w-max animate-scroll-continuous items-center gap-x-12 sm:gap-x-16 md:gap-x-20 group-hover:[animation-play-state:paused]"
-    role="marquee"
-    aria-label="شركاؤنا ورعاتنا"
-    [style.--logo-count]="logoCount()"
-    [style.--animation-duration]="animationDuration()"
-  >
+    role="marquee" aria-label="شركاؤنا ورعاتنا" [style.--logo-count]="logoCount()"
+    [style.--animation-duration]="animationDuration()">
     <!-- نعرض الشعارات المكررة (مرتين) -->
     @for (logo of duplicatedLogos(); track logo.id + '-' + $index) {
-      <div class="shrink-0">
-        <img
-          [src]="logo.src"
-          [alt]="logo.alt"
-          class="h-12 md:h-16 w-auto max-w-none object-contain"
-          loading="lazy"
-          height="64"
-          width="150"
-        />
-      </div>
+    <div class="shrink-0">
+      <img [src]="logo.src" [alt]="logo.alt" class="h-12 md:h-16 w-auto max-w-none object-contain" loading="lazy"
+        height="64" width="150" />
+    </div>
     }
   </div>
 </div>
-
-
-
-
-
