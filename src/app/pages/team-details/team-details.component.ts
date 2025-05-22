@@ -36,6 +36,25 @@ export class TeamDetailsComponent implements OnInit {
       }
     });
   }
+  isLinkedInInfoVisible = false;
+  isContactInfoVisible = false;
+
+
+    toggleInfo(type: 'linkedin' | 'contact'): void {
+    if (type === 'linkedin') {
+      this.isLinkedInInfoVisible = !this.isLinkedInInfoVisible;
+      // اختيارى: إغلاق المعلومات الأخرى عند فتح واحدة
+      if (this.isLinkedInInfoVisible) {
+        this.isContactInfoVisible = false;
+      }
+    } else if (type === 'contact') {
+      this.isContactInfoVisible = !this.isContactInfoVisible;
+      // اختيارى: إغلاق المعلومات الأخرى عند فتح واحدة
+      if (this.isContactInfoVisible) {
+        this.isLinkedInInfoVisible = false;
+      }
+    }
+  }
 
 
 }
