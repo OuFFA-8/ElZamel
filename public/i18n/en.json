@@ -389,5 +389,11 @@
             "title4": "Call Us Today:",
             "span4": "920009756"
         }
+    },
+    "counter": {
+        "1": "Team Members",
+        "2": "Legal Consultations",
+        "3": "Resolved Cases",
+        "4": "Clients"
     }
 }

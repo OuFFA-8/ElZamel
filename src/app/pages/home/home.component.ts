@@ -61,6 +61,7 @@ export class HomeComponent implements AfterViewInit {
   counter1 = 0;
   counter2 = 0;
   counter3 = 0;
+  counter4 = 0;
   private hasAnimated = false;
 
 
@@ -85,12 +86,13 @@ export class HomeComponent implements AfterViewInit {
   }
 
   startCounter() {
-    this.animateValue('counter1', 320, 2000);
-    this.animateValue('counter2', 320, 2000);
-    this.animateValue('counter3', 320, 2000);
+    this.animateValue('counter1', 45, 2000);
+    this.animateValue('counter2', 10000, 2000);
+    this.animateValue('counter3', 1400, 2000);
+    this.animateValue('counter4', 1000, 2000);
   }
 
-  animateValue(counterName: 'counter1' | 'counter2' | 'counter3', end: number, duration: number) {
+  animateValue(counterName: 'counter1' | 'counter2' | 'counter3' | 'counter4', end: number, duration: number) {
     let start = 0;
     const stepTime = Math.abs(Math.floor(duration / end));
     const timer = setInterval(() => {
