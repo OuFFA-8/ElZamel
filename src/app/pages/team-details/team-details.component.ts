@@ -1,5 +1,5 @@
 import { Component, OnInit, inject } from '@angular/core';
-import { ActivatedRoute } from '@angular/router'; 
+import { ActivatedRoute, RouterLink } from '@angular/router'; 
 import { TranslatePipe } from '@ngx-translate/core';
 import { Section, TeamDataService } from '../../core/services/team-data/team-data.service';
 import { Location } from '@angular/common';
@@ -8,7 +8,8 @@ import { Location } from '@angular/common';
   selector: 'app-team-details',
   standalone: true,
   imports: [
-    TranslatePipe
+    TranslatePipe,
+    RouterLink
   ],
   templateUrl: './team-details.component.html',
   styleUrls: ['./team-details.component.css']

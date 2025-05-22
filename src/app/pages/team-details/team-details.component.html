@@ -34,7 +34,7 @@
                 [class.mt-2]="isLinkedInInfoVisible" [class.max-h-0]="!isLinkedInInfoVisible"
                 [class.opacity-0]="!isLinkedInInfoVisible" [class.mt-0]="!isLinkedInInfoVisible"
                 [class.p-0]="!isLinkedInInfoVisible">
-                <a href="YOUR_LINKEDIN_URL" target="_blank" class="text-blue-600 hover:underline">
+                <a href="https://www.linkedin.com/company/zk-legal/?originalSubdomain=sa" target="_blank" class="text-blue-600 hover:underline">
                   ملفي على LinkedIn
                 </a>
                 <p class="text-xs text-gray-500 mt-1">اضغط للإغلاق</p>
@@ -63,9 +63,9 @@
                 [class.mt-2]="isContactInfoVisible" [class.max-h-0]="!isContactInfoVisible"
                 [class.opacity-0]="!isContactInfoVisible" [class.mt-0]="!isContactInfoVisible"
                 [class.p-0]="!isContactInfoVisible">
-                <p>Email: <a href="mailto:example@example.com"
-                    class="text-blue-600 hover:underline">exampleexample.com</a></p>
-                <p>Phone: <a href="tel:+123456789" class="text-blue-600 hover:underline">+123456789</a></p>
+                <p>Email: <a href={{member.email}}
+                    class="text-blue-600 hover:underline">{{member.email}}</a></p>
+                <p>Phone: <a href={{member.phone}} class="text-blue-600 hover:underline">{{member.phone}}</a></p>
                 <p class="text-xs text-gray-500 mt-1">اضغط للإغلاق</p>
               </div>
             </div>
@@ -87,7 +87,7 @@
           <div class="text-base text-gray-700 leading-relaxed space-y-4 text-justify">
             <p>{{ (member.contentText) | translate }}</p>
           </div>
-          <button
+          <button routerLink="/contact"
             class="bg-[#b3a16c] text-white font-semibold py-2 px-6 rounded-full mt-6 hover:bg-[#85784f] transition">
             {{'form.connect' | translate}}
           </button>
