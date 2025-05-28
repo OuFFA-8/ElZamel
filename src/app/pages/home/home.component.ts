@@ -16,7 +16,7 @@ interface Logo {
 
 @Component({
   selector: 'app-home',
-  imports: [CarouselComponent, CommonModule, TimelineComponent, TranslatePipe, RouterLink ,AnimateOnScrollDirective ],
+  imports: [CarouselComponent, CommonModule, TimelineComponent, TranslatePipe, RouterLink, AnimateOnScrollDirective],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -93,16 +93,21 @@ export class HomeComponent implements AfterViewInit {
   }
 
   animateValue(counterName: 'counter1' | 'counter2' | 'counter3' | 'counter4', end: number, duration: number) {
-    let start = 0;
-    const stepTime = Math.abs(Math.floor(duration / end));
+    const steps = 100; // عدد الخطوات
+    let currentStep = 0;
+    const increment = end / steps;
+    const stepTime = duration / steps;
+
     const timer = setInterval(() => {
-      start++;
-      (this as any)[counterName] = start;
-      if (start >= end) {
+      currentStep++;
+      (this as any)[counterName] = Math.round(increment * currentStep);
+      if (currentStep >= steps) {
+        (this as any)[counterName] = end; // لضمان أن الرقم النهائي مضبوط 100%
         clearInterval(timer);
       }
     }, stepTime);
   }
+
 
 
 
@@ -116,7 +121,7 @@ export class HomeComponent implements AfterViewInit {
   readonly duplicatedLogos = computed(() => {
     const currentLogos = this.logos();
     if (!Array.isArray(currentLogos) || currentLogos.length === 0) {
-      return []; 
+      return [];
     }
     return [...currentLogos, ...currentLogos];
   });
