@@ -115,7 +115,9 @@ export class HomeComponent implements AfterViewInit {
     { id: 1, src: '/images/logo-1.webp', alt: 'شعار 1' },
     { id: 2, src: '/images/logo-2.webp', alt: 'شعار 2' },
     { id: 3, src: '/images/logo-3.webp', alt: 'شعار 3' },
-    { id: 4, src: '/images/logo-4.webp', alt: 'شعار 4' }
+    { id: 4, src: '/images/logo-4.webp', alt: 'شعار 4' },
+    { id: 5, src: '/images/logo-5.webp', alt: 'شعار 5' },
+    { id: 6, src: '/images/logo-6.webp', alt: 'شعار 6' },
   ]);
 
   readonly duplicatedLogos = computed(() => {
