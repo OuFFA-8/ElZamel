@@ -319,7 +319,7 @@
     class="flex w-max animate-scroll-continuous items-center gap-x-12 sm:gap-x-16 md:gap-x-20 group-hover:[animation-play-state:paused]"
     role="marquee" aria-label="شركاؤنا ورعاتنا" [style.--logo-count]="logoCount()"
     [style.--animation-duration]="animationDuration()">
-    <!-- نعرض الشعارات المكررة (مرتين) -->
+
     @for (logo of duplicatedLogos(); track logo.id + '-' + $index) {
     <div class="shrink-0">
       <img [src]="logo.src" [alt]="logo.alt" class="h-12 md:h-16 w-auto max-w-none object-contain" loading="lazy"
