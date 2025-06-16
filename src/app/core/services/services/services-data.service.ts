@@ -63,7 +63,7 @@ export class ServicesDataService {
       image3: '/images/black-white-view-theatre.webp'
     },
     {
-      id: 2, iconClass: 'fas fa-pen-fancy',
+      id: 2, iconClass: 'fas fa-house-chimney',
       title: 'services.section2.title',
       shortDescription: 'services.section2.span',
       bannerImageUrl: '/images/black-white-view-theatre.webp',
@@ -88,7 +88,7 @@ export class ServicesDataService {
       span4: 'services.section3.span4',
     },
     {
-      id: 4, iconClass: 'fas fa-user-injured',
+      id: 4, iconClass: 'fas fa-gavel',
       title: 'services.section4.title',
       shortDescription: 'services.section4.span',
       bannerImageUrl: '/images/black-white-view-theatre.webp',
@@ -106,7 +106,7 @@ export class ServicesDataService {
       span10: 'services.section4.span10'
     },
     {
-      id: 5, iconClass: 'fas fa-certificate',
+      id: 5, iconClass: 'fas fa-coins',
       title: 'services.section5.title',
       shortDescription: 'services.section5.span',
       bannerImageUrl: '/images/black-white-view-theatre.webp',
@@ -120,7 +120,7 @@ export class ServicesDataService {
       span6: 'services.section5.span6',
     },
     {
-      id: 6, iconClass: 'fas fa-university',
+      id: 6, iconClass: 'fas fa-file-contract',
       title: 'services.section6.title',
       shortDescription: 'services.section6.span',
       bannerImageUrl: '/images/black-white-view-theatre.webp',
@@ -136,7 +136,7 @@ export class ServicesDataService {
       contentSection7Body: 'services.section6.paragraph7',
     },
     {
-      id: 7, iconClass: 'fas fa-book-open',
+      id: 7, iconClass: 'fa-solid fa-people-roof',
       title: 'services.section7.title',
       shortDescription: 'services.section7.span',
       bannerImageUrl: '/images/black-white-view-theatre.webp',
@@ -173,7 +173,7 @@ export class ServicesDataService {
       span13: 'services.section8.span13',
     },
     {
-      id: 9, iconClass: 'fas fa-book-open',
+      id: 9, iconClass: 'fas fa-book',
       title: 'services.section9.title',
       shortDescription: 'services.section9.span',
       bannerImageUrl: '/images/black-white-view-theatre.webp',

@@ -35,6 +35,8 @@ export class HomeComponent implements AfterViewInit {
   open5 = false;
   open6 = false;
   open7 = false;
+  open8 = false;
+  open9 = false;
 
   toggleOpen1() {
     this.open1 = !this.open1;
@@ -56,6 +58,12 @@ export class HomeComponent implements AfterViewInit {
   }
   toggleOpen7() {
     this.open7 = !this.open7;
+  }
+  toggleOpen8() {
+    this.open8 = !this.open8;
+  }
+  toggleOpen9() {
+    this.open9 = !this.open9;
   }
 
   counter1 = 0;

@@ -61,6 +61,10 @@ export class AppComponent implements OnInit {
         initFlowbite();
       });
 
+      window.addEventListener('load', () => {
+        setTimeout(() => this.loadingService.hide(), 1000); // ممكن تعدل التأخير حسب الحركة
+      });
+
       // --- منطق شاشة التحميل مع scrollToTop ---
       this.router.events
         .pipe(
@@ -86,12 +90,12 @@ export class AppComponent implements OnInit {
 
             window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
             // اخف اللودر بعد تأخير بسيط
-            setTimeout(() => this.loadingService.hide(), 250);
+            setTimeout(() => this.loadingService.hide(), 1000);
           } else if (event instanceof NavigationCancel || event instanceof NavigationError) {
             // في حالة الإلغاء أو الخطأ، اخف اللودر أيضًا
             console.log('Hiding loader due to NavigationCancel/Error'); // <<< أضف هذا السطر
 
-            setTimeout(() => this.loadingService.hide(), 250);
+            setTimeout(() => this.loadingService.hide(), 1000);
           }
         });
 

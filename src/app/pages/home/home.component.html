@@ -22,23 +22,22 @@
   </div>
 </section> -->
 
-<app-timeline appAnimateOnScroll animationClass="animate-fade-in-up"
-  class=" bg-[#a39669] opacity-0">
+<app-timeline appAnimateOnScroll animationClass="animate-fade-in-up" class=" bg-[#a39669] opacity-0">
 </app-timeline>
 
 
 
-<section appAnimateOnScroll animationClass="animate-fade-in-up"
-  class=" bg-[#a39669] opacity-0" class="our-section w-full min-h-72 py-12 sm:py-16 md:py-20 bg-cover bg-center bg-no-repeat">
+<section appAnimateOnScroll animationClass="animate-fade-in-up" class=" bg-[#a39669] opacity-0"
+  class="our-section w-full min-h-72 py-12 sm:py-16 md:py-20 bg-cover bg-center bg-no-repeat">
   <div class="m-section container mx-auto px-4">
 
     <h2 class="text-3xl sm:text-4xl md:text-5xl text-[#a39669] mb-5 font-bold pb-6 md:pb-10"> <span
-        class="text-3xl sm:text-4xl md:text-5xl"><i class="fa-solid fa-gavel"></i></span> {{'navbar.services.main' |
+        class="text-3xl sm:text-4xl md:text-5xl"><i class="fas fa-scale-balanced"></i></span> {{'navbar.services.main' |
       translate}} </h2>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 ">
 
-      <div class="group/1">
+      <!-- <div class="group/1">
         <div class="1" (click)="toggleOpen1()">
           <div class="relative text-white flex cursor-pointer items-center">
             <div class="relative">
@@ -71,21 +70,53 @@
           </div>
           }
         </div>
-      </div>
+      </div> -->
 
-      <div class="group/2 space-y-8 md:space-y-10">
-        <div class="2">
-          <div class="relative text-white flex  w-full cursor-pointer items-center" (click)="toggleOpen2()">
+      <div class="group/1 space-y-8 md:space-y-10">
+        <div class="1">
+          <div class="relative text-white flex  w-full cursor-pointer items-center" (click)="toggleOpen1()">
             <div class="flex-shrink-0 relative">
-              <span class="text-4xl md:text-5xl font-bold relative z-10 duration-1000" [class.text-[#a39669]]="open2"
-                [class.text-white]="!open2">
-                02
+              <span class="text-4xl md:text-5xl font-bold relative z-10 duration-1000" [class.text-[#a39669]]="open1"
+                [class.text-white]="!open1">
+                1
               </span>
               <div class="absolute bottom-1 left-0 right-0 h-px bg-white z-0"></div>
             </div>
 
             <div class="flex-grow flex justify-center items-center ">
-              <span class="text-base sm:text-lg md:text-lg">{{'services.section2.title' | translate}}</span>
+              <span class="text-base sm:text-lg md:text-lg">{{'services.section1.title' | translate}}</span>
+
+            </div>
+            <i class="fa-solid fa-arrow-up fa-rotate-by font text-3xl md:text-4xl duration-500 flex-shrink-0"
+              [class.rotate-[225deg]]="open1" [class.text-[#a39669]]="open1" [class.text-white]="!open1"
+              style="--fa-rotate-angle: 45deg;"></i>
+
+            <div class="absolute bottom-1 left-0 right-0 h-px z-0 duration-1000" [class.bg-[#a39669]]="open1"
+              [class.bg-white]="!open1"></div>
+          </div>
+
+          @if (open1) {
+          <div class="p-3 bg-gray-100 rounded-lg mt-2 transition-all duration-500 ease-out w-full
+                        opacity-0 -translate-y-4 animate-fadeDown">
+            <p class="text-sm text-black">
+              {{'services.section1.span' | translate}}
+            </p>
+          </div>
+          }
+        </div>
+
+        <div class="2">
+          <div class="relative text-white flex  w-full cursor-pointer items-center" (click)="toggleOpen2()">
+            <div class="flex-shrink-0 relative">
+              <span class="text-4xl md:text-5xl font-bold relative z-10 duration-1000" [class.text-[#a39669]]="open2"
+                [class.text-white]="!open2">
+                2
+              </span>
+              <div class="absolute bottom-1 left-0 right-0 h-px bg-white z-0"></div>
+            </div>
+
+            <div class="flex-grow flex justify-center items-center mx-2">
+              <span class="text-base sm:text-lg">{{'services.section2.title' | translate}}</span>
 
             </div>
             <i class="fa-solid fa-arrow-up fa-rotate-by font text-3xl md:text-4xl duration-500 flex-shrink-0"
@@ -93,31 +124,67 @@
               style="--fa-rotate-angle: 45deg;"></i>
 
             <div class="absolute bottom-1 left-0 right-0 h-px z-0 duration-1000" [class.bg-[#a39669]]="open2"
-              [class.bg-white]="!open2"></div>
+              [class.bg-white]="!open2">
+            </div>
           </div>
 
           @if (open2) {
           <div class="p-3 bg-gray-100 rounded-lg mt-2 transition-all duration-500 ease-out w-full
-                        opacity-0 -translate-y-4 animate-fadeDown">
+                          opacity-0 -translate-y-4 animate-fadeDown">
             <p class="text-sm text-black">
-              {{'navbar.services.par2' | translate}}
+              {{'services.section2.span' | translate}}
             </p>
           </div>
           }
         </div>
 
+        <div class="3">
+          <div class="relative text-white flex w-full cursor-pointer items-center" (click)="toggleOpen3()">
+            <div class="flex-shrink-0 relative">
+              <span class="text-4xl md:text-5xl font-bold relative z-10 duration-1000" [class.text-[#a39669]]="open3"
+                [class.text-white]="!open3">
+                3
+              </span>
+              <div class="absolute bottom-1 left-0 right-0 h-px bg-white z-0"></div>
+            </div>
+
+            <div class="flex-grow flex justify-center items-center ">
+              <span class="text-base sm:text-md">{{'services.section3.title' | translate}}</span>
+
+            </div>
+            <i class="fa-solid fa-arrow-up fa-rotate-by font text-3xl md:text-4xl duration-500 flex-shrink-0"
+              [class.rotate-[225deg]]="open3" [class.text-[#a39669]]="open3" [class.text-white]="!open3"
+              style="--fa-rotate-angle: 45deg;"></i>
+
+            <div class="absolute bottom-1 left-0 right-0 h-px z-0 duration-1000" [class.bg-[#a39669]]="open3"
+              [class.bg-white]="!open3">
+            </div>
+          </div>
+
+          @if (open3) {
+          <div class="p-3 bg-gray-100 rounded-lg mt-2 transition-all duration-500 ease-out w-full
+                opacity-0 -translate-y-4 animate-fadeDown">
+            <p class="text-sm text-black">
+              {{'services.section3.span' | translate}}
+            </p>
+          </div>
+          }
+        </div>
+      </div>
+
+      <div class="group/2 space-y-8 md:space-y-10">
         <div class="4">
           <div class="relative text-white flex  w-full cursor-pointer items-center" (click)="toggleOpen4()">
             <div class="flex-shrink-0 relative">
               <span class="text-4xl md:text-5xl font-bold relative z-10 duration-1000" [class.text-[#a39669]]="open4"
                 [class.text-white]="!open4">
-                04
+                4
               </span>
               <div class="absolute bottom-1 left-0 right-0 h-px bg-white z-0"></div>
             </div>
 
-            <div class="flex-grow flex justify-center items-center mx-2">
-              <span class="text-base sm:text-lg">{{'services.section4.title' | translate}}</span>
+            <div class="flex-grow flex justify-center items-center ">
+              <span class="text-base sm:text-lg md:text-lg">{{'services.section4.title' | translate}}</span>
 
             </div>
             <i class="fa-solid fa-arrow-up fa-rotate-by font text-3xl md:text-4xl duration-500 flex-shrink-0"
@@ -125,15 +192,47 @@
               style="--fa-rotate-angle: 45deg;"></i>
 
             <div class="absolute bottom-1 left-0 right-0 h-px z-0 duration-1000" [class.bg-[#a39669]]="open4"
-              [class.bg-white]="!open4">
-            </div>
+              [class.bg-white]="!open4"></div>
           </div>
 
           @if (open4) {
           <div class="p-3 bg-gray-100 rounded-lg mt-2 transition-all duration-500 ease-out w-full
+                        opacity-0 -translate-y-4 animate-fadeDown">
+            <p class="text-sm text-black">
+              {{'services.section4.span' | translate}}
+            </p>
+          </div>
+          }
+        </div>
+
+        <div class="5">
+          <div class="relative text-white flex  w-full cursor-pointer items-center" (click)="toggleOpen5()">
+            <div class="flex-shrink-0 relative">
+              <span class="text-4xl md:text-5xl font-bold relative z-10 duration-1000" [class.text-[#a39669]]="open5"
+                [class.text-white]="!open5">
+                5
+              </span>
+              <div class="absolute bottom-1 left-0 right-0 h-px bg-white z-0"></div>
+            </div>
+
+            <div class="flex-grow flex justify-center items-center mx-2">
+              <span class="text-base sm:text-lg">{{'services.section5.title' | translate}}</span>
+
+            </div>
+            <i class="fa-solid fa-arrow-up fa-rotate-by font text-3xl md:text-4xl duration-500 flex-shrink-0"
+              [class.rotate-[225deg]]="open5" [class.text-[#a39669]]="open5" [class.text-white]="!open5"
+              style="--fa-rotate-angle: 45deg;"></i>
+
+            <div class="absolute bottom-1 left-0 right-0 h-px z-0 duration-1000" [class.bg-[#a39669]]="open5"
+              [class.bg-white]="!open5">
+            </div>
+          </div>
+
+          @if (open5) {
+          <div class="p-3 bg-gray-100 rounded-lg mt-2 transition-all duration-500 ease-out w-full
                           opacity-0 -translate-y-4 animate-fadeDown">
             <p class="text-sm text-black">
-              {{'navbar.services.par4' | translate}}
+              {{'services.section5.span' | translate}}
             </p>
           </div>
           }
@@ -144,7 +243,7 @@
             <div class="flex-shrink-0 relative">
               <span class="text-4xl md:text-5xl font-bold relative z-10 duration-1000" [class.text-[#a39669]]="open6"
                 [class.text-white]="!open6">
-                06
+                6
               </span>
               <div class="absolute bottom-1 left-0 right-0 h-px bg-white z-0"></div>
             </div>
@@ -166,7 +265,7 @@
           <div class="p-3 bg-gray-100 rounded-lg mt-2 transition-all duration-500 ease-out w-full
                 opacity-0 -translate-y-4 animate-fadeDown">
             <p class="text-sm text-black">
-              {{'navbar.services.par6' | translate}}
+              {{'services.section6.span' | translate}}
             </p>
           </div>
           }
@@ -174,67 +273,11 @@
       </div>
 
       <div class="group/3 space-y-8 md:space-y-10">
-        <div class="3">
-          <div class="relative text-white flex w-full cursor-pointer items-center" (click)="toggleOpen3()">
-            <div class="flex-shrink-0 relative">
-              <span class="text-4xl md:text-5xl font-bold relative z-10 duration-1000" [class.text-[#a39669]]="open3"
-                [class.text-white]="!open3">03</span>
-              <div class="absolute bottom-1 left-0 right-0 h-px bg-white z-0"></div>
-            </div>
-            <div class="flex-grow flex justify-center items-center mx-2">
-              <span class="text-base sm:text-lg md:text-xl">{{'services.section3.title' | translate}}</span>
-
-            </div>
-            <i class="fa-solid fa-arrow-up fa-rotate-by font text-3xl md:text-4xl duration-500 flex-shrink-0"
-              [class.rotate-[225deg]]="open3" [class.text-[#a39669]]="open3" [class.text-white]="!open3"
-              style="--fa-rotate-angle: 45deg;"></i>
-            <div class="absolute bottom-1 left-0 right-0 h-px z-0 duration-1000" [class.bg-[#a39669]]="open3"
-              [class.bg-white]="!open3"></div>
-          </div>
-
-          @if (open3) {
-          <div class="p-3 bg-gray-100 rounded-lg mt-2 transition-all duration-500 ease-out w-full
-                  opacity-0 -translate-y-4 animate-fadeDown">
-            <p class="text-sm text-black">
-              {{'navbar.services.par3' | translate}}
-            </p>
-          </div>
-          }
-        </div>
-
-        <div class="5">
-          <div class="relative text-white flex w-full cursor-pointer items-center" (click)="toggleOpen5()">
-            <div class="flex-shrink-0 relative">
-              <span class="text-4xl md:text-5xl font-bold relative z-10 duration-1000" [class.text-[#a39669]]="open5"
-                [class.text-white]="!open5">05</span>
-              <div class="absolute bottom-1 left-0 right-0 h-px bg-white z-0"></div>
-            </div>
-            <div class="flex-grow flex justify-center items-center mx-2">
-              <span class="text-base sm:text-lg md:text-xl">{{'services.section5.title' | translate}}</span>
-
-            </div>
-            <i class="fa-solid fa-arrow-up fa-rotate-by font text-3xl md:text-4xl duration-500 flex-shrink-0"
-              [class.rotate-[225deg]]="open5" [class.text-[#a39669]]="open5" [class.text-white]="!open5"
-              style="--fa-rotate-angle: 45deg;"></i>
-            <div class="absolute bottom-1 left-0 right-0 h-px z-0 duration-1000" [class.bg-[#a39669]]="open5"
-              [class.bg-white]="!open5"></div>
-          </div>
-
-          @if (open5) {
-          <div class="p-3 bg-gray-100 rounded-lg mt-2 transition-all duration-500 ease-out w-full
-                  opacity-0 -translate-y-4 animate-fadeDown">
-            <p class="text-sm text-black">
-              {{'navbar.services.par5' | translate}}
-            </p>
-          </div>
-          }
-        </div>
-
-        <div class="7 ">
+        <div class="7">
           <div class="relative text-white flex w-full cursor-pointer items-center" (click)="toggleOpen7()">
             <div class="flex-shrink-0 relative">
               <span class="text-4xl md:text-5xl font-bold relative z-10 duration-1000" [class.text-[#a39669]]="open7"
-                [class.text-white]="!open7">07</span>
+                [class.text-white]="!open7">7</span>
               <div class="absolute bottom-1 left-0 right-0 h-px bg-white z-0"></div>
             </div>
             <div class="flex-grow flex justify-center items-center mx-2">
@@ -252,7 +295,63 @@
           <div class="p-3 bg-gray-100 rounded-lg mt-2 transition-all duration-500 ease-out w-full
                   opacity-0 -translate-y-4 animate-fadeDown">
             <p class="text-sm text-black">
-              {{'navbar.services.par7' | translate}}
+              {{'services.section7.span' | translate}}
+            </p>
+          </div>
+          }
+        </div>
+
+        <div class="8">
+          <div class="relative text-white flex w-full cursor-pointer items-center" (click)="toggleOpen8()">
+            <div class="flex-shrink-0 relative">
+              <span class="text-4xl md:text-5xl font-bold relative z-10 duration-1000" [class.text-[#a39669]]="open8"
+                [class.text-white]="!open8">8</span>
+              <div class="absolute bottom-1 left-0 right-0 h-px bg-white z-0"></div>
+            </div>
+            <div class="flex-grow flex justify-center items-center mx-2">
+              <span class="text-base sm:text-lg md:text-lg">{{'services.section8.title' | translate}}</span>
+
+            </div>
+            <i class="fa-solid fa-arrow-up fa-rotate-by font text-3xl md:text-4xl duration-500 flex-shrink-0"
+              [class.rotate-[225deg]]="open8" [class.text-[#a39669]]="open8" [class.text-white]="!open8"
+              style="--fa-rotate-angle: 45deg;"></i>
+            <div class="absolute bottom-1 left-0 right-0 h-px z-0 duration-1000" [class.bg-[#a39669]]="open8"
+              [class.bg-white]="!open8"></div>
+          </div>
+
+          @if (open8) {
+          <div class="p-3 bg-gray-100 rounded-lg mt-2 transition-all duration-500 ease-out w-full
+                  opacity-0 -translate-y-4 animate-fadeDown">
+            <p class="text-sm text-black">
+              {{'services.section8.span' | translate}}
+            </p>
+          </div>
+          }
+        </div>
+
+        <div class="9">
+          <div class="relative text-white flex w-full cursor-pointer items-center" (click)="toggleOpen9()">
+            <div class="flex-shrink-0 relative">
+              <span class="text-4xl md:text-5xl font-bold relative z-10 duration-1000" [class.text-[#a39669]]="open9"
+                [class.text-white]="!open9">9</span>
+              <div class="absolute bottom-1 left-0 right-0 h-px bg-white z-0"></div>
+            </div>
+            <div class="flex-grow flex justify-center items-center mx-2">
+              <span class="text-base sm:text-lg md:text-xl">{{'services.section9.title' | translate}}</span>
+
+            </div>
+            <i class="fa-solid fa-arrow-up fa-rotate-by font text-3xl md:text-4xl duration-500 flex-shrink-0"
+              [class.rotate-[225deg]]="open9" [class.text-[#a39669]]="open9" [class.text-white]="!open9"
+              style="--fa-rotate-angle: 45deg;"></i>
+            <div class="absolute bottom-1 left-0 right-0 h-px z-0 duration-1000" [class.bg-[#a39669]]="open9"
+              [class.bg-white]="!open9"></div>
+          </div>
+
+          @if (open9) {
+          <div class="p-3 bg-gray-100 rounded-lg mt-2 transition-all duration-500 ease-out w-full
+                  opacity-0 -translate-y-4 animate-fadeDown">
+            <p class="text-sm text-black">
+              {{'services.section9.span' | translate}}
             </p>
           </div>
           }
@@ -260,6 +359,7 @@
       </div>
 
     </div>
+
     <div class=" flex justify-end text-[#a39669] mt-8 md:mt-10">
       <button routerLink="/services" class=" text-lg sm:text-xl font-bold hover:underline ">{{'timeline.button' |
         translate}} <span><i class="fa-solid fa-angle-up fa-rotate-90 "></i></span></button>
@@ -268,28 +368,32 @@
   </div>
 </section>
 
-<section appAnimateOnScroll animationClass="animate-fade-in-up"
-  class=" bg-[#a39669] opacity-0" class=" py-10  bg-[#a39669]">
+<section appAnimateOnScroll animationClass="animate-fade-in-up" class=" bg-[#a39669] opacity-0"
+  class=" py-10  bg-[#a39669]">
   <div id="counterSection"
     class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center">
 
 
     <div class="flex flex-col items-center">
+      <i class="fa-solid fa-people-group text-white text-6xl mb-3"></i>
       <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-200">+{{counter1}}</h2>
       <p class="mt-2 text-gray-200 text-lg md:text-xl">{{'counter.1' | translate}}</p>
     </div>
 
     <div class="flex flex-col items-center">
+      <i class="fas fa-scale-balanced text-white text-6xl mb-3"></i>
       <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-200">+{{counter2}}</h2>
       <p class="mt-2 text-gray-200 text-lg md:text-xl">{{'counter.2' | translate}}</p>
     </div>
 
     <div class="flex flex-col items-center">
+      <i class="fas fa-file-circle-check text-white text-6xl mb-3"></i>
       <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-200">+{{counter3}}</h2>
       <p class="mt-2 text-gray-200 text-lg md:text-xl">{{'counter.3' | translate}}</p>
     </div>
 
     <div class="flex flex-col items-center">
+      <i class="fas fa-users text-white text-6xl mb-3"></i>
       <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-200">+{{counter4}}</h2>
       <p class="mt-2 text-gray-200 text-lg md:text-xl">{{'counter.4' | translate}}</p>
     </div>
@@ -297,8 +401,8 @@
   </div>
 </section>
 
-<section appAnimateOnScroll animationClass="animate-fade-in-up"
-  class=" bg-[#a39669] opacity-0" class="bg-white w-full container mx-auto px-4 pt-10">
+<section appAnimateOnScroll animationClass="animate-fade-in-up" class=" bg-[#a39669] opacity-0"
+  class="bg-white w-full container mx-auto px-4 pt-10">
 
   <h2 class="text-3xl sm:text-4xl md:text-5xl text-[#061933] mb-5 font-bold pb-6 md:pb-10"> {{'title3' | translate}}
   </h2>
@@ -307,7 +411,7 @@
 
 </section>
 
-<div  class="relative w-full overflow-hidden bg-white pb-10 group" dir="ltr">
+<div class="relative w-full overflow-hidden bg-white pb-10 group" dir="ltr">
   <div
     class="absolute left-0 top-0 h-full w-20 md:w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none">
   </div>

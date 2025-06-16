@@ -23,11 +23,10 @@
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start">
 
         <div class="content-column lg:col-span-2 text-gray-600 space-y-8 leading-relaxed">
-          <img src="/images/black-white-view-theatre.webp" alt="Main section image" class="rounded-lg shadow-md mb-6">
 
-          <h2 class="text-2xl font-semibold pt-2 text-[#061933]">
+          <!-- <h2 class="text-2xl font-semibold pt-2 text-[#061933]">
             {{ (currentService.contentSection1Title ?? '') | translate }}
-          </h2>
+          </h2> -->
           @if ( currentService.contentSection1Body && !currentService.mainSpan1 ) {
           <p>
             {{ (currentService.contentSection1Body ) | translate }}
@@ -179,6 +178,9 @@
 
         </div>
 
+        <div class="sidebar-form lg:col-span-1">
+                    <img src="/images/timeline1.webp" alt="Main section image" class="rounded-lg shadow-md mb-6">
+        </div>
         <!-- <div class="sidebar-form lg:col-span-1">
           <div class="bg-[#061933] p-6 md:p-8 rounded-lg shadow-lg">
             <form action="#" method="POST" class="space-y-6">
