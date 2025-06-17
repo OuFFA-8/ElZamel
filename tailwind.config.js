@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [  "./src/**/*.{html,ts}", "./node_modules/flowbite/**/*.js" ],
+  content: ["./src/**/*.{html,ts}", "./node_modules/flowbite/**/*.js"],
   theme: {
     extend: {
       fontFamily: {
@@ -10,12 +10,17 @@ module.exports = {
       },
       animation: {
         'fade-in-up': 'fadeInUp 1s ease-out',
+        'orbit-glow': 'orbit-glow 2s linear infinite',
       },
       keyframes: {
         fadeInUp: {
           '0%': { opacity: 0, transform: 'translateY(20px)' },
           '100%': { opacity: 1, transform: 'translateY(0)' },
         },
+        'orbit-glow': {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        }
       },
     },
   },

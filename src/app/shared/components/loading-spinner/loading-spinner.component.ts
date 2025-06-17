@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+// loading-spinner.component.ts
+import { Component, ViewEncapsulation } from '@angular/core'; // استورد ViewEncapsulation
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -7,27 +8,39 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule],
   template: `
     <div
-      class="fixed inset-0 bg-gray-900  backdrop-blur-sm flex items-center justify-center z-[9999]"
-      aria-modal="true"
-      role="dialog"
-      aria-labelledby="loading-message"
+      class="fixed inset-0 bg-gray-900 bg-opacity-75 backdrop-blur-sm flex items-center justify-center z-[9999]"
     >
-      <div class="flex flex-col items-center">
-        <!-- شعار الشركة -->
+      <!-- الحاوية الجديدة للحركة -->
+      <div class="relative w-32 h-32 flex items-center justify-center">
+        <!-- الهالة الضوئية التي ستدور (عنصر وهمي) -->
+        <div class="glow-orb animate-orbit-glow"></div>
+        
+        <!-- شعار الشركة في الأعلى -->
         <img
-         src="/images/-٢- شعار الزامل.webp"
+          src="/images/-٢- شعار الزامل.webp"
           alt="شعار الشركة"
-          class="w-24 h-24 animate-fade-in-pulse"
+          class="relative w-24 h-24 z-10" 
         />
-
-        <!-- نص التحميل -->
-        <!-- <p id="loading-message" class="text-white text-center mt-4 text-lg">
-          جاري التحميل...
-        </p> -->
       </div>
     </div>
   `,
+  // سنضيف الـ CSS الخاص بالهالة هنا
+  styles: [`
+    .glow-orb {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: conic-gradient(
+        from 180deg at 50% 50%,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 50%,
+        #ffffff 90%, /* لون الهالة - يمكن تغييره للون علامتك التجارية */
+        rgba(255, 255, 255, 0) 100%
+      );
+      border-radius: 50%;
+      z-index: 5;
+    }
+  `],
+  encapsulation: ViewEncapsulation.None // مهم لكي يعمل الـ CSS بشكل صحيح مع Tailwind
 })
-export class LoadingSpinnerComponent {
-  constructor() { }
-}
+export class LoadingSpinnerComponent {}
