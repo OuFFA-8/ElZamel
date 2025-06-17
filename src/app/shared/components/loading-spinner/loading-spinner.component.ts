@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule],
   template: `
     <div
-      class="fixed inset-0 bg-gray-900 bg-opacity-60 backdrop-blur-sm flex items-center justify-center z-[9999]"
+      class="fixed inset-0 bg-gray-900  backdrop-blur-sm flex items-center justify-center z-[9999]"
       aria-modal="true"
       role="dialog"
       aria-labelledby="loading-message"
@@ -21,9 +21,9 @@ import { CommonModule } from '@angular/common';
         />
 
         <!-- نص التحميل -->
-        <p id="loading-message" class="text-white text-center mt-4 text-lg">
+        <!-- <p id="loading-message" class="text-white text-center mt-4 text-lg">
           جاري التحميل...
-        </p>
+        </p> -->
       </div>
     </div>
   `,

@@ -211,7 +211,7 @@
     "event": {
         "item1": {
             "date": "April 30, 2025",
-            "category": "Our Work",
+            "category": "event",
             "title": "Enforcement of Shares and Stocks under the New Companies Law",
             "description": "A brief overview of the enforcement of shares and stocks under the new Companies Law, highlighting key exceptions.",
             "details1": "Shares and Stocks are enforceable according to the new Companies Law. However, the shares of a member in non-profit companies are excluded from this enforcement.",
@@ -220,7 +220,7 @@
         },
         "item2": {
             "date": "April 30, 2025",
-            "category": "Our Work",
+            "category": "event",
             "title": "Among the most prominent principles established in the Civil Transactions Law",
             "description": "The law grants the court broad powers to interpret contracts and fill in gaps to ensure their validity and enforceability.",
             "details1": "The principle of granting the court broad powers to address contractual disputes, to ensure the validity and enforceability of contracts.",
@@ -233,7 +233,7 @@
         },
         "item3": {
             "date": "30 April 2025",
-            "category": "Our Work",
+            "category": "event",
             "title": "Mandatory Information to Include in the Company's Official Documents",
             "description": "The mandatory information that companies must include in their official documents, and the consequences of neglecting it in terms of fines and legal liability on the company's management.",
             "details1": "It is essential to pay attention to an issue that many commercial companies may overlook, which is:",
