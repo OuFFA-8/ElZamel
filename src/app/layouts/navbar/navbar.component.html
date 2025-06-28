@@ -9,12 +9,19 @@
 
     <div class="flex items-center md:order-2 space-x-1 md:space-x-2 rtl:space-x-reverse">
       <!-- زرار تغيير اللغة المباشر -->
-      <button (click)="toggleLanguage()" type="button"
-        class="inline-flex items-center font-medium justify-center px-2 py-2 text-white text-sm hover:text-[#b3a16c] duration-300"
+<button (click)="toggleLanguage()" type="button"
+        class="inline-flex items-center justify-center p-2 rounded-full text-white hover:text-[#b3a16c] hover:bg-white/10 duration-300"
         aria-label="Change language">
-        <i class="fa-solid fa-language text-3xl md:text-4xl"></i>
 
-      </button>
+  <!-- SVG Icon: Globe Refresh -->
+  <svg class="w-7 h-7 md:w-8 md:h-8" 
+       xmlns="http://www.w3.org/2000/svg" 
+       viewBox="0 0 24 24" 
+       fill="currentColor">
+    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+  </svg>
+  
+</button>
 
       <button #mobileMenuButton data-collapse-toggle="navbar-language" type="button"
         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-[#b3a16c]"

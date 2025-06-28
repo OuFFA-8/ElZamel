@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, computed, ElementRef, HostListener, NgModule, signal } from '@angular/core';
+import { AfterViewInit, Component, computed, ElementRef, HostListener, NgModule, Signal, signal } from '@angular/core';
 import { CarouselComponent } from "../carousel/carousel.component";
 import { CommonModule } from '@angular/common';
 import { TimelineComponent } from "../timeline/timeline.component";
@@ -6,6 +6,7 @@ import { TranslatePipe } from '@ngx-translate/core';
 import { NavbarComponent } from "../../layouts/navbar/navbar.component";
 import { RouterLink } from '@angular/router';
 import { AnimateOnScrollDirective } from '../../shared/directives/animate-on-scroll.directive';
+import { ServiceItem, ServicesDataService } from '../../core/services/services/services-data.service';
 
 interface Logo {
   id: number;
@@ -24,9 +25,13 @@ interface Logo {
 
 
 export class HomeComponent implements AfterViewInit {
+  public services: Signal<ServiceItem[]>; 
 
 
-
+  constructor(private servicesDataService: ServicesDataService) {
+    this.services = this.servicesDataService.services;
+    console.log('Services Signal Value in Constructor:', this.services()); 
+  }
 
   open1 = false;
   open2 = false;
