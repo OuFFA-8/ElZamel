@@ -89,21 +89,24 @@
 
 <div class="w-full ">
 
-  <div class="mt-32 container mx-auto px-4 sm:px-6 lg:px-8 my-8 md:my-10 md:mt-32 min-h-[80vh] sm:min-h-[90vh] " id="content-area">
+  <div class="mt-32 container mx-auto px-4 sm:px-6 lg:px-8 my-8 md:my-10 md:mt-32 min-h-[80vh] sm:min-h-[90vh] "
+    id="content-area">
     <div class="flex flex-col items-center mb-8 md:mb-10">
 
-      <div class="flex flex-col sm:flex-row flex-wrap justify-center items-stretch gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12">
+      <div
+        class="flex flex-col sm:flex-row  flex-wrap justify-center items-stretch gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12">
         @for (branch of allBranchesData; track branch.id) {
         <button type="button" (click)="selectBranch(branch)" [class]="getRectangleClasses(branch)"
-          class="w-full sm:w-auto min-w-[280px] sm:min-w-0">
+          class="w-full sm:w-auto min-w-[280px] sm:min-w-0 glass-effect">
 
-          <div class="flex items-center space-x-2 rtl:space-x-reverse text-right">
+          <div class="flex items-center space-x-2 rtl:space-x-reverse text-right ">
             <div
               class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-gradient-to-br from-[#061933] to-[#061933] text-white text-base sm:text-lg">
               <i class="fas fa-building"></i>
             </div>
             <div class="flex-1">
-              <h3 class="text-sm sm:text-base font-semibold ms-2 sm:ms-3 text-gray-800">{{ branch.shortName |translate }}</h3>
+              <h3 class="text-sm sm:text-base font-semibold ms-2 sm:ms-3 text-gray-800">{{ branch.shortName |translate
+                }}</h3>
             </div>
           </div>
 
@@ -119,7 +122,7 @@
 
     <div class="details-container-wrapper w-full mx-auto">
       @if (selectedBranch) {
-      <div class="details-content bg-white rounded-lg shadow-xl overflow-hidden" [@detailsSequence]>
+      <div class="details-content glass-effect bg-white rounded-lg shadow-xl overflow-hidden" [@detailsSequence]>
 
         <div class="p-4 sm:p-6 md:p-8 border-b border-gray-200 text-center details-title-anim">
           <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-1 sm:mb-2 leading-tight">
@@ -140,8 +143,9 @@
                 <i class="fa-solid fa-location-dot text-base sm:text-lg"></i>
               </div>
               <div>
-                <h3 class="text-base sm:text-lg font-semibold text-gray-900 mb-1">{{ 'branches.address' |translate }}</h3>
-                <p class="text-gray-600 ltr-text text-xs sm:text-sm">{{ selectedBranch.addressLines | translate }}</p>
+                <h3 class="text-base sm:text-lg font-semibold text-gray-900 mb-1">{{ 'branches.address' |translate }}
+                </h3>
+                <p class="text-gray-600 ltr-text-start rtl-text-end text-xs sm:text-sm">{{ selectedBranch.addressLines | translate }}</p>
               </div>
             </div>
             <div class="flex items-start gap-3 sm:gap-4">
@@ -152,7 +156,7 @@
               <div>
                 <h3 class="text-base sm:text-lg font-semibold text-gray-900 mb-1">{{ 'branches.email' |translate }}</h3>
                 @for(email of selectedBranch.emails; track $index) {
-                  <p class="text-gray-600 ltr-text text-xs sm:text-sm break-all">{{ email }}</p>
+                <p class="text-gray-600 ltr-text text-xs sm:text-sm break-all">{{ email }}</p>
                 }
               </div>
             </div>
@@ -172,7 +176,8 @@
                 <i class="fas fa-phone-alt text-base sm:text-lg"></i>
               </div>
               <div>
-                <h3 class="text-base sm:text-lg font-semibold text-gray-900 mb-1">{{ 'branches.phone2' |translate }}</h3>
+                <h3 class="text-base sm:text-lg font-semibold text-gray-900 mb-1">{{ 'branches.phone2' |translate }}
+                </h3>
                 <p class="text-gray-600 ltr-text text-xs sm:text-sm">{{ selectedBranch.MutualNumber }}</p>
               </div>
             </div>
@@ -190,80 +195,80 @@
         </div>
       </div>
       } @else {
-        <div class="text-center py-10 text-gray-500">
-          <p>{{ 'branches.pleaseSelect' | translate }}</p>
-        </div>
-      } 
-    </div> 
-  </div> 
-</div> 
-
-
-<section class=" our-section relative w-full min-h-[110vh] sm:min-h-[90vh] md:h-auto md:min-h-[80vh] lg:h-screen bg-cover bg-center py-10 md:py-0">
-    <div class="absolute inset-0"></div>
-  
-    <div class="relative z-10 flex flex-col md:flex-row items-center justify-center md:justify-between max-w-[1325px] mx-auto px-4 sm:px-6 py-10 md:py-16 h-full gap-10 md:gap-6">
-  
-      <div class="text-white max-w-lg text-center md:text-start md:mb-0 lg:mb-16 xl:mb-52 w-full md:w-1/2">
-        <h1 class="text-3xl md:text-4xl font-bold mb-4 leading-loose">
-          {{'form.title' | translate}}
-        </h1>
-        <p class="mb-6 text-base sm:text-lg">
-          {{'form.title2' | translate}}
-        </p>
-        <button class="bg-white text-blue-900 font-semibold py-2 px-6 rounded-full hover:bg-gray-100 transition">
-          {{'form.connect' | translate}}
-        </button>
+      <div class="text-center py-10 text-gray-500">
+        <p>{{ 'branches.pleaseSelect' | translate }}</p>
       </div>
-  
-      <div
-        class="bg-white bg-opacity-20 backdrop-blur-md p-6 md:p-8 rounded-xl w-full max-w-md md:w-1/2 mt-0">
-        <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
-  
-          <input type="text" placeholder="First Name"
-            class="p-3 rounded bg-transparent border border-white placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2 md:col-span-1">
-  
-          <input type="text" placeholder="Last Name"
-            class="p-3 rounded bg-transparent border border-white placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2 md:col-span-1">
-  
-          <input type="email" placeholder="Email"
-            class="p-3 rounded bg-transparent border border-white placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2">
-  
-            <input type="tel" placeholder="Mobile Number"
-            class="p-3 rounded bg-transparent border border-white placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2">
-  
-  
-          <select
-            class="p-3 rounded bg-transparent border border-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2">
-            <option class="text-black" value="" disabled selected>Select Service...</option>
-            <option class="text-black">{{'form.group.Corporate' | translate}}</option>
-            <option class="text-black">{{'form.group.Banking' | translate}}</option>
-             <option class="text-black">{{'form.group.Investment' | translate}}</option>
-            <option class="text-black">{{'form.group.Information' | translate}}</option>
-            <option class="text-black">{{'form.group.Intellectual' | translate}}</option>
-            <option class="text-black">{{'form.group.Employment' | translate}}</option>
-            <option class="text-black">{{'form.group.Dispute' | translate}}</option>
-            <option class="text-black">{{'form.group.Foreign' | translate}}</option>
-            <option class="text-black">{{'form.group.Government' | translate}}</option>
-            <option class="text-black">{{'form.group.Capital' | translate}}</option>
-            <option class="text-black">{{'form.group.Environmental' | translate}}</option>
-            <option class="text-black">{{'form.group.Insurance' | translate}}</option>
-            <option class="text-black">{{'form.group.Legal' | translate}}</option>
-            <option class="text-black">{{'form.group.Real' | translate}}</option>
-            <option class="text-black">{{'form.group.Shipping' | translate}}</option>
-          </select>
-  
-          <textarea placeholder="Your Message" rows="4"
-            class="p-3 rounded bg-transparent border border-white placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2"></textarea>
-  
-          <button role="button"
-            class="bg-[#b3a16c] text-white font-semibold py-3 px-6 rounded-full hover:bg-[#837342] transition col-span-2">
-            {{'form.send' | translate}}
-          </button>
-  
-        </form>
-      </div>
-  
+      }
     </div>
-  </section>
+  </div>
+</div>
 
+
+<section
+  class=" our-section relative w-full min-h-[110vh] sm:min-h-[90vh] md:h-auto md:min-h-[80vh] lg:h-screen bg-cover bg-center py-10 md:py-0">
+  <div class="absolute inset-0"></div>
+
+  <div
+    class="relative z-10 flex flex-col md:flex-row items-center justify-center md:justify-between max-w-[1325px] mx-auto px-4 sm:px-6 py-10 md:py-16 h-full gap-10 md:gap-6">
+
+    <div class="text-white max-w-lg text-center md:text-start md:mb-0 lg:mb-16 xl:mb-52 w-full md:w-1/2">
+      <h1 class="text-3xl md:text-4xl font-bold mb-4 leading-loose">
+        {{'form.title' | translate}}
+      </h1>
+      <p class="mb-6 text-base sm:text-lg">
+        {{'form.title2' | translate}}
+      </p>
+      <button class="bg-white text-blue-900 font-semibold py-2 px-6 rounded-full hover:bg-gray-100 transition">
+        {{'form.connect' | translate}}
+      </button>
+    </div>
+
+    <div class="bg-white bg-opacity-20 backdrop-blur-md p-6 md:p-8 rounded-xl w-full max-w-md md:w-1/2 mt-0">
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+        <input type="text" placeholder="First Name"
+          class="p-3 rounded bg-transparent border border-white placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2 md:col-span-1">
+
+        <input type="text" placeholder="Last Name"
+          class="p-3 rounded bg-transparent border border-white placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2 md:col-span-1">
+
+        <input type="email" placeholder="Email"
+          class="p-3 rounded bg-transparent border border-white placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2">
+
+        <input type="tel" placeholder="Mobile Number"
+          class="p-3 rounded bg-transparent border border-white placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2">
+
+
+        <select
+          class="p-3 rounded bg-transparent border border-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2">
+          <option class="text-black" value="" disabled selected>Select Service...</option>
+          <option class="text-black">{{'form.group.Corporate' | translate}}</option>
+          <option class="text-black">{{'form.group.Banking' | translate}}</option>
+          <option class="text-black">{{'form.group.Investment' | translate}}</option>
+          <option class="text-black">{{'form.group.Information' | translate}}</option>
+          <option class="text-black">{{'form.group.Intellectual' | translate}}</option>
+          <option class="text-black">{{'form.group.Employment' | translate}}</option>
+          <option class="text-black">{{'form.group.Dispute' | translate}}</option>
+          <option class="text-black">{{'form.group.Foreign' | translate}}</option>
+          <option class="text-black">{{'form.group.Government' | translate}}</option>
+          <option class="text-black">{{'form.group.Capital' | translate}}</option>
+          <option class="text-black">{{'form.group.Environmental' | translate}}</option>
+          <option class="text-black">{{'form.group.Insurance' | translate}}</option>
+          <option class="text-black">{{'form.group.Legal' | translate}}</option>
+          <option class="text-black">{{'form.group.Real' | translate}}</option>
+          <option class="text-black">{{'form.group.Shipping' | translate}}</option>
+        </select>
+
+        <textarea placeholder="Your Message" rows="4"
+          class="p-3 rounded bg-transparent border border-white placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-[#b3a16c] col-span-2"></textarea>
+
+        <button role="button"
+          class="bg-[#b3a16c] text-white font-semibold py-3 px-6 rounded-full hover:bg-[#837342] transition col-span-2">
+          {{'form.send' | translate}}
+        </button>
+
+      </form>
+    </div>
+
+  </div>
+</section>

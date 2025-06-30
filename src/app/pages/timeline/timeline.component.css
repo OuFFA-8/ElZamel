@@ -5,7 +5,7 @@
 
 @media (min-width: 768px) {
   :host {
-    background-image: linear-gradient(rgba(163, 150, 105, 0.9), rgba(163, 150, 105, 0.9)), url("/images/black-white-view-theatre.webp");
+    background-image: linear-gradient(rgba(202, 201, 198, 0.9), rgba(205, 205, 204, 0.9)), url("/images/black-white-view-theatre.webp");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

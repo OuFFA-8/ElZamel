@@ -20,6 +20,12 @@
 }
 body {
   @apply font-NotoKufi;
+    background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* تأثير جميل يجعل الخلفية ثابتة أثناء التمرير */
+    transition: background-image 0.8s ease-in-out;
+
 }
 
 

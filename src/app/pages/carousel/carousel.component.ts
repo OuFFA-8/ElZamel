@@ -52,8 +52,8 @@ export class CarouselComponent {
             }
           
             .swiper-pagination-bullet-active {
-              color: #fff;
-              background: #a39669;
+              color: #061933;
+              background: #d6d6d6;
             }
           `]
           
