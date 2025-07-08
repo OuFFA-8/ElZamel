@@ -109,7 +109,7 @@ export class ServicesDataService {
       id: 5, iconClass: 'fas fa-coins',
       title: 'services.section5.title',
       shortDescription: 'services.section5.span',
-      bannerImageUrl: '/images/اسواق المال.webp',
+      bannerImageUrl: '/images/اسواق-المال.webp',
       contentSection1Title: 'services.section5.title2',
       contentSection1Body: 'services.section5.paragraph1',
       span1: 'services.section5.span1',
