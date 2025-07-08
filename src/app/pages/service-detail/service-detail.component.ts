@@ -1,52 +1,57 @@
 import { Component, OnInit, inject, signal, computed } from '@angular/core';
-import { ActivatedRoute, Router, RouterModule } from '@angular/router'; 
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { ServicesDataService, ServiceItem } from  '../../core/services/services/services-data.service'; 
+import { ServicesDataService, ServiceItem } from '../../core/services/services/services-data.service';
 import { SafeUrlPipe } from '../../shared/pipes/safe-url.pipe';
 import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-service-detail',
   standalone: true,
-  imports: [ CommonModule, RouterModule  , TranslatePipe],
+  imports: [CommonModule, RouterModule, TranslatePipe],
   templateUrl: './service-detail.component.html',
   styleUrls: ['./service-detail.component.css']
 })
 export class ServiceDetailComponent implements OnInit {
 
   private route = inject(ActivatedRoute);
-  private router = inject(Router); 
+  private router = inject(Router);
   private servicesDataService = inject(ServicesDataService);
 
 
   service = signal<ServiceItem | undefined>(undefined);
 
   ngOnInit(): void {
-    const serviceIdParam = this.route.snapshot.paramMap.get('id');
+    this.route.paramMap.subscribe((params) => {
+      window.scrollTo(0, 0);
+      const serviceIdParam = params.get('id');
 
-    if (serviceIdParam) {
-      const serviceId = +serviceIdParam; 
-      if (!isNaN(serviceId)) {
-        const foundService = this.servicesDataService.getServiceById(serviceId);
-        if (foundService) {
-          this.service.set(foundService); 
+      if (serviceIdParam) {
+        const serviceId = +serviceIdParam;
+
+        if (!isNaN(serviceId)) {
+          const foundService = this.servicesDataService.getServiceById(serviceId);
+
+          if (foundService) {
+            this.service.set(foundService); 
+          } else {
+            console.error(`Service with ID ${serviceId} not found.`);
+          }
         } else {
-          console.error(`Service with ID ${serviceId} not found.`);
+          console.error(`Invalid service ID parameter: ${serviceIdParam}`);
         }
       } else {
-         console.error(`Invalid service ID parameter: ${serviceIdParam}`);
+        console.error('Service ID parameter not found in route.');
       }
-    } else {
-      console.error('Service ID parameter not found in route.');
-    }
+    });
   }
 
   goBack(): void {
-    this.router.navigate(['/services']); 
+    this.router.navigate(['/services']);
   }
 
   scrollToContent(event: MouseEvent): void {
-    event.preventDefault(); 
+    event.preventDefault();
     const contentArea = document.getElementById('content-area');
     if (contentArea) {
       contentArea.scrollIntoView({ behavior: 'smooth', block: 'start' });
