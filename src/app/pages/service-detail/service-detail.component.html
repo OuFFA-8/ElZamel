@@ -3,7 +3,7 @@
   @if (service(); as currentService) {
 
   <div
-    class="banner-section relative w-full text-white min-h-72 flex flex-col items-center justify-center bg-cover bg-center "
+    class="banner-section relative w-full text-white min-h-72 flex flex-col items-center justify-center bg-bottom bg-cover "
     [style.backgroundImage]="'url(' + currentService.bannerImageUrl + ')'">
 
     <!-- 1. طبقة الـ Overlay تم وضعها هنا لتغطي كل شيء -->
@@ -25,7 +25,7 @@
       </div>
 
       <!-- قسم المحتوى النصي (لم يتغير) -->
-      <div class="flex justify-center mx-10 py-4">
+      <div class="flex justify-center mx-10 py-14">
         <div class="content-column w-full max-w-4xl  text-white space-y-8 text-justify leading-relaxed">
           <!-- كل المحتوى بتاعك هنا زي ما هو بالظبط -->
 
