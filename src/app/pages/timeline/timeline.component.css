@@ -5,12 +5,11 @@
 
 @media (min-width: 768px) {
   :host {
-    background-image: linear-gradient(rgba(202, 201, 198, 0.9), rgba(205, 205, 204, 0.9)), url("/images/black-white-view-theatre.webp");
+    background-image: linear-gradient(rgb(177, 161, 110,0.8), rgb(177, 161, 110,0.8)), url("/images/black-white-view-theatre.webp");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* height: 80vh;  <-- يمكن حذف هذا الآن لأن الـ HTML يتحكم بارتفاع الديسكتوب */
   }
 }
 
